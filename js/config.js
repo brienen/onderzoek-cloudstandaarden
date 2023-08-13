@@ -2,35 +2,41 @@ let respecConfig = {
   useLogo: true,
   useLabel: true,
   license: "cc-by",
-  specStatus: "DEF",
-  specType: "HR",
+  specStatus: "wv",
+  specType: "al",
   pubDomain: "dk",
-  shortName: "template",
-  publishDate: "2023-06-21",
-  publishVersion: "0.0.3",
+  shortName: "Onderzoek Cloudstandaarden",
+  publishDate: "2023-08-13",
+  publishVersion: "0.2",
   
-  previousVersion: "0.0.2",
-  previousPublishDate: "2022-06-24",
+  previousVersion: "0.1",
+  previousPublishDate: "2023-08-13",
   previousMaturity: "WV",
-  title: "titleText",
+  title: "Onderzoek Cloudstandaarden",
   content: {"ch01": "informative", "ch02": "", "mermaid": ""},
-  editors:
-    [
-      {
-        name: "Logius Standaarden",
-        company: "Logius",
-        companyURL: "https://github.com/Logius-standaarden",
-      }
-    ],
+  //editors:
+  //  [
+  //    {
+  //      name: "Logius Standaarden",
+  //      company: "Logius",
+  //      companyURL: "https://github.com/Logius-standaarden",
+  //    }
+  //  ],
   authors:
     [
       {
-        name: "Logius Standaarden",
-        company: "Logius",
-        companyURL: "https://github.com/Logius-standaarden",
+        name: "Arjen Brienen",
+        company: "E-Space",
+        companyURL: "https://www.e-space.nl",
+      },
+      {
+        name: "Jeroen de Ruig",
+        company: "E-Space",
+        companyURL: "https://www.e-space.nl",
       }
+
     ],
-  github: "https://github.com/Logius-standaarden/ReSpec-template",
+  github: "https://github.com/brienen/onderzoek-cloudstandaarden",
 
 
   // Create PDF and link to file in header (optional):

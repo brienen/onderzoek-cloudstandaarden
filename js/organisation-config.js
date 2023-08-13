@@ -2,7 +2,7 @@
 var organisationConfig = {
     nl_organisationName: "E-Space",
     nl_organisationStylesURL: "https://brienen.github.io/publish/respec/style/",
-    nl_organisationPublishURL: "https://gitdocumentatie.logius.nl/publicatie/",
+    nl_organisationPublishURL: "https://brienen.github.io/publish/onderzoek-cloudstandaarden/",
     logos: [{
         src: "https://brienen.github.io/publish/respec/style/logos/Logo_E-Space_Small.jpg",
         alt: "E-Space",
