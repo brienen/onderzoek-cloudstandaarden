@@ -7,8 +7,8 @@ var organisationConfig = {
         src: "https://brienen.github.io/publish/respec/style/logos/Logo_E-Space_Small.jpg",
         alt: "E-Space",
         id: "E-Space",
-        height: 77,
-        width: 320,
+        height: 112,
+        width: 361,
         url: "https://www.e-space.nl",
     }],
 
