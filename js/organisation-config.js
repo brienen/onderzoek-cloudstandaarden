@@ -1,7 +1,7 @@
 // Plaats dit bestand op een centrale locatie voor hergebruik in meerdere documenten.
 var organisationConfig = {
-    nl_organisationName: "Logius",
-    nl_organisationStylesURL: "https://gitdocumentatie.logius.nl/publicatie/respec/style/",
+    nl_organisationName: "E-Space",
+    nl_organisationStylesURL: "https://brienen.github.io/publish/respec/style/",
     nl_organisationPublishURL: "https://gitdocumentatie.logius.nl/publicatie/",
     logos: [{
         src: "https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/figure-logius.svg",
