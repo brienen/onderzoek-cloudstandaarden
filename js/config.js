@@ -3,7 +3,7 @@ let respecConfig = {
   useLabel: true,
   license: "cc-by",
   specStatus: "wv",
-  specType: "al",
+  specType: "ad",
   pubDomain: "dk",
   shortName: "Onderzoek Cloudstandaarden",
   publishDate: "2023-08-13",

@@ -2,7 +2,7 @@
 var organisationConfig = {
     nl_organisationName: "E-Space",
     nl_organisationStylesURL: "https://brienen.github.io/publish/respec/style/",
-    nl_organisationPublishURL: "https://brienen.github.io/publish/onderzoek-cloudstandaarden/",
+    nl_organisationPublishURL: "https://brienen.github.io/publish/",
     logos: [{
         src: "https://brienen.github.io/publish/respec/style/logos/Logo_E-Space_Small.jpg",
         alt: "E-Space",
@@ -41,6 +41,7 @@ var organisationConfig = {
             al: "General",
             bd: "Governance documentation",
             bp: "Best practice",
+            ad: "Advisory Document"
         },
         nl: {
             wv: "Werkversie",
@@ -59,6 +60,7 @@ var organisationConfig = {
             al: "Algemeen",
             bd: "Beheerdocumentatie",
             bp: "Best practice",
+            ad: "Adviesdocument"
         },
     },
 
