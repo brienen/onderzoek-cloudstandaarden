@@ -12,8 +12,8 @@ let respecConfig = {
   previousVersion: "0.1",
   previousPublishDate: "2023-08-13",
   previousMaturity: "WV",
-  title: "Onderzoek Cloudstandaarden",
-  content: {"ch01": "informative", "ch02": "", "mermaid": ""},
+  title: "Onderzoek naar standaarden en standaardisatieactiviteiten voor Cloud",
+  content: {"ch1_inleiding": "informative", "ch2_cloud": "", "ch3_onderzoek": "", "ch4_conclusies": ""},
   //editors:
   //  [
   //    {
