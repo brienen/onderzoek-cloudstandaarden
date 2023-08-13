@@ -6,7 +6,42 @@ Het moderne bestuurlijke landschap van Nederland heeft, net als de rest van de w
 
 Cloud computing stelt gebruikers in staat om gegevens op te slaan, op te vragen en applicaties uit te voeren via het internet in plaats van op lokale servers of computers. Voor de overheid betekent dit een verhoogde capaciteit en flexibiliteit bij het leveren van diensten, zonder de noodzaak van enorme fysieke IT-infrastructuren.
 
-### De Adoptie door de Nederlandse Overheid
+Natuurlijk, de Nederlandse markt voor cloud computing is in veel opzichten een weerspiegeling van de bredere Europese en mondiale trends, maar heeft ook zijn eigen unieke kenmerken. Hier is een overzicht van de cloudleveranciers in Nederland:
+
+## Belangrijkste wereldwijde cloudleveranciers actief in Nederland:
+
+1. **Amazon Web Services (AWS)**: AWS heeft een actieve aanwezigheid in Nederland en biedt diensten aan vanuit datacenters in de regio Europa (Frankfurt, Ierland, Londen, Parijs, Stockholm, en sinds 2020 ook een aangekondigde regio in Spanje). Veel Nederlandse bedrijven en startups gebruiken AWS vanwege de brede reeks diensten en schaalbaarheid.
+
+2. **Microsoft Azure**: Gezien de diepgewortelde relatie van veel Nederlandse bedrijven met Microsoft-producten, is Azure een populaire keuze. Microsoft heeft ook een datacenterregio in Nederland, wat helpt bij compliance- en datalocatievereisten.
+
+3. **Google Cloud Platform (GCP)**: Google heeft in 2020 zijn datacenteruitbreiding in Eemshaven voltooid, waarmee het zijn capaciteit in Nederland versterkte. Dit heeft het voor lokale bedrijven aantrekkelijker gemaakt om GCP te gebruiken.
+
+4. **IBM Cloud**: Met een sterke aanwezigheid in de zakelijke markt biedt IBM Cloud diensten aan die populair zijn bij grotere Nederlandse organisaties, vooral die welke al in een IBM-ecosysteem zitten.
+
+5. **Oracle Cloud**: Oracle heeft relaties met veel grote Nederlandse bedrijven, vooral op het gebied van database- en bedrijfssoftware. Hun cloudaanbod wordt vaak overwogen door bedrijven die al gebruik maken van Oracle-producten.
+
+### Lokale en regionale spelers:
+
+1. **KPN Cloud**: Als een van de grootste telecomproviders in Nederland biedt KPN ook cloudservices aan, vooral gericht op de lokale markt.
+
+2. **TransIP**: Een Nederlandse webhosting- en cloudserviceprovider, populair bij kleinere bedrijven en individuele gebruikers.
+
+3. **LeaseWeb**: Met hoofdkantoor in Amsterdam, biedt LeaseWeb een scala aan cloudhostingdiensten en heeft het een aanzienlijke aanwezigheid in Nederland.
+
+4. **Interxion**: Een grote Europese aanbieder van colocatie datacenterdiensten, met meerdere datacenters in Nederland.
+
+### Belangrijke overwegingen voor de Nederlandse markt:
+
+- **Data-soevereiniteit**: Gezien de Europese regelgeving, zoals GDPR, en specifieke Nederlandse privacywetten, is de locatie van datacenters en de opslag van gegevens een cruciale overweging voor veel bedrijven.
+
+- **Integratie met bestaande IT-infrastructuren**: Veel Nederlandse bedrijven hebben aanzienlijke investeringen gedaan in bestaande IT-infrastructuren. Cloudoplossingen die naadloos integreren met deze bestaande systemen worden vaak geprefereerd.
+
+- **Lokale ondersteuning**: Lokale vertegenwoordiging en Nederlandssprekende ondersteuning kunnen doorslaggevend zijn voor sommige Nederlandse organisaties, vooral in sectoren waar snel handelen en communicatie essentieel zijn.
+
+Samenvattend, hoewel de grote internationale spelers dominant zijn in de Nederlandse cloudmarkt, is er ook ruimte voor lokale providers die specifieke oplossingen en ondersteuning bieden afgestemd op de Nederlandse markt en regelgeving. Het is essentieel voor organisaties om zowel technische als regelgevende overwegingen in acht te nemen bij het kiezen van een cloudprovider.
+
+
+## De Nederlandse Overheid
 
 De Nederlandse overheid heeft de afgelopen jaren flink geïnvesteerd in het moderniseren van haar IT-infrastructuur. Cloud-oplossingen zijn hierbij naar voren gekomen als een strategisch middel om efficiëntie te verhogen, kosten te besparen en diensten te verbeteren. Verschillende overheidsinstanties hebben projecten en initiatieven geïmplementeerd om de overgang naar de cloud te faciliteren.
 
