@@ -4,12 +4,12 @@ var organisationConfig = {
     nl_organisationStylesURL: "https://brienen.github.io/publish/respec/style/",
     nl_organisationPublishURL: "https://gitdocumentatie.logius.nl/publicatie/",
     logos: [{
-        src: "https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/figure-logius.svg",
-        alt: "Logius",
-        id: "Logius",
+        src: "https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/Logo_E-Space_Small.jpg",
+        alt: "E-Space",
+        id: "E-Space",
         height: 77,
-        width: 44,
-        url: "https://www.logius.nl/standaarden",
+        width: 320,
+        url: "https://www.e-space.nl",
     }],
 
     postProcess: [window.respecMermaid.createFigures],
