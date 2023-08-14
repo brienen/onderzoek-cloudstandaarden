@@ -2,11 +2,51 @@
 
 ## Aanleiding
 
-In uw offerteaanvraag schetst u de context van de beoogde opdracht via de kamerbrief Rijksbreed cloudbeleid 2022 en de belangrijke rol van standaardisatie en in het bijzonder standaarden voor portabiliteit van gegevens, cloud-interoperabiliteit en informatieveiligheid.
+In uw offerteaanvraag schetst u de context van de beoogde opdracht via de [kamerbrief Rijksbreed cloudbeleid 2022](https://open.overheid.nl/documenten/ronl-a79331dc7c088f2cb6259f591c3b4f2fbcc9b5f1/pdf) en de belangrijke rol van standaardisatie en in het bijzonder standaarden voor portabiliteit van gegevens, cloud-interoperabiliteit en informatieveiligheid.
 
 Bureau Forum Standaardisatie zet namens Forum Standaardisatie de beoogde opdracht uit met de volgende opdrachtomschrijving:
 
 > Om de digitale overheid gevraagd en ongevraagd te kunnen adviseren over standaardisatie voor de Cloud, wil het Forum Standaardisatie graag een beeld krijgen van de standaarden die van strategisch belang zijn voor het Cloudbeleid. In het bijzonder wil Forum Standaardisatie weten welke cruciale standaarden al bestaan, welke nog moeten worden gespecificeerd, en op welke (Europese en internationale) standaardisatie- activiteiten de overheid nog invloed op kan en zou moeten uitoefenen.
+
+## Brief Rijksbreed Cloudbeleid 2022
+
+In deze brief wordt geïnformeerd over het Rijksbrede cloudbeleid 2022. Dit beleid richt zich op het gebruik van publieke clouddiensten door de Rijksoverheid, als vervanging van het eerdere beleid uit 2011 dat de focus legde op private clouddiensten.
+
+Hoofdpunten:
+
+1.  **Overheidsdiensten** mogen onder bepaalde voorwaarden en uitzonderingen gebruik maken van publieke clouddiensten.
+
+2.  **Verwerking van persoonsgegevens** in publieke clouddiensten vereist een goedgekeurde pre-scan gegevens-beschermingseffectbeoordeling. Bij een hoog risico is een volledige data protection impact assessment noodzakelijk.
+
+3.  Elk **departement** is zelf verantwoordelijk voor het inzicht in de risico’s van het gebruik van publieke cloud toepassingen.
+
+4.  Er komt een “implementatierichtlijn risicoafweging cloudgebruik” voor het einde van 2022.
+
+5.  Overheidsentiteiten die niet tot de Rijksdienst behoren, wordt geadviseerd het Rijksbeleid te volgen.
+
+6.  **Uitzonderingen**: Publieke clouddiensten mogen niet worden gebruikt voor staatsgeheim gerubriceerde informatie. Het Ministerie van Defensie valt niet onder dit beleid.
+
+7.  **Voorwaarden**:
+
+    - Departementen moeten hun eigen cloudbeleid formuleren.
+
+    - Een relevante risicoafweging is vereist.
+
+    - Jaarlijkse rapportage over het gebruik van publieke clouddiensten aan CIO Rijk.
+
+    - Er moet een ‘exit strategie’ zijn in overeenkomsten met cloudleveranciers.
+
+    - Clouddienstverlening moet voldoen aan bestaande ICT-voorwaarden.
+
+    - Cyberveiligheid is essentieel, vooral met betrekking tot gegevensverwerking in andere landen.
+
+    - Besluitvorming moet openbaar zijn volgens de Wet Open Overheid.
+
+    - Opslag en verwerking van persoonsgegevens moet in lijn zijn met de AVG.
+
+    - Extra bescherming is vereist voor bijzondere persoonsgegevens.
+
+De brief benadrukt het belang van een evenwichtige benadering, waarbij gebruik wordt gemaakt van de voordelen van publieke clouddiensten terwijl de risico's worden beheerst
 
 ## Hoofdvraag
 
@@ -103,73 +143,21 @@ Het moderne bestuurlijke landschap van Nederland heeft, net als de rest van de w
 
 Cloud computing stelt gebruikers in staat om gegevens op te slaan, op te vragen en applicaties uit te voeren via het internet in plaats van op lokale servers of computers. Voor de overheid betekent dit een verhoogde capaciteit en flexibiliteit bij het leveren van diensten, zonder de noodzaak van enorme fysieke IT-infrastructuren.
 
-## Cloudvarianten: IaaS, PaaS en SaaS
+Cloud computing heeft het potentieel om de manier waarop de Nederlandse overheid opereert en integreert met haar burgers te transformeren. Door de kansen te benutten en tegelijkertijd de uitdagingen te herkennen en aan te pakken, kan de overheid een duurzamere, efficiëntere en meer responsieve toekomst voor Nederland creëren
+
+## Cloudvarianten
 
 Wanneer we het hebben over cloudoplossingen, zijn er drie vooraanstaande servicemodellen die de ruggengraat vormen van wat de cloud te bieden heeft, met name voor organisaties zoals de Nederlandse overheid. Dit zijn Infrastructure as a Service (IaaS), Platform as a Service (PaaS) en Software as a Service (SaaS).
 
 1.  **Infrastructure as a Service (IaaS)**: IaaS biedt gebruikers toegang tot essentiële infrastructuur zoals fysieke machines, virtual machines, netwerk, opslag en andere fundamenten zonder dat ze de daadwerkelijke hardware hoeven te bezitten of te onderhouden. Voor de Nederlandse overheid kan dit betekenen dat er minder behoefte is aan grote datacenters of serverfarms, omdat deze resources op aanvraag vanuit de cloud kunnen worden verkregen.
 
-2.  **Platform as a Service (PaaS)**: PaaS gaat een stap verder door naast de basisinfrastructuur ook een platform te bieden waarop applicaties kunnen worden ontwikkeld, uitgevoerd en beheerd. Denk hierbij aan besturingssystemen, databases, webservers en ontwikkeltools. Voor overheidsinstellingen die unieke applicaties willen bouwen voor hun diensten, kan PaaS een waardevol hulpmiddel zijn door het ontwikkelproces te stroomlijnen zonder zich zorgen te maken over het onderliggende systeembeheer.
+2.  **Platform as a Service (PaaS)**: PaaS gaat een stap verder door naast de basisinfrastructuur ook een platform te bieden waarop applicaties kunnen worden ontwikkeld, uitgevoerd en beheerd. Denk hierbij aan besturingssystemen, databases, webservers, ontwikkeltools, toegangsbeheer, identiteitenbeheer, portaalfunctionaliteiten en integratiefaciliteiten. Voor overheidsinstellingen die unieke applicaties willen bouwen voor hun diensten, kan PaaS een waardevol hulpmiddel zijn door het ontwikkelproces te stroomlijnen zonder zich zorgen te maken over het onderliggende systeembeheer.
 
-3.  **Software as a Service (SaaS)**: Dit is wellicht het bekendste model, waarbij gebruikers toegang hebben tot softwaretoepassingen via het web. Denk bijvoorbeeld aan e-maildiensten, CRM-systemen of samenwerkingstools. Voor de Nederlandse overheid betekent dit dat verschillende departementen en agentschappen toegang kunnen hebben tot de nieuwste software zonder zich zorgen te hoeven maken over installaties, updates of compatibiliteitsproblemen.
+3.  **Software as a Service (SaaS)**: Dit is wellicht het bekendste model, waarbij gebruikers toegang hebben tot softwaretoepassingen via het web. Denk bijvoorbeeld aan e-maildiensten, CRM-systemen of samenwerkingstools, zoals: bijvoorbeeld kantoorapplicaties (bijv. Microsoft365), cliëntenbeheer (CRM, bijv. Salesforce), softwareontwikkeling (bijv. GitHub). Voor de Nederlandse overheid betekent dit dat verschillende departementen en agentschappen toegang kunnen hebben tot de nieuwste software zonder zich zorgen te hoeven maken over installaties, updates of compatibiliteitsproblemen.
 
 Voor de overheid kunnen deze modellen helpen om diensten efficiënter te leveren, te reageren op veranderende technologische behoeften en tegelijkertijd de overheadkosten te verlagen. Door de juiste mix van IaaS, PaaS en SaaS te kiezen, kan de Nederlandse overheid een technologische infrastructuur creëren die zowel flexibel als robuust is.
 
-Cloud computing heeft het potentieel om de manier waarop de Nederlandse overheid opereert en interageert met haar burgers te transformeren. Door de kansen te benutten en tegelijkertijd de uitdagingen te herkennen en aan te pakken, kan de overheid een duurzamere, efficiëntere en meer responsieve toekomst voor Nederland creëren
-
-‘Cloud’ is een containerbegrip en dat vraagt om een nadere precisering. Hieronder een aanzet.
-
-*<u>IAAS, PAAS, SAAS</u>*
-
-Deze veelgebruikte indeling brengt verschillende soorten afwegingen met zich mee, zoals:
-
-- Infra as a service: Er wordt alleen gebruik gemaakt van servers, netwerken, opslagcapaciteit en andere infrastructuur van de cloudprovider, waarop ‘eigen’ basisvoorzieningen (platformen) en applicaties draaien.
-
-- Platform as a service: De PaaS-laag biedt de cloudprovider een aantal diensten boven op de infrastructuur die het mogelijk maken hun toepassingen op een gestructureerde en geïntegreerde wijze aan te bieden. Voorbeelden van diensten in deze laag zijn toegangsbeheer, identiteitenbeheer, portaalfunctionaliteiten en integratiefaciliteiten. De afnemers van PAAS kunnen hierop hun eigen applicaties draaien.
-
-- Software as a service: De cloudprovider biedt eindapplicaties aan. Deze applicaties kunnen van allerlei soort zijn, bijvoorbeeld kantoorapplicaties (bijv. Microsoft365), cliëntenbeheer (CRM, bijv. Salesforce), softwareontwikkeling (bijv. GITHub), enz., enz.
-
-## Cloudleveranciers
-
-de Nederlandse markt voor cloud computing is in veel opzichten een weerspiegeling van de bredere Europese en mondiale trends, maar heeft ook zijn eigen unieke kenmerken. Hier is een overzicht van de cloudleveranciers in Nederland:
-
-**Belangrijkste wereldwijde cloudleveranciers actief in Nederland:**
-
-1.  **Amazon Web Services (AWS)**: AWS heeft een actieve aanwezigheid in Nederland en biedt diensten aan vanuit datacenters in de regio Europa (Frankfurt, Ierland, Londen, Parijs, Stockholm, en sinds 2020 ook een aangekondigde regio in Spanje). Veel Nederlandse bedrijven en startups gebruiken AWS vanwege de brede reeks diensten en schaalbaarheid.
-
-2.  **Microsoft Azure**: Gezien de diepgewortelde relatie van veel Nederlandse bedrijven met Microsoft-producten, is Azure een populaire keuze. Microsoft heeft ook een datacenterregio in Nederland, wat helpt bij compliance- en datalocatievereisten.
-
-3.  **Google Cloud Platform (GCP)**: Google heeft in 2020 zijn datacenteruitbreiding in Eemshaven voltooid, waarmee het zijn capaciteit in Nederland versterkte. Dit heeft het voor lokale bedrijven aantrekkelijker gemaakt om GCP te gebruiken.
-
-4.  **IBM Cloud**: Met een sterke aanwezigheid in de zakelijke markt biedt IBM Cloud diensten aan die populair zijn bij grotere Nederlandse organisaties, vooral die welke al in een IBM-ecosysteem zitten.
-
-5.  **Oracle Cloud**: Oracle heeft relaties met veel grote Nederlandse bedrijven, vooral op het gebied van database- en bedrijfssoftware. Hun cloudaanbod wordt vaak overwogen door bedrijven die al gebruik maken van Oracle-producten.
-
-**Lokale en regionale spelers:**
-
-1.  **KPN Cloud**: Als een van de grootste telecomproviders in Nederland biedt KPN ook cloudservices aan, vooral gericht op de lokale markt.
-
-2.  **TransIP**: Een Nederlandse webhosting- en cloudserviceprovider, populair bij kleinere bedrijven en individuele gebruikers.
-
-3.  **LeaseWeb**: Met hoofdkantoor in Amsterdam, biedt LeaseWeb een scala aan cloudhostingdiensten en heeft het een aanzienlijke aanwezigheid in Nederland.
-
-4.  **Interxion**: Een grote Europese aanbieder van colocatie datacenterdiensten, met meerdere datacenters in Nederland.
-
-## Nederlandse Overheid
-
-De Nederlandse overheid heeft de afgelopen jaren flink geïnvesteerd in het moderniseren van haar IT-infrastructuur. Cloud-oplossingen zijn hierbij naar voren gekomen als een strategisch middel om efficiëntie te verhogen, kosten te besparen en diensten te verbeteren. Verschillende overheidsinstanties hebben projecten en initiatieven geïmplementeerd om de overgang naar de cloud te faciliteren.
-
-### Waarom Cloud?
-
-1.  **Efficiëntie en Flexibiliteit**: Met de veranderende eisen van de moderne samenleving kan de overheid haar dienstverlening snel aanpassen door de flexibele capaciteit van de cloud.
-
-2.  **Kostenbesparing**: De cloud vermindert de noodzaak voor de overheid om te investeren in fysieke infrastructuur, wat resulteert in aanzienlijke besparingen.
-
-3.  **Toegankelijkheid en Transparantie**: Door gegevens in de cloud op te slaan, kan de overheid zorgen voor een bredere en gemakkelijkere toegang voor haar burgers, wat bijdraagt aan transparantie en openheid.
-
-4.  **Beveiliging en Compliance**: Gerenommeerde cloud-aanbieders bieden geavanceerde beveiligingsfuncties en kunnen helpen om te voldoen aan strenge regelgevingsnormen.
-
-<u>Publiek, gemeenschappelijk, privaat</u>
+**Publiek, gemeenschappelijk, privaat**
 
 Voor de toegankelijkheid van cloud bestaan drie varianten:
 
@@ -179,63 +167,79 @@ Voor de toegankelijkheid van cloud bestaan drie varianten:
 
 - Privaat: Er wordt gewerkt op een (virtueel) private ICT-infrastructuur. In deze cloud heeft de gebruiker volledige controle over data, beveiliging en kwaliteit van de dienst. De applicaties die via de Private Cloud beschikbaar worden gemaakt, maken gebruik van gedeelde infrastructuurcomponenten die slechts voor één organisatie worden ingezet.
 
-<u>Intern, extern</u>
+**Intern, extern**
 
 Cloud is ook te beschouwen als een technologie, welke zowel in een eigen rekencentrum kan worden gehuisvest (on premise) of bij een externe serviceprovider (cloudprovider). Een aantal overheidsorganisaties beschikt over interne cloudtechnologie.
+
+## Waarom Cloud?
+
+Cloudcomputing biedt een scala aan voordelen voor zowel individuen als bedrijven. Hier zijn enkele van de meest prominente voordelen:
+
+1.  **Schaalbaarheid:** Een van de grootste voordelen van cloudservices is de mogelijkheid om gemakkelijk op te schalen naarmate de behoeften van een organisatie groeien, zonder dat er grote investeringen in fysieke hardware nodig zijn.
+
+2.  **Kostenbesparing:** Door gebruik te maken van de cloud kunnen bedrijven besparen op de kosten van aanschaf en onderhoud van hardware. Ze betalen vaak alleen voor wat ze daadwerkelijk gebruiken.
+
+3.  **Toegankelijkheid en mobiliteit:** Gegevens en applicaties in de cloud kunnen over het algemeen vanaf elke locatie met internettoegang worden benaderd. Dit maakt telewerken en toegang onderweg gemakkelijker.
+
+4.  **Disaster recovery en back-ups:** Veel cloudproviders bieden data-replicatie aan over meerdere locaties, wat zorgt voor een snellere gegevensherstel in het geval van een ramp.
+
+5.  **Automatische software-updates:** Cloudproviders voeren regelmatig systeemonderhoud en software-updates uit, wat betekent dat bedrijven zich geen zorgen hoeven te maken over het beheer van deze taken.
+
+6.  **Flexibiliteit:** Cloudoplossingen bieden de mogelijkheid om snel nieuwe gebruikers toe te voegen, bronnen aan te passen of zelfs nieuwe services te implementeren.
+
+7.  **Beveiliging:** Hoewel beveiliging in de cloud een veelbesproken onderwerp is, bieden veel cloudproviders geavanceerde beveiligingsfuncties die bedrijven wellicht niet zelf zouden kunnen implementeren.
+
+8.  **Milieu-impact:** Door gebruik te maken van gedeelde resources in de cloud, kunnen bedrijven hun koolstofvoetafdruk verkleinen. Ze gebruiken alleen de serverruimte die ze nodig hebben, wat helpt bij het verminderen van het energieverbruik.
+
+9.  **Concurrentievoordeel:** Met toegang tot geavanceerde technologieën kunnen zelfs kleine bedrijven concurreren met grotere spelers in hun industrie.
+
+10. **Samenwerking:** Cloudoplossingen zoals Google Workspace of Microsoft 365 bevorderen samenwerking door gebruikers in staat te stellen gelijktijdig in documenten te werken en informatie in realtime te delen.
+
+11. **Beheer van IT-capaciteit:** Door gebruik te maken van de cloud kunnen bedrijven hun IT-capaciteit optimaliseren, waardoor pieken in de vraag beter worden opgevangen zonder overinvestering in infrastructuur.
+
+<!-- -->
+
+1.  **Efficiëntie en Flexibiliteit**: Met de veranderende eisen van de moderne samenleving kan de overheid haar dienstverlening snel aanpassen door de flexibele capaciteit van de cloud.
+
+2.  **Kostenbesparing**: De cloud vermindert de noodzaak voor de overheid om te investeren in fysieke infrastructuur, wat resulteert in aanzienlijke besparingen.
+
+3.  **Toegankelijkheid en Transparantie**: Door gegevens in de cloud op te slaan, kan de overheid zorgen voor een bredere en gemakkelijkere toegang voor haar burgers, wat bijdraagt aan transparantie en openheid.
+
+4.  **Beveiliging en Compliance**: Gerenommeerde cloud-aanbieders bieden geavanceerde beveiligingsfuncties en kunnen helpen om te voldoen aan strenge regelgevingsnormen.
 
 Gemeenten willen de veranderkracht van digitalisering benutten en tegelijkertijd een antwoord vinden op de risico’s en uitdagingen die dit met zich meebrengt. Met als doel: op weg naar een veilige, mensgerichte, transparante, effectieve digitale toekomst.
 
 De gemeente kan daarbij de volgende doelstellingen hanteren:
 
-Bij het formuleren van het cloudbeleid zijn er een aantal keuzes te maken die bepalend zijn voor de uitgangspunten van het beleid. Hieronder volgt een <u>voorbeeld</u> van deze keuzes, iedere gemeente maakt uiteraard zelf haar keuzes in haar cloudbeleid:
-
-- We kiezen bewust voor een Cloud First strategie. Cloud heeft zichzelf bewezen, bedrijfsvoering en dienstverlening profiteren ervan.
-
-- Voorkeursmodel:
-
-  - Public Cloud is het voorkeursmodel bij alle vernieuwingsvraagstukken, al dan niet bewust bij één cloudleverancier.
-
-  - OF het voorkeursmodel is een combinatie van een on-premises omgeving en een private en public cloud. Oftewel een combinatie van verschillende leveranciers.
-
-<!-- -->
-
-- Gebruik volwassen technologie waar het kan, vernieuwende technologie waar het moet
-
-- Commodity functionaliteit wordt als SaaS-dienst afgenomen, PaaS en IaaS worden gebruikt voor maatwerk oplossingen
-
-- Clouddiensten worden centraal ingekocht en beheerd door het i-domein en kunnen naar decentrale behoeften worden aangepast
-
-### Uitdagingen en Overwegingen
+## Uitdagingen en Risico’s
 
 Hoewel de voordelen evident zijn, brengt de migratie naar de cloud ook uitdagingen met zich mee. Vragen over dataprivacy, beveiliging en de integratie met bestaande systemen zijn zaken die zorgvuldig moeten worden aangepakt. De Nederlandse overheid moet ook zorgen voor de naleving van zowel nationale als Europese regelgeving met betrekking tot gegevensbescherming.
 
-### Privacy en beveiliging
+Hoewel cloudcomputing veel voordelen biedt, zijn er ook verschillende risico's en uitdagingen waarmee organisaties en individuen rekening moeten houden:
 
-De volgende zaken spelen er op het gebied van privacy en beveiliging:
+1.  **Beveiligingszorgen:** De data van een organisatie bevindt zich buiten de directe controle van die organisatie, wat kan leiden tot zorgen over datalekken, hackpogingen en andere cyberbeveiligingsbedreigingen.
 
-1.  **Data Locatie**: Waar worden de gegevens fysiek opgeslagen? In welk land bevinden de datacenters zich? De locatie kan invloed hebben op de regelgeving die van toepassing is op de gegevens. Bijvoorbeeld, gegevens opgeslagen binnen de EU zijn onderhevig aan de GDPR, wat strenge eisen stelt aan gegevensbescherming.
+2.  **Privacy van gegevens:** De opslag van gevoelige gegevens in de cloud kan leiden tot privacyzorgen, vooral als de cloudprovider gegevens opslaat in een ander rechtsgebied met andere privacywetten.
 
-2.  **Data Overdracht**: Hoe worden gegevens tussen locaties en tussen de cloud en eindgebruikers overgedragen? Tijdens deze overdracht kunnen gegevens kwetsbaar zijn voor onderschepping, vooral als de overdracht niet adequaat wordt gecodeerd.
+3.  **Downtime:** Cloudserviceproviders kunnen te maken krijgen met downtime, waardoor klanten tijdelijk geen toegang hebben tot hun gegevens of applicaties.
 
-3.  **Toegangscontrole**: Wie heeft er toegang tot de gegevens? Zowel vanuit de kant van de cloud service provider als vanuit de kant van de gebruiker moet duidelijk zijn wie welke gegevens mag inzien, wijzigen of verwijderen.
+4.  **Afhankelijkheid van de provider:** Als een cloudprovider besluit om een bepaalde dienst stop te zetten, kunnen bedrijven gedwongen worden om alternatieven te zoeken en hun gegevens te migreren, wat zowel tijdrovend als kostbaar kan zijn.
 
-4.  **Multi-Tenancy Risico's**: Cloud providers gebruiken vaak multi-tenancy modellen waarbij de gegevens van meerdere klanten op dezelfde servers kunnen worden opgeslagen. Dit kan leiden tot zorgen over datalekken tussen 'tenants'.
+5.  **Overdrachtssnelheden:** Hoewel de toegang tot de cloud vaak snel is, kunnen de overdrachtssnelheden voor zeer grote datavolumes beperkt zijn, vooral als er een trage internetverbinding is.
 
-5.  **Wettelijke en Regelgevende Uitdagingen**: Verschillende landen en regio's hebben verschillende wetten met betrekking tot gegevensbescherming en privacy. Cloud providers moeten deze wetten navigeren, wat ingewikkeld kan zijn als ze in meerdere rechtsgebieden opereren.
+6.  **Kosten kunnen oplopen:** Terwijl initieel cloudservices kostenbesparingen kunnen opleveren, kunnen onverwachte kosten optreden bij verhoogd gebruik, met name als organisaties niet zorgvuldig hun verbruik monitoren.
 
-6.  **Afhankelijkheid van de Service Provider**: Als een cloud provider failliet gaat of zijn diensten wijzigt, wat gebeurt er dan met de gegevens van de klant? Hoe kunnen organisaties hun gegevens terughalen of overzetten naar een andere provider?
+7.  **Integratie en compatibiliteit:** Het kan een uitdaging zijn om bestaande on-premises systemen te integreren met cloudoplossingen, vooral als er sprake is van verouderde technologie.
 
-7.  **Eindpuntbeveiliging**: Aangezien cloud diensten vaak toegankelijk zijn vanaf diverse apparaten en locaties, wordt het beveiligen van elk eindpunt waarvan toegang wordt verkregen tot de cloud cruciaal.
+8.  **Beheer van meerdere clouds:** Met de opkomst van multi-cloudstrategieën kunnen organisaties het moeilijk vinden om meerdere cloudomgevingen effectief te beheren.
 
-8.  **Incidentrespons en Melding**: In het geval van een beveiligingsincident, hoe snel en effectief zal de cloud provider reageren? Hoe en wanneer worden klanten op de hoogte gesteld?
+9.  **Contractuele en SLA-zorgen:** De service level agreements (SLA's) van cloudproviders kunnen beperkingen en uitsluitingen bevatten die organisaties moeten begrijpen en waarover ze moeten onderhandelen.
 
-9.  **Back-ups en Gegevensverlies**: Hoewel de cloud vaak wordt gezien als een veiligere opslagplaats, kunnen er nog steeds zorgen zijn over hoe gegevens worden geback-upt en wat er gebeurt in het geval van gegevensverlies of corruptie.
+10. **Wettelijke en regelgevende kwesties:** In sommige sectoren en landen zijn er wettelijke beperkingen op waar en hoe gegevens kunnen worden opgeslagen.
 
-10. **Compliance en Audits**: Hoe kunnen organisaties verifiëren dat hun cloud provider voldoet aan de benodigde normen en regelgeving, vooral als deze normen veranderen of evolueren?
+11. **Data-eigendom en -controle:** Het kan onduidelijk zijn wie de eigenaar is van de gegevens in de cloud en hoe gemakkelijk het is om gegevens te verplaatsen of te verwijderen.
 
-Deze vraagstukken vereisen een zorgvuldige overweging bij de overgang naar of uitbreiding van het gebruik van cloud-diensten. Organisaties, waaronder overheidsentiteiten, moeten samenwerken met cloud providers en juridische en beveiligingsexperts om te zorgen voor een veilige en conforme cloud-omgeving
-
-# Onderzoek
+Het is belangrijk dat organisaties en individuen deze risico's en uitdagingen grondig evalueren en de juiste voorzorgsmaatregelen nemen, zoals het regelmatig beoordelen van beveiligingsprotocollen, het zorgvuldig lezen van contracten en het hebben van een back-upstrategie.
 
 ## Cloudontwikkelingen
 
@@ -267,6 +271,20 @@ De mondiale trends in cloud computing zijn een reflectie van de snel veranderend
 
 ### Europese Cloudontwikkelingen
 
+De EU ziet standaardisatie als een [strategisch instrument](https://joinup.ec.europa.eu/collection/rolling-plan-ict-standardisation/cloud-and-edge-computing-0) om de markt voor clouddiensten gezonder en veiliger te maken. Acties voor Cloud computing in het Rolling Plan 2022:
+
+> “Action 1 - Identify needs for ICT standards and open source technologies to further improve the interoperability, data protection and portability of cloud services and continue or start respective development activities…
+>
+> Action 2 - Promote the use of the ICT standards needed to further improve the interoperability, data protection and portability of cloud services as well as multi-cloud management.”
+
+Open standaarden vormen ook een van de [componenten](https://gaia-x.eu/what-is-gaia-x/core-elements/standards/) van Gaia-X.
+
+Eén van de Europese verordeningen die Cloud het meest direct raakt, is de [Data Act](https://digital-strategy.ec.europa.eu/en/policies/data-act). Deze verordening stelt dat aanbieders van Clouddiensten het mogelijk moeten maken om over te stappen naar een andere dienstverlener zonder verlies van gegevens en functionaliteit. Hiervoor moeten dienstverleners waar mogelijk Europese standaarden of anders open specificaties gebruiken.
+
+Aan interoperabiliteit tussen Clouddiensten stelt de Data Act minder expliciete eisen. De Autoriteit Consument en Markt heeft bij de Europese Commissie een voorstel ingediend om ook interoperabiliteit met open standaarden af te dwingen. De ACM wil met de Data Act bovendien verplichten dat aanbieders van Clouddiensten de door hen gebruikte standaarden openbaar te maken.
+
+Over de inhoud van de Data Act wordt nog onderhandeld. Het is niet te verwachten dat de Triloog onderhandelingen voor het tweede kwartaal van 2023 worden afgerond
+
 In een tijdperk waarin gegevens de nieuwe olie zijn en technologie centraal staat in beleidsvorming, regelgeving en dienstverlening, is het cruciaal voor de Nederlandse overheid om op de hoogte te blijven van belangrijke Europese cloudontwikkelingen. Deze ontwikkelingen zijn van invloed op de manier waarop gegevens worden opgeslagen, verwerkt en gedeeld op Europees niveau. Hier zijn enkele van de belangrijkste ontwikkelingen en hun implicaties:
 
 1.  **Europese Datastrategie**: In 2020 heeft de Europese Commissie een datastrategie gelanceerd die beoogt een gemeenschappelijke Europese data-ruimte te creëren. Deze strategie heeft directe implicaties voor cloud computing, aangezien het beoogt sectorspecifieke, gedeelde Europese datasystemen te ontwikkelen. Voor Nederland betekent dit dat overheidssystemen compatibel en in lijn moeten zijn met deze Europese initiatieven.
@@ -284,6 +302,18 @@ In een tijdperk waarin gegevens de nieuwe olie zijn en technologie centraal staa
 In de dynamische wereld van cloud computing is het essentieel voor de Nederlandse overheid om op de hoogte te blijven van de ontwikkelingen op Europees niveau. Deze veranderingen bieden zowel uitdagingen als kansen. Door proactief te zijn en een weloverwogen benadering van cloud-adoptie te handhaven, kan Nederland zorgen voor een veilige, efficiënte en conform de regelgeving cloud-omgeving voor zijn burgers en instellingen
 
 ### Cloudontwikkelingen Nederlandse Overheid
+
+De [Kamerbrief Rijksbreed cloudbeleid 2022](https://www.rijksoverheid.nl/documenten/kamerstukken/2022/08/29/kamerbrief-rijksbreed-cloudbeleid-2022) van Staatssecretaris van Huffelen noemt standaardisatie onder het kopje ‘*Voordelen gebruik publieke clouddiensten’*. De Staatssecretaris zegt hierover:
+
+> *“Daarnaast vereist de inzet van de publieke cloud een hoge mate van standaardisatie. Dit kan in potentie kostenbesparend werken en de kwaliteit en implementatiesnelheid van ICT-projecten binnen het Rijk verhogen.”*
+
+Op 15 november 2022 organiseerde CIO Rijk een bijeenkomst over 'werken in de publieke cloud'. Hier sprak onder andere Chris Wauters, de nieuwe CTO van SSC-ICT, die standaardisatie direct in de opening van zijn presentatie noemde. Tijdens de bijeenkomst noemde Aart Jochem, de CISO Rijk dataportabiliteit en ‘multi-Cloud’ als middelen om de afhankelijkheid van één (Amerikaanse) marktpartij te beperken. Standaardisatie speelt daarbij een cruciale rol.
+
+De [Marktstudie Clouddiensten](https://www.acm.nl/nl/publicaties/marktstudie-clouddiensten) van de Autoriteit Consument en Markt van 2022 gaat uitgebreid in op de rol van standaarden in Cloud, en onderkent dat er zowel open als leveranciersafhankelijke standaarden bestaan. De ACM onderstreept in het rapport het belang van open standaarden voor dataportabiliteit en interoperabiliteit:
+
+> “Voor SaaS-diensten is het advies om zoveel mogelijk gebruik te maken van diensten die gebruik maken van open standaarden en formats.”
+
+Tenslotte heeft de NORA een [beslisboom voor risicobeoordeling Clouddiensten](https://www.noraonline.nl/wiki/BIO_Thema_Clouddiensten/Beslisbomen_voor_risicobeoordeling_IV-diensten) als onderdeel van het [BIO thema Clouddiensten](https://www.noraonline.nl/wiki/BIO_Thema_Clouddiensten/Inleiding). Daarnaast onderhoudt de NORA een [Wiki over Cloudcomputing](https://www.noraonline.nl/wiki/Cloud_computing). Hier staan vooralsnog oudere artikelen over Cloud, en de NORA is nog op zoek naar een expertgroep die deze Wiki actueel kan houden.
 
 De cloudtransitie heeft zich wereldwijd volop ingezet en de Nederlandse overheid is daarop geen uitzondering. Als reactie op de wereldwijde technologische ontwikkelingen en in lijn met haar eigen ambitie om moderner, efficiënter en dienstbaarder te zijn voor haar burgers, heeft de Nederlandse overheid verschillende cloudinitiatieven ontplooid. Hier volgt een blik op de belangrijkste cloudontwikkelingen binnen de Nederlandse overheid:
 
@@ -304,6 +334,38 @@ De cloudtransitie heeft zich wereldwijd volop ingezet en de Nederlandse overheid
 8.  **Samenwerking met de Private Sector**: De overheid werkt steeds nauwer samen met de private sector, zowel om expertise te verkrijgen als om gezamenlijke cloud-oplossingen te ontwikkelen die kunnen worden gebruikt door zowel publieke als private entiteiten.
 
 De cloudontwikkelingen binnen de Nederlandse overheid zijn een weerspiegeling van zowel de mondiale technologische trends als de unieke behoeften en uitdagingen van Nederland als natie. Door voorop te lopen in deze transitie en tegelijkertijd rekening te houden met beveiliging, privacy en interoperabiliteit, streeft de Nederlandse overheid ernaar een modern en effectief technologisch landschap te creëren voor haar burgers en instellingen
+
+## Cloudleveranciers
+
+de Nederlandse markt voor cloud computing is in veel opzichten een weerspiegeling van de bredere Europese en mondiale trends, maar heeft ook zijn eigen unieke kenmerken. Hier is een overzicht van de cloudleveranciers in Nederland:
+
+**Belangrijkste wereldwijde cloudleveranciers actief in Nederland:**
+
+1.  **Amazon Web Services (AWS)**: AWS heeft een actieve aanwezigheid in Nederland en biedt diensten aan vanuit datacenters in de regio Europa (Frankfurt, Ierland, Londen, Parijs, Stockholm, en sinds 2020 ook een aangekondigde regio in Spanje). Veel Nederlandse bedrijven en startups gebruiken AWS vanwege de brede reeks diensten en schaalbaarheid.
+
+2.  **Microsoft Azure**: Gezien de diepgewortelde relatie van veel Nederlandse bedrijven met Microsoft-producten, is Azure een populaire keuze. Microsoft heeft ook een datacenterregio in Nederland, wat helpt bij compliance- en datalocatievereisten.
+
+3.  **Google Cloud Platform (GCP)**: Google heeft in 2020 zijn datacenteruitbreiding in Eemshaven voltooid, waarmee het zijn capaciteit in Nederland versterkte. Dit heeft het voor lokale bedrijven aantrekkelijker gemaakt om GCP te gebruiken.
+
+4.  **IBM Cloud**: Met een sterke aanwezigheid in de zakelijke markt biedt IBM Cloud diensten aan die populair zijn bij grotere Nederlandse organisaties, vooral die welke al in een IBM-ecosysteem zitten.
+
+5.  **Oracle Cloud**: Oracle heeft relaties met veel grote Nederlandse bedrijven, vooral op het gebied van database- en bedrijfssoftware. Hun cloudaanbod wordt vaak overwogen door bedrijven die al gebruik maken van Oracle-producten.
+
+**Lokale en regionale spelers:**
+
+1.  **KPN Cloud**: Als een van de grootste telecomproviders in Nederland biedt KPN ook cloudservices aan, vooral gericht op de lokale markt.
+
+2.  **TransIP**: Een Nederlandse webhosting- en cloudserviceprovider, populair bij kleinere bedrijven en individuele gebruikers.
+
+3.  **LeaseWeb**: Met hoofdkantoor in Amsterdam, biedt LeaseWeb een scala aan cloudhostingdiensten en heeft het een aanzienlijke aanwezigheid in Nederland.
+
+4.  **Interxion**: Een grote Europese aanbieder van colocatie datacenterdiensten, met meerdere datacenters in Nederland.
+
+## Nederlandse Overheid
+
+De Nederlandse overheid heeft de afgelopen jaren flink geïnvesteerd in het moderniseren van haar IT-infrastructuur. Cloud-oplossingen zijn hierbij naar voren gekomen als een strategisch middel om efficiëntie te verhogen, kosten te besparen en diensten te verbeteren. Verschillende overheidsinstanties hebben projecten en initiatieven geïmplementeerd om de overgang naar de cloud te faciliteren.
+
+# Cloudtechnologie en cloudstandaarden
 
 ## Cloudtechnologie
 
@@ -331,43 +393,108 @@ Hier zijn de belangrijkste cloudtechnologieën waar de Nederlandse overheid reke
 
 Het is van essentieel belang voor de Nederlandse overheid om proactief te zijn in het begrijpen en integreren van deze cloudtechnologieën. De juiste implementatie kan leiden tot verbeterde dienstverlening, operationele efficiëntie en kostenbesparingen. Tegelijkertijd moeten potentiële risico's, zoals beveiligingszorgen en gegevensbescherming, zorgvuldig worden aangepakt om het vertrouwen van het publiek te behouden
 
-## Cloudstandaarden en -normen
+## Cloudstandaarden
 
-bestaande standaarden, standaarden in ontwikkeling en ontbrekende standaarden, in relatie tot cloud-interoperabiliteit, dataportabiliteit, informatieveiligheid en processen.
+Cloudcomputing heeft een scala aan standaarden nodig om interoperabiliteit, veiligheid, privacy en effectieve serviceprovisie te waarborgen. Wij maken onderscheid in de volgende soorten cloudstandaarden:
 
-laten we eerst het verschil tussen "standaarden" en "normen" definiëren:
+1.  **Interoperabiliteitsstandaarden:** Deze zorgen ervoor dat verschillende cloudservices en -componenten met elkaar kunnen werken. Ze kunnen helpen bij het vermijden van vendor lock-in en het ondersteunen van multi-cloudstrategieën.
+
+2.  **Beveiligingsstandaarden:** Deze hebben betrekking op aspecten zoals data-encryptie, authenticatie, autorisatie en auditlogboekregistratie. Voorbeelden zijn de ISO/IEC 27017 standaard voor cloudbeveiliging en de ISO/IEC 27018 standaard voor de bescherming van persoonsgegevens in de cloud.
+
+3.  **Privacystandaarden:** Deze richten zich op de bescherming van persoonlijke gegevens die worden opgeslagen of verwerkt in de cloud. Hierbij kan gedacht worden aan standaarden die betrekking hebben op gegevensmaskering, anonimisering en pseudonimisering.
+
+4.  **Standaarden voor Servicebeheer en -orchestratie:** Deze standaarden richten zich op hoe cloudservices worden georkestreerd, beheerd en geautomatiseerd, zoals de Open Cloud Computing Interface (OCCI).
+
+5.  **Portabiliteitsstandaarden:** Deze standaarden maken het gemakkelijker om applicaties en gegevens van de ene cloudomgeving naar de andere te verplaatsen. Denk hierbij aan standaarden voor conainerization.
+
+6.  **Beheer- en compliancestandaarden:** Standaarden die nodig zijn om clouddiensten te beheren.
+
+Er kunnen standaaren en normen worden onderscheiden:
 
 - **Standaarden**: Deze zijn technische specificaties of andere nauwkeurige criteria die worden gebruikt als regels of richtlijnen om consistentie en interoperabiliteit te waarborgen. Ze kunnen worden opgesteld door officiële normeringsorganisaties, door brancheorganisaties, of kunnen zelfs de facto standaarden worden door wijdverbreid gebruik.
 
 - **Normen**: In de context van technologie en IT, zijn normen vaak officiële documenten die best practices, methodologieën, processen of specificaties bevatten die algemeen worden geaccepteerd. Normen worden meestal uitgegeven door officiële normeringsorganisaties.
 
-### Cloudstandaarden
+In deze analyse worden beiden meegenomen.
 
-1.  **Open Virtualization Format (OVF)**: Een open standaard voor het verpakken en distribueren van gevirtualiseerde applicaties.
+Tussen 2014 en 2016 heeft het Forum Standaardisatie een verkenning uitgevoerd naar standaarden voor Cloud. Deze verkenning leverde al een inventarisatie op van open standaarden voor Cloud. NEN heeft hier recentelijk nog enkele ISO standaarden aan toegevoegd.
 
-2.  **OAuth**: Een open standaard voor toegangsdelegatie, die veel wordt gebruikt voor token-gebaseerde authenticatie en autorisatie op het internet.
+De lijst is niet noodzakelijk volledig en up-to-date, maar geeft wel een startpunt voor onderzoek naar standaardisatiebehoeften en mogelijke acties van het Forum Standaardisatie om standaarden status te geven. De volgende twee paragrafen geven een overzicht van de standaarden die uit de verkenning naar voren kwamen.
+
+### Analyse Forum: Standaarden voor Cloud interoperabiliteit en dataportabiliteit
+
+| [DMTF](https://www.dmtf.org/)                    | DSP0263               | Logisch model voor beheerinteractie tussen een afgenomen  IaaS dienst en de aanbieder van die dienst, gebaseerd op RESTful API                                                                                                                 |
+|--------------------------------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [DMTF](https://www.dmtf.org/)                    | DSP8009               | Het XML schema behorende bij DSP0263                                                                                                                                                                                                           |
+| [ISO](https://www.iso.org/home.html)             | ISO/IEC 17826:2012    | Interface voor ontwikkelaars om opslag in de cloud te implementeren en/of gebruiken.                                                                                                                                                           |
+| [ISO](https://www.iso.org/home.html)             | ISO/IEC 27036-1-3     | Richtlijnen voor informatiebeveiliging in waardeketens van cloud aanbieders.                                                                                                                                                                   |
+| [ISO](https://www.iso.org/home.html)             | ISO/IEC 17788:2014    | Definitie van standaard begrippen voor toepassingen in de cloud                                                                                                                                                                                |
+| [ISO](https://www.iso.org/home.html)             | ISO/IEC 17789:2014    | Referentie architectuur (Cloud Computing Reference Architecture – CCRA) voor rollen, activiteiten en functionele componenten van een cloud service.                                                                                            |
+| [ISO](https://www.iso.org/home.html)             | ISO-IEC 19941:2017    | 'Information technology — Cloud computing — Interoperability and portability' (deze komt dit jaar mogelijk in herziening)                                                                                                                      |
+| [ISO](https://www.iso.org/home.html)             | ISO/IEC 27017         | ‘Information technology — Security techniques — Code of practice for information security controls based on ISO/IEC 27002 for cloud services’                                                                                                  |
+| [ISO](https://www.iso.org/home.html)             | ISO/IEC 19944         | delen 1 en 2, over data flow, data categories and data use bij cloud computing                                                                                                                                                                 |
+| [ISO](https://www.iso.org/home.html)             | ISO/IEC TS 23167:2020 | ‘Information technology — Cloud computing — Common technologies and techniques’                                                                                                                                                                |
+| [ISO](https://www.iso.org/home.html)             | ISO/IEC 19086         | Serie over Service level agreement (SLA) framework bij cloud computing                                                                                                                                                                         |
+| [ISO](https://www.iso.org/home.html)             | ISO/IEC JTC 15C38     | Cloud en gedistribueerde platformen                                                                                                                                                                                                            |
+| [ITU](https://www.itu.int/en/Pages/default.aspx) | Y.3500                | Hetzelfde als ISO17788.                                                                                                                                                                                                                        |
+| [ITU](https://www.itu.int/en/Pages/default.aspx) | Y.3502                | Hetzelfde als ISO17789                                                                                                                                                                                                                         |
+| [ITU](https://www.itu.int/en/Pages/default.aspx) | Y.3510                | Vereisten voor een cloud infrastructuur waaronder verwerkingsmogelijkheden, opslag en netwerk resources.                                                                                                                                       |
+| [ITU](https://www.itu.int/en/Pages/default.aspx) | Y.3512                | Uitbreiding van Y.3510 specifiek voor NaaS en IaaS cloud services                                                                                                                                                                              |
+| [ITU](https://www.itu.int/en/Pages/default.aspx) | Y.3513                | Aanbevelingen en functionele vereisten voor een IaaS Cloud service                                                                                                                                                                             |
+| [ITU](https://www.itu.int/en/Pages/default.aspx) | Y.3520                | Raamwerk voor end-to-end resource management in een cloud omgeving                                                                                                                                                                             |
+| [OASIS](https://www.oasis-open.org/)             | TOSCA                 | Topology and Orchestration Specification for Cloud Applications (TOSCA). Standaard taal (XML gebaseerd) om applicatie laag diensten te porteren naar alternatieve cloud implementaties met behoud van interoperabiliteit.                      |
+| [OGF](https://ogf.org/ogf/doku.html)             | GFD.183               | Is eerste deel van Open Cloud Computing Interface (OCCI)  en beschrijft een RESTful API voor beheer van IaaS, PaaS en SaaS cloud diensten. GFD.183 is de OCCI-Core specificatie                                                                |
+| [OGF](https://ogf.org/ogf/doku.html)             | GFD.184               | Is tweede deel van Open Cloud Computing Interface (OCCI)  en beschrijft een RESTful API voor beheer van IaaS cloud diensten. GFD.184 is de OCCI http Rendering specificatie en beschrijft hoe de OCCI core kan communiceren op basis van http. |
+| [OGF](https://ogf.org/ogf/doku.html)             | GFD.185               | Is derde deel van Open Cloud Computing Interface (OCCI)  en beschrijft een RESTful API voor beheer van IaaS cloud diensten. GFD.185 is de OCCI Infrastructuur specificatie en bevat extensies van de OCCI core specifiek voor IaaS diensten.   |
+| [SNIA](https://www.snia.org/)                    | CDMI                  | Cloud Data Management Interface (CDMI™) Definieert een functionele interface voor applicaties om gegevens elementen te muteren indien deze in de cloud zijn opgeslagen. De interface kan ook gebruikt worden voor beheer van dataopslag.       |
+| [ONF](https://opennetworking.org/)               | OpenFlow              | Besturing van Software Defined Networking switches en routers, OpenFlow wordt veel toegepast door organisaties die een open SDN netwerk bouwen met apparatuur van verschillende fabrikanten.                                                   |
+| [NIST](https://www.nist.gov/)                    | FIPS 140-2 level 4    | Een standaard van de Amerikaanse regering om cryptografische modules te beoordelen. Kan relevant zijn voor end-to-end encryptie van data in de cloud.                                                                                          |
+
+### Algemene standaarden
+
+De volgende standaarden zijn niet in een van de hoofdcategorieën in te delen, maar zijn wel van belang:
+
+1.  **NIST SP 500-292**: Het NIST Cloud Computing Reference Architecture is een generiek high-level conceptueel model dat dient als een gebruikersgericht referentiepunt.
+
+2.  **GAIA-X**: Een initiatief in Europa, gericht op het creëren van een uniform framework voor cloud services, dat bepaalde principes en beleidsregels vaststelt die functioneren als normen.
+
+### Interoperabiliteitsstandaarden
+
+Verder zijn voor clouddiensten mogelijk relevant:
+
+- [REST API Design Rules](https://forumstandaardisatie.nl/open-standaarden/rest-api-design-rules)
+
+- [Open API Specification](https://forumstandaardisatie.nl/open-standaarden/openapi-specification)
+
+### Beveiligingsstandaarden
+
+1.  **OAuth**: Een open standaard voor toegangsdelegatie, die veel wordt gebruikt voor token-gebaseerde authenticatie en autorisatie op het internet.
+
+2.  [SAML](https://forumstandaardisatie.nl/open-standaarden/saml) (wordt op termijn waarschijnlijk uitgefaseerd ten gunste van OIDC)
 
 3.  **OpenID Connect**: Een simpele identiteitslaag bovenop het OAuth 2.0-protocol, die gebruikersauthenticatie mogelijk maakt.
 
-4.  **Cloud Data Management Interface (CDMI)**: Een set van protocollen die zijn gedefinieerd voor het beheer van cloud storage.
+4.  **ISO/IEC 27001**: Een wereldwijd erkende norm voor het beheren van risico's op het gebied van informatiebeveiliging.
 
-### Cloudnormen
-
-1.  **ISO/IEC 27001**: Een wereldwijd erkende norm voor het beheren van risico's op het gebied van informatiebeveiliging.
-
-2.  **ISO/IEC 27017**: Een cloud-specifieke norm die extra beveiligingscontroles bevat bovenop ISO/IEC 27001 specifiek voor cloudservices.
-
-3.  **ISO/IEC 27018**: Een code voor de bescherming van persoonlijke gegevens in de cloud, op basis van ISO/IEC 27001.
-
-4.  **NIST SP 500-292**: Het NIST Cloud Computing Reference Architecture is een generiek high-level conceptueel model dat dient als een gebruikersgericht referentiepunt.
-
-5.  **ENISA Cloud Computing Risk Assessment**: Een norm van het European Network and Information Security Agency (ENISA) dat zich richt op risicobeoordeling in de cloudomgeving.
+5.  **ISO/IEC 27017**: Een cloud-specifieke norm die extra beveiligingscontroles bevat bovenop ISO/IEC 27001 specifiek voor cloudservices.
 
 6.  **Cloud Security Alliance (CSA) Best Practices**: Hoewel niet een "norm" in de traditionele zin, biedt CSA richtlijnen en best practices voor cloudbeveiliging die algemeen worden geaccepteerd in de industrie.
 
-7.  **GAIA-X**: Een initiatief in Europa, gericht op het creëren van een uniform framework voor cloud services, dat bepaalde principes en beleidsregels vaststelt die functioneren als normen.
+### Privacystandaarden
 
-Hoewel standaarden en normen vaak door elkaar worden gebruikt, is het onderscheid tussen de twee vooral dat standaarden doorgaans technischer van aard zijn, terwijl normen eerder de algemeen geaccepteerde practices en procedures beschrijven. In de cloudomgeving is het cruciaal voor organisaties om zowel de relevante standaarden als normen te kennen om te zorgen voor interoperabiliteit, beveiliging en compliance.
+3.  **ISO/IEC 27018**: Een code voor de bescherming van persoonlijke gegevens in de cloud, op basis van ISO/IEC 27001.
+
+### Standaarden voor Servicebeheer en -orchestratie
+
+### Portabiliteitsstandaarden
+
+1.  **Open Virtualization Format (OVF)**: Een open standaard voor het verpakken en distribueren van gevirtualiseerde applicaties.
+
+### Beheerstandaarden
+
+1.  **Cloud Data Management Interface (CDMI)**: Een set van protocollen die zijn gedefinieerd voor het beheer van cloud storage.
+
+2.  **ENISA Cloud Computing Risk Assessment**: Een norm van het European Network and Information Security Agency (ENISA) dat zich richt op risicobeoordeling in de cloudomgeving.
 
 ## Witte vlekken
 
