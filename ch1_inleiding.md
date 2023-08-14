@@ -6,20 +6,23 @@ In uw offerteaanvraag schetst u de context van de beoogde opdracht via de kamerb
 
 Bureau Forum Standaardisatie zet namens Forum Standaardisatie de beoogde opdracht uit met de volgende opdrachtomschrijving:
 
-*Om de digitale overheid gevraagd en ongevraagd te kunnen adviseren over standaardisatie voor de Cloud, wil het Forum Standaardisatie graag een beeld krijgen van de standaarden die van strategisch belang zijn voor het Cloudbeleid. In het bijzonder wil Forum Standaardisatie weten welke cruciale standaarden al bestaan, welke nog moeten worden gespecificeerd, en op welke (Europese en internationale) standaardisatie- activiteiten de overheid nog invloed op kan en zou moeten uitoefenen.*
+> Om de digitale overheid gevraagd en ongevraagd te kunnen adviseren over standaardisatie voor de Cloud, wil het Forum Standaardisatie graag een beeld krijgen van de standaarden die van strategisch belang zijn voor het Cloudbeleid. In het bijzonder wil Forum Standaardisatie weten welke cruciale standaarden al bestaan, welke nog moeten worden gespecificeerd, en op welke (Europese en internationale) standaardisatie- activiteiten de overheid nog invloed op kan en zou moeten uitoefenen.
 
 ## Hoofdvraag
 
-Wij vragen de opdrachtnemer om een onderzoek uit te voeren dat een beeld geeft van de Europese, internationale en nationale standaarden en standaardisatieactiviteiten die relevant zijn voor Cloud platformen, systemen en diensten. Tevens vragen wij aan de opdrachtnemer om ‘witte vlekken’ te identificeren, dat wil zeggen domeinen waar open standaarden voor de Cloud nodig zijn maar nog niet bestaan.
+Wij vragen de opdrachtnemer om een onderzoek uit te voeren dat een beeld geeft van de Europese, internationale en nationale standaarden en standaardisatieactiviteiten die relevant zijn voor Cloud platformen, systemen en diensten. Tevens vragen wij aan de opdrachtnemer om 'witte vlekken' te identificeren, dat wil zeggen domeinen waar open standaarden voor de Cloud nodig zijn maar nog niet bestaan.
 
 ## Deelvragen
 
 Hierbij vraagt u ons de volgende onderzoeksvragen te beantwoorden:
 
-1.  *Welke Europese, internationale en nationale standaarden bestaan er voor Cloud, in het bijzonder voor Cloud-interoperabiliteit, dataportabiliteit, informatieveiligheid en processen?*
-2.  *Welke Europese, internationale en nationale Cloud-standaarden zijn nog in ontwikkeling, of gepland?*
-3.  *Zijn er witte vlekken? Dat wil zeggen, Cloud-technologieën of - toepassingen waar open standaarden nodig zijn, maar nog niet bestaan en nog niet ontwikkeling zijn?*
-4.  *Op welke (Europese en internationale) standaardisatieactiviteiten voor Cloud zou de overheid of de private sector in Nederland invloed op moeten uitoefenen? Bijvoorbeeld omdat zij zich bewegen in een richting die niet overeenstemt met Nederlandse waarden zoals openheid, inclusie, veiligheid, privacy, digitale soevereiniteit, en een evenwichtige markt? En is dat nog mogelijk?*
+1.  Welke Europese, internationale en nationale standaarden bestaan er voor Cloud, in het bijzonder voor Cloud-interoperabiliteit, dataportabiliteit, informatieveiligheid en processen?
+
+2.  Welke Europese, internationale en nationale Cloud-standaarden zijn nog in ontwikkeling, of gepland?
+
+3.  Zijn er witte vlekken? Dat wil zeggen, Cloud-technologieën of - toepassingen waar open standaarden nodig zijn, maar nog niet bestaan en nog niet ontwikkeling zijn?
+
+4.  Op welke (Europese en internationale) standaardisatieactiviteiten voor Cloud zou de overheid of de private sector in Nederland invloed op moeten uitoefenen? Bijvoorbeeld omdat zij zich bewegen in een richting die niet overeenstemt met Nederlandse waarden zoals openheid, inclusie, veiligheid, privacy, digitale soevereiniteit, en een evenwichtige markt? En is dat nog mogelijk?
 
 ## Aanpak en betrokkenen
 
@@ -29,17 +32,36 @@ Voor dit onderzoek zijn allereerst bestaande onderzoeken en bronnen geanalyseerd
 
 *Aanpak verkenning*
 
-| **Wat**                                  | **Activiteit**                                                                                                                   | **Resultaat**                                                                 | **Wanneer**               |
-|------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|---------------------------|
-| **Voorbereiding**                        | Gesprekken met opdrachtgever en adviseurs van deze voor afkadering Desk research  Benaderen experts                              | Duidelijke focus en afkadering onderzoek                                      | Oktober 2022              |
-| **Onderzoek**                            | Individuele (online) gesprekken  met 10 experts                                                                                  | Kennis, meningen en ideeën experts ophalen                                    | Oktober-November 202      |
-| **Analyse en opmaak** **conceptrapport** | Analyseren en verwerken resultaten interviews en deskresearch                                                                    | Beeld van de huidige stand  van zaken                                         | November 2022             |
-| **Toetsing en validatie**                | Delen conceptrapport met  experts voor feedback Organiseren expert bijeenkomst voor discussie inzichten, aanbevelingen en vragen | Verdieping op de resultaten, aanvullende inzichten en validatie door experts  | November- December 2022   |
-| **Definitief eindrapport**               | Verwerken feedback experts en inzichten expert bijeenkomst                                                                       | Gevalideerde verkenning  naar benodigde standaarden                           | December 2022- Maart 2023 |
++----------------------------+----------------------------------------------------------------------------------+------------------------------------------------------------------------------+---------------------------+
+| **Wat**                    | **Activiteit**                                                                   | **Resultaat**                                                                | **Wanneer**               |
++----------------------------+----------------------------------------------------------------------------------+------------------------------------------------------------------------------+---------------------------+
+| **Voorbereiding**          | Gesprekken met opdrachtgever en adviseurs van deze voor afkadering               | Duidelijke focus en afkadering onderzoek                                     | Oktober 2022              |
+|                            |                                                                                  |                                                                              |                           |
+|                            | Desk research                                                                    |                                                                              |                           |
+|                            |                                                                                  |                                                                              |                           |
+|                            | Benaderen experts                                                                |                                                                              |                           |
++----------------------------+----------------------------------------------------------------------------------+------------------------------------------------------------------------------+---------------------------+
+| **Onderzoek**              | Individuele (online) gesprekken\                                                 | Kennis, meningen en ideeën experts ophalen                                   | Oktober-November 202      |
+|                            | met 10 experts                                                                   |                                                                              |                           |
++----------------------------+----------------------------------------------------------------------------------+------------------------------------------------------------------------------+---------------------------+
+| **Analyse en opmaak**      | Analyseren en verwerken resultaten interviews en deskresearch                    | Beeld van de huidige stand                                                   | November 2022             |
+|                            |                                                                                  |                                                                              |                           |
+| **conceptrapport**         |                                                                                  | van zaken                                                                    |                           |
++----------------------------+----------------------------------------------------------------------------------+------------------------------------------------------------------------------+---------------------------+
+| **Toetsing en validatie**  | Delen conceptrapport met\                                                        | Verdieping op de resultaten, aanvullende inzichten en validatie door experts | November- December 2022   |
+|                            | experts voor feedback                                                            |                                                                              |                           |
+|                            |                                                                                  |                                                                              |                           |
+|                            | Organiseren expert bijeenkomst voor discussie inzichten, aanbevelingen en vragen |                                                                              |                           |
++----------------------------+----------------------------------------------------------------------------------+------------------------------------------------------------------------------+---------------------------+
+| **Definitief eindrapport** | Verwerken feedback experts en inzichten expert bijeenkomst                       | Gevalideerde verkenning\                                                     | December 2022- Maart 2023 |
+|                            |                                                                                  | naar benodigde standaarden                                                   |                           |
++----------------------------+----------------------------------------------------------------------------------+------------------------------------------------------------------------------+---------------------------+
 
 *Betrokken experts*
 
 Onderstaande experts zijn geraadpleegd voor deze verkenning. In de selectiecriteria is rekening gehouden met een representatie van experts vanuit diverse (overheids)organisaties en aanverwante organisaties die betrokken zijn bij het thema Regie op Gegevens. Het betreft de volgende experts:
+
+-   
 
 ## Leeswijzer
 
