@@ -9,7 +9,7 @@ let respecConfig = {
   publishDate: "2023-08-13",
   publishVersion: "0.2",
   
-  previousVersion: "0.1",
+  previousVersion: "0.2",
   previousPublishDate: "2023-08-13",
   previousMaturity: "WV",
   title: "Onderzoek naar standaarden en standaardisatieactiviteiten voor Cloud",
