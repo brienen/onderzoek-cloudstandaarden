@@ -13,7 +13,7 @@ let respecConfig = {
   previousPublishDate: "2023-08-13",
   previousMaturity: "WV",
   title: "Onderzoek naar standaarden en standaardisatieactiviteiten voor Cloud",
-  content: {"ch1_inleiding": "informative", "ch2_cloud": "", "ch3_onderzoek": "", "ch4_conclusies": ""},
+  content: {"rapport": ""},
   //editors:
   //  [
   //    {
