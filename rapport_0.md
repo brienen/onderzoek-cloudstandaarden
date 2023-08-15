@@ -8,46 +8,6 @@ Bureau Forum Standaardisatie zet namens Forum Standaardisatie de beoogde opdrach
 
 > Om de digitale overheid gevraagd en ongevraagd te kunnen adviseren over standaardisatie voor de Cloud, wil het Forum Standaardisatie graag een beeld krijgen van de standaarden die van strategisch belang zijn voor het Cloudbeleid. In het bijzonder wil Forum Standaardisatie weten welke cruciale standaarden al bestaan, welke nog moeten worden gespecificeerd, en op welke (Europese en internationale) standaardisatie- activiteiten de overheid nog invloed op kan en zou moeten uitoefenen.
 
-## Brief Rijksbreed Cloudbeleid 2022
-
-In deze brief wordt geïnformeerd over het Rijksbrede cloudbeleid 2022. Dit beleid richt zich op het gebruik van publieke clouddiensten door de Rijksoverheid, als vervanging van het eerdere beleid uit 2011 dat de focus legde op private clouddiensten.
-
-Hoofdpunten:
-
-1.  **Overheidsdiensten** mogen onder bepaalde voorwaarden en uitzonderingen gebruik maken van publieke clouddiensten.
-
-2.  **Verwerking van persoonsgegevens** in publieke clouddiensten vereist een goedgekeurde pre-scan gegevens-beschermingseffectbeoordeling. Bij een hoog risico is een volledige data protection impact assessment noodzakelijk.
-
-3.  Elk **departement** is zelf verantwoordelijk voor het inzicht in de risico’s van het gebruik van publieke cloud toepassingen.
-
-4.  Er komt een “implementatierichtlijn risicoafweging cloudgebruik” voor het einde van 2022.
-
-5.  Overheidsentiteiten die niet tot de Rijksdienst behoren, wordt geadviseerd het Rijksbeleid te volgen.
-
-6.  **Uitzonderingen**: Publieke clouddiensten mogen niet worden gebruikt voor staatsgeheim gerubriceerde informatie. Het Ministerie van Defensie valt niet onder dit beleid.
-
-7.  **Voorwaarden**:
-
-    - Departementen moeten hun eigen cloudbeleid formuleren.
-
-    - Een relevante risicoafweging is vereist.
-
-    - Jaarlijkse rapportage over het gebruik van publieke clouddiensten aan CIO Rijk.
-
-    - Er moet een ‘exit strategie’ zijn in overeenkomsten met cloudleveranciers.
-
-    - Clouddienstverlening moet voldoen aan bestaande ICT-voorwaarden.
-
-    - Cyberveiligheid is essentieel, vooral met betrekking tot gegevensverwerking in andere landen.
-
-    - Besluitvorming moet openbaar zijn volgens de Wet Open Overheid.
-
-    - Opslag en verwerking van persoonsgegevens moet in lijn zijn met de AVG.
-
-    - Extra bescherming is vereist voor bijzondere persoonsgegevens.
-
-De brief benadrukt het belang van een evenwichtige benadering, waarbij gebruik wordt gemaakt van de voordelen van publieke clouddiensten terwijl de risico's worden beheerst
-
 ## Hoofdvraag
 
 Wij vragen de opdrachtnemer om een onderzoek uit te voeren dat een beeld geeft van de Europese, internationale en nationale standaarden en standaardisatieactiviteiten die relevant zijn voor Cloud platformen, systemen en diensten. Tevens vragen wij aan de opdrachtnemer om ‘witte vlekken’ te identificeren, dat wil zeggen domeinen waar open standaarden voor de Cloud nodig zijn maar nog niet bestaan.
