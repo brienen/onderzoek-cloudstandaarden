@@ -1,4 +1,4 @@
-# Bijlage 2: De betrokken experts
+# De betrokken experts
 
 Onderstaande experts zijn geïnterviewd tijdens het onderzoek. In de selectiecriteria is rekening gehouden met een representatie van experts vanuit diverse (overheids)organisaties en aanverwante organisaties die betrokken zijn bij het thema standaarden voor de cloud.
 

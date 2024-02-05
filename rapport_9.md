@@ -1,4 +1,4 @@
-# Bijlage 6: Cloudontwikkelingen en trends
+# Cloudontwikkelingen en trends
 
 Cloudcomputing heeft de manier waarop bedrijven, overheden en individuen technologie gebruiken en benaderen getransformeerd. Dit dynamische topic blijft evolueren met nieuwe innovaties, gebruikspatronen en businessmodellen. In dit hoofdstuk een overzicht van de mondiale trends op het gebied van cloudcomputing. Daarnaast een opsomming van cloudontwikkelingen in Europa en in Nederland.
 

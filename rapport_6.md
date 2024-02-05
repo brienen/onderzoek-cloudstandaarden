@@ -1,4 +1,4 @@
-# Bijlage 3: Aanpak en planning onderzoek
+# Aanpak en planning onderzoek
 
 <table>
 <colgroup>

@@ -1,4 +1,4 @@
-# Bijlage 1: Gebruikte bronnen bij het onderzoek
+# Gebruikte bronnen bij het onderzoek
 
 De volgende bronnen zijn gebruikt als input voor dit rapport:
 

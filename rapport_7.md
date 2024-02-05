@@ -1,4 +1,4 @@
-# Bijlage 4: Wat is cloud?
+# Wat is cloud?
 
 In deze bijlage een toelichting op de cloud. Waar is het cloudbeleid op gericht? De verschillende clouddiensten en cloudvarianten worden toegelicht, een toelichting van het toenemende belang van cloudcomputing en een opsomming van belangrijke cloudleveranciers.
 

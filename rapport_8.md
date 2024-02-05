@@ -1,4 +1,4 @@
-# Bijlage 5: Scope en uitgangspunten
+# Scope en uitgangspunten
 
 Een belangrijk uitgangspunt voor het onderzoek is de brief van de Staatssecretaris van Huffelen van 29 augustus 2022 aan de Tweede Kamer, waarin zij een wijziging definieert ten opzichte van het tot dan toe geldende rijksbeleid van de overheid. In deze brief wordt geïnformeerd over het Rijksbrede cloudbeleid 2022. Dit beleid richt zich op het gebruik van public clouddiensten door de Rijksoverheid, als vervanging van het eerdere beleid uit 2011 dat de focus legde op private clouddiensten. De brief van de Staatssecretaris maakt het voor overheidsorganisaties mogelijk om gebruik te maken van de public cloud.
 
