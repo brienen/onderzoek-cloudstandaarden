@@ -14,7 +14,7 @@ Advies aan de overheid: pak meer regie op de markt voor clouddiensten, zowel op 
 >
 > *Rudi Bekkers, Professor of Standardisation and Intellectual Property at Eindhoven University of Technology, tijdens ECP congres 16 november 2023*
 
-## Bouw kennis en capaciteit bij de overheid
+## Bouw aan kennis en capaciteit bij de overheid
 
 Kennis en kunde op het gebied van public clouddiensten is schaars en versnipperd bij de overheid. Dit in tegenstelling tot *on-premise* cloud-omgevingen waar veel meer kennis en ervaring over beschikbaar is. Meerdere ondervraagden geven aan dat er binnen de overheid weinig coördinatie is op alle maatregelen en acties die moeten worden ondernomen om de snelle ontwikkeling op het gebied van clouddiensten bij te houden en in goede banen te leiden. Zonder eigen, gebundelde expertise wordt de overheid ook qua kennis steeds afhankelijker van marktpartijen, en in het bijzonder de grote buitenlandse clouddienstverleners.
 
@@ -38,7 +38,7 @@ Op de [lijst aanbevolen standaarden van het Forum Standaardisatie](https://forum
 
 Advies aan de overheid: meld aanbevolen standaarden die relevant zijn voor dataportabiliteit aan voor opname op de ‘pas toe of leg uit’ lijst van het Forum Standaardisatie. Oefen via het strategisch leveranciers management (SLM) van de overheid druk uit op de cloudleveranciers om open standaarden te implementeren. Nog beter is het om deze druk met gelijkgestemde lidstaten op Europees niveau uit te oefenen.
 
-## Laat op de lijst van het Forum Standaardisatie standaarden toe voor leveranciersonafhankelijkheid en digitale soevereiniteit
+## Laat standaarden toe voor leveranciersonafhankelijkheid en digitale soevereiniteit op de lijst van het Forum Standaardisatie 
 
 Forum Standaardisatie richt zich vooralsnog alleen op standaarden voor gegevensuitwisseling *tussen* organisaties. Dat maakt het moeilijk om standaarden te verplichten zoals IMAP, die cruciaal zijn voor dataportabiliteit en leveranciersonafhankelijkheid, maar die doorgaans niet worden gebruikt voor gegevensuitwisselingsstandaarden tussen organisaties.
 
