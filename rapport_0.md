@@ -32,3 +32,5 @@ Dit rapport is zo piramidaal mogelijk opgesteld, waarbij we beginnen met de conc
 
 De aanpak, scope en uitgangspunten en de resultaten van de deskresearch zijn in bijlagen opgenomen. In [bijlage 3](#aanpak-en-planning-onderzoek) is een overzicht opgenomen van de uitgevoerde stappen in het onderzoek met de bestede tijdsperiode per stap. [Bijlage 4](#wat-is-cloud) bevat een uitleg van de cloud en clouddiensten, implementatievarianten van clouddiensten en een opsomming van belangrijke cloudleveranciers wereldwijd, in Europa en in Nederland. In [bijlage 5](#scope-en-uitgangspunten) zijn de uitgebreide scope en uitgangspunten van het onderzoek beschreven, onder andere een samenvatting van het vernieuwde Rijkscloudbeleid van augustus 2022. [Bijlage 6](#cloudontwikkelingen-en-trends) bestaat uit een overzicht van de mondiale trends, Europese ontwikkelingen en initiatieven vanuit de Nederlandse overheid met betrekking tot het cloudbeleid. Tot slot is in [bijlage 7](#risicos-van-de-toepassing-van-cloud-en-clouddiensten) een opsomming opgenomen van mogelijke risico’s van cloud en clouddiensten.
 
+1)  
+

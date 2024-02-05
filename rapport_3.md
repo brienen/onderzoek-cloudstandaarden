@@ -67,7 +67,11 @@ De beveiligings- en privacystandaarden bouwen voor een groot deel voort op de be
 
 1.  [Oauth2.0](https://www.forumstandaardisatie.nl/open-standaarden/oauth) : Met OAuth 2.0 kunnen gebruikers of organisaties een programma of website toegang geven tot specifieke (privé)gegevens, die opgeslagen zijn op een ander systeem, zonder hun gebruikersnaam en wachtwoord uit handen te geven.
 
-Tijdens het onderzoek werd aangegeven dat de attributen die in het kader van Oauth2.0 worden uitgewisseld uitbreiding behoeven als ze in het kader van Trusted Cloud van het Ministerie van Justitie en veiligheid worden ingezet;
+<!-- -->
+
+2)  Tijdens het onderzoek werd aangegeven dat de attributen die in het kader van Oauth2.0 worden uitgewisseld uitbreiding behoeven als ze in het kader van Trusted Cloud van het Ministerie van Justitie en veiligheid worden ingezet;
+
+<!-- -->
 
 2.  [IP Sec](https://www.forumstandaardisatie.nl/open-standaarden/ip-sec): De standaard maakt het mogelijk om IP-verbindingen te encrypten. Hierdoor is het netwerk beveiligd waardoor gevoelige data kan worden uitgewisseld. Vooral relevant voor VPN's. In andere gevallen is beveiliging op transport niveau meer toepasselijk. 
 
