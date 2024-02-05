@@ -244,29 +244,29 @@ Ondanks dat het onderzoek zich richt op standaarden voor beveiliging en privacy,
 
 <!-- -->
 
-2)  **ISO/IEC 22123-1:**  Information technology — Cloud computing — Part 1: Vocabulary
+1)  **ISO/IEC 22123-1:**  Information technology — Cloud computing — Part 1: Vocabulary
 
     Bevat definities voor termen die in het kader van cloud gebruikt worden zoals: IaaS, PaaS en SaaS. Heeft overlap met NIST SP 500-292.
 
-3)  **ISO/IEC 22123-2:**  Information technology — Cloud computing — Part 2: Concepts
+2)  **ISO/IEC 22123-2:**  Information technology — Cloud computing — Part 2: Concepts
 
     Deze norm, getiteld "Deel 2: Concepten", heeft als doel het definiëren en specificeren van concepten die gebruikt worden op het gebied van Cloudcomputing. Het dient als een uitbreiding van de cloudcomputing vocabulaire die oorspronkelijk gedefinieerd werd in ISO/IEC 22123-1. Door deze concepten verder uit te werken, legt ISO/IEC 22123-2:2023 een fundament dat andere documenten en normen ondersteunt die geassocieerd zijn met cloudcomputing.
 
-4)  **ISO/IEC 22123-3:**  Information technology — Cloud computing — Part 3: Reference architecture. Deze norm, getiteld "Deel 3: Referentiearchitectuur", specificeert de referentiearchitectuur voor cloudcomputing (CCRA). Dit document is van belang omdat het richtlijnen en standaarden vastlegt die betrekking hebben op de structuur en organisatie van systemen en diensten binnen de cloudcomputing omgeving. De referentiearchitectuur die in dit document wordt beschreven, biedt een gestructureerde en gedetailleerde blauwdruk voor het opzetten en beheren van cloudgebaseerde systemen, waardoor het een essentiële bron is voor professionals in het veld van cloudcomputing.
+3)  **ISO/IEC 22123-3:**  Information technology — Cloud computing — Part 3: Reference architecture. Deze norm, getiteld "Deel 3: Referentiearchitectuur", specificeert de referentiearchitectuur voor cloudcomputing (CCRA). Dit document is van belang omdat het richtlijnen en standaarden vastlegt die betrekking hebben op de structuur en organisatie van systemen en diensten binnen de cloudcomputing omgeving. De referentiearchitectuur die in dit document wordt beschreven, biedt een gestructureerde en gedetailleerde blauwdruk voor het opzetten en beheren van cloudgebaseerde systemen, waardoor het een essentiële bron is voor professionals in het veld van cloudcomputing.
 
-5)  **NIST SP 800-154:** Het Nationale Instituut van Standaarden en Technologische definities van cloudcomputing, dat een duidelijk beknopt raamwerk biedt voor het begrijpen van cloudtechnologie.
+4)  **NIST SP 800-154:** Het Nationale Instituut van Standaarden en Technologische definities van cloudcomputing, dat een duidelijk beknopt raamwerk biedt voor het begrijpen van cloudtechnologie.
 
-6)  **ETSI cloud standards:** De Europese Telecommunicatie Standaarden Instituut hanteert verschillende standaarden en specificaties voor clouddiensten, gericht op interoperabiliteit, veiligheid en SLA’s.
+5)  **ETSI cloud standards:** De Europese Telecommunicatie Standaarden Instituut hanteert verschillende standaarden en specificaties voor clouddiensten, gericht op interoperabiliteit, veiligheid en SLA’s.
 
-7)  [**ENISA Cloud Computing Risk Assessment**](https://www.enisa.europa.eu/publications/cloud-computing-risk-assessment): De Cloudcomputing Risk Assessment van ENISA (European Union Agency for Cybersecurity) is een uitgebreid document dat de potentiële risico's evalueert die samenhangen met de adoptie van cloudcomputingdiensten.
+6)  [**ENISA Cloud Computing Risk Assessment**](https://www.enisa.europa.eu/publications/cloud-computing-risk-assessment): De Cloudcomputing Risk Assessment van ENISA (European Union Agency for Cybersecurity) is een uitgebreid document dat de potentiële risico's evalueert die samenhangen met de adoptie van cloudcomputingdiensten.
 
-8)  **[ISO/IEC 38500:](https://www.iso.org/standard/62816.html)** ISO 38500 is een internationale norm die richtlijnen biedt voor effectief corporate governance van informatie- en communicatietechnologie (ICT).
+7)  **[ISO/IEC 38500:](https://www.iso.org/standard/62816.html)** ISO 38500 is een internationale norm die richtlijnen biedt voor effectief corporate governance van informatie- en communicatietechnologie (ICT).
 
-9)  [**FinOps-framework**](https://www.finops.org/framework/): Het FinOps-framework is een reeks principes ontworpen om organisaties te helpen hun cloudkosten effectiever te beheren en te optimaliseren.
+8)  [**FinOps-framework**](https://www.finops.org/framework/): Het FinOps-framework is een reeks principes ontworpen om organisaties te helpen hun cloudkosten effectiever te beheren en te optimaliseren.
 
-10) [**ISO/IEC 19086**](https://www.iso.org/standard/67545.html): ISO/IEC 19086 is een reeks internationale normen die richtlijnen en best practices biedt voor cloud service level agreements (SLA's). Deze normen helpen bij het definiëren, documenteren en overeenkomen van service level doelstellingen, metingen en verantwoordelijkheden tussen cloud service providers en hun klanten.
+9)  [**ISO/IEC 19086**](https://www.iso.org/standard/67545.html): ISO/IEC 19086 is een reeks internationale normen die richtlijnen en best practices biedt voor cloud service level agreements (SLA's). Deze normen helpen bij het definiëren, documenteren en overeenkomen van service level doelstellingen, metingen en verantwoordelijkheden tussen cloud service providers en hun klanten.
 
-11) **[ISO/IEC 19944](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi4toPH6fCCAxVuV6QEHRpCDjUQFnoECA4QAQ&url=https%3A%2F%2Fwww.iso.org%2Fstandard%2F66674.html&usg=AOvVaw1waD80Lvzt0_QfZ5qeeWEd&opi=89978449):** ISO/IEC 19944 (Deel 1 en 2) is een internationale standaard die zich richt op cloudcomputing en distributed platforms, met speciale aandacht voor het vaststellen van een raamwerk voor data flow en data categorieën in de cloud. Deze norm biedt richtlijnen voor het classificeren van data, inclusief de oorsprong, beweging, en het gebruik ervan binnen cloud en gedistribueerde computing omgevingen. Het helpt organisaties bij het identificeren van de verschillende soorten data die in de cloud worden verwerkt, zoals gebruikersgegevens, operationele data en metadata, en geeft aanbevelingen voor het beheer en de behandeling van deze data, rekening houdend met zaken als privacy, beveiliging en compliance.
+10) **[ISO/IEC 19944](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi4toPH6fCCAxVuV6QEHRpCDjUQFnoECA4QAQ&url=https%3A%2F%2Fwww.iso.org%2Fstandard%2F66674.html&usg=AOvVaw1waD80Lvzt0_QfZ5qeeWEd&opi=89978449):** ISO/IEC 19944 (Deel 1 en 2) is een internationale standaard die zich richt op cloudcomputing en distributed platforms, met speciale aandacht voor het vaststellen van een raamwerk voor data flow en data categorieën in de cloud. Deze norm biedt richtlijnen voor het classificeren van data, inclusief de oorsprong, beweging, en het gebruik ervan binnen cloud en gedistribueerde computing omgevingen. Het helpt organisaties bij het identificeren van de verschillende soorten data die in de cloud worden verwerkt, zoals gebruikersgegevens, operationele data en metadata, en geeft aanbevelingen voor het beheer en de behandeling van deze data, rekening houdend met zaken als privacy, beveiliging en compliance.
 
 ### Witte vlekken
 
