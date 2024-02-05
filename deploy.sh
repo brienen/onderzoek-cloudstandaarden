@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-DOCX="/Users/arjen/OneDrive - E-Space/Forum Standaardisatie/Onderzoek Cloud Standaarden/Eindrapport Onderzoek naar standaarden en standaardisatieactiviteiten voor Cloud v0.4.docx"
+DOCX="/Users/arjen/OneDrive - E-Space/Forum Standaardisatie/Onderzoek Cloud Standaarden/Eindrapport Onderzoek naar standaarden en standaardisatieactiviteiten voor Cloud v1.0.docx"
 MD="rapport"
 
 echo "Deploying report $DOCX as Markdown $MD"

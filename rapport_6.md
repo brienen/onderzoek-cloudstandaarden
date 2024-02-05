@@ -42,7 +42,7 @@ met meer dan 10 experts</td>
 <td>Delen conceptrapport met<br />
 experts voor feedback</td>
 <td>Verdieping op de resultaten, aanvullende inzichten en validatie door experts</td>
-<td>Dec. 2023</td>
+<td>Dec. 2023/jan 2024</td>
 </tr>
 </tbody>
 </table>
