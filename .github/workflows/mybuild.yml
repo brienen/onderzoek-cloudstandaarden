@@ -1,0 +1,33 @@
+name: Build
+on:
+  workflow_call:
+jobs:
+  main:
+    name: Snapshot
+    runs-on: ubuntu-latest
+    steps:
+      - run: mkdir ~/static
+      - name: Create cache
+        uses: actions/cache@v3
+        with:
+          path: ~/static
+          key: ${{ github.run_id }}
+      - uses: actions/checkout@v3
+      - name: Static HTML
+        run: |
+          npx respec --localhost --src index.html --out ~/static/snapshot.html
+          cp ~/static/snapshot.html snapshot.html
+      - name: PDF
+        if: ${{ github.event_name != 'pull_request'}}
+        run: |
+         cp ./js/config.js config.js
+         echo "module.exports = { respecConfig };" >> config.js
+         echo "var window = {respecMermaid : {createFigures : null}};" | cat - config.js > temp && mv temp config.js
+         cp ~/static/snapshot.html snapshot.html
+         npm i puppeteer
+         python3 -m http.server 8080 &
+         wget https://raw.githubusercontent.com/Logius-standaarden/Automatisering/main/scripts/pdf.js
+         rm -f *.pdf
+         node pdf.js      
+         find *.pdf
+         mv *.pdf ~/static/
