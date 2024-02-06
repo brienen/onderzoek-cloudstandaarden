@@ -16,7 +16,7 @@ jobs:
       - name: Static HTML
         run: |
           npx respec --localhost --src index.html --out ~/static/snapshot.html
-          cp ~/static/snapshot.html snapshot.html
+          cp ~/static/snapshot.html ./snapshot.html
       - name: PDF
         if: ${{ github.event_name != 'pull_request'}}
         run: |
