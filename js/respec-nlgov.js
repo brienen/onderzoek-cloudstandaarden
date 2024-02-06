@@ -238,7 +238,8 @@ dd{margin-left:0}
             <dt>${e.multipleAuthors?Bn.authors:Bn.author}</dt>
             ${On(e,"authors")}
           `:""}
-      ${e.otherLinks?e.otherLinks.map(Pn):""}
+      <dt>Opdrachtgever:</dt>
+      <dd><a href="https://www.forumstandaardisatie.nl">Forum Standaardisatie</a></dd>
     </dl>
     ${e.errata?ye`
           <p lang="nl">
