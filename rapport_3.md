@@ -224,7 +224,7 @@ De volgende interoperabiliteitstandaarden kwamen tijdens het onderzoek naar vore
 
 FSC NLX is onderdeel van [Common Ground](https://commonground.nl/).
 
-2.  [Open Cloud Computing Interface (OCCI):](https://occi-wg.org/) OCCI is een set van open specificaties voor cloudcomputing, ontwikkeld door de Open Grid Forum. Het biedt een API-standaard voor het beheren van allerlei cloudinfrastructuur, waaronder IaaS (Infrastructure as a Service).
+2.  [Open Cloud Computing Interface (OCCI):](https://en.wikipedia.org/wiki/Open_Cloud_Computing_Interface) OCCI is een set van open specificaties voor cloudcomputing, ontwikkeld door de Open Grid Forum. Het biedt een API-standaard voor het beheren van allerlei cloudinfrastructuur, waaronder IaaS (Infrastructure as a Service).
 
 3.  [Cloud Infrastructure Management Interface (CIMI)](https://joinup.ec.europa.eu/collection/ict-standards-procurement/solution/dsp0263-cloud-infrastructure-management-interface-cimi-model-and-restful-http-based-protocol-v200/about): Ontwikkeld door de Distributed Management Task Force (DMTF), richt CIMI zich op het beheer van cloudinfrastructuur en streeft het naar een uniforme interface voor de interactie met infrastructuur als een service (IaaS) modellen.
 
