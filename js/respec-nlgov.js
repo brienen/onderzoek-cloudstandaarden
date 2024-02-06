@@ -256,10 +256,6 @@ dd{margin-left:0}
             <strong>translations</strong></a
           >.
         </p>`:""}
-    ${e.alternateFormats?ye`<p>
-          ${t.multipleAlternates?Bn.alt_formats:Bn.alt_format}
-          ${t.alternatesHTML}
-        </p>`:""}
     ${function(e){const t=document.querySelector(".copyright");if(t)return t.remove(),t;if(e.hasOwnProperty("overrideCopyright")){it("The `overrideCopyright` configuration option is deprecated.",qn,{hint:'Please add a `<p class="copyright">` element directly to your document instead'})}return e.isUnofficial?e.additionalCopyrightHolders?ye`<p class="copyright">${[e.additionalCopyrightHolders]}</p>`:e.overrideCopyright?[e.overrideCopyright]:ye`<p class="copyright">
           ${Bn.licensed}
           ${Hn(e.licenses[e.license.toLowerCase()].name,e.licenses[e.license.toLowerCase()].url,e.licenses[e.license.toLowerCase()].image,"subfoot")}
