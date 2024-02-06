@@ -203,14 +203,6 @@ dd{margin-left:0}
       >${e.modificationDate?ye`, ${Bn.edited_in_place}${" "} $conf.modificationDate`:""}
     </h2>
     <dl>
-      ${!e.isNoTrack&&e.thisVersion?ye`
-            <dt>${Bn.this_version}</dt>
-            <dd class="status">
-              <a class="u-url status" href="${e.thisVersion}"
-                >${e.thisVersion}</a
-              >
-            </dd>
-          `:""}
       ${e.testSuiteURI?ye`
             <dt>${Bn.test_suite}</dt>
             <dd><a href="${e.testSuiteURI}">${e.testSuiteURI}</a></dd>
