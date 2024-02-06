@@ -9,7 +9,7 @@ var organisationConfig = {
         id: "E-Space",
         height: 78,
         width: 291,
-        url: "https://www.e-space.nl",
+        url: "https://www.linkedin.com/in/arjenbrienen/",
     }],
 
     postProcess: [window.respecMermaid.createFigures],
