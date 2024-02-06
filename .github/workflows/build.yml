@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Build
-    uses: .github/workflows/mybuild.yml@snapshot-in-repo
+    uses: ./.github/workflows/mybuild.yml@snapshot-in-repo
   check:
     needs: build
     name: Check
