@@ -27,7 +27,3 @@ jobs:
          npm i puppeteer
          python3 -m http.server 8080 &
          wget https://raw.githubusercontent.com/Logius-standaarden/Automatisering/main/scripts/pdf.js
-         rm -f *.pdf
-         node pdf.js      
-         find *.pdf
-         mv *.pdf ~/static/
