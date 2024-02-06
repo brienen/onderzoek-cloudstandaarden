@@ -16,7 +16,7 @@ jobs:
       - name: Static HTML
         run: |
           npx respec --localhost --src index.html --out ~/static/snapshot.html
-          cp ~/static/snapshot.html ./snapshot.html
+          cp ~/static/snapshot.html snapshot.html
       - name: PDF
         if: ${{ github.event_name != 'pull_request'}}
         run: |
@@ -32,8 +32,8 @@ jobs:
           echo "Hello, world!" > hello.txt
           git config --global user.name 'brienen'
           git config --global user.email 'brienen@e-space.nl'
-          git add hello.txt
-          git commit -m "Add hello.txt"
+          git add snapshot.html
+          git commit -m "Add snapshot.html"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
