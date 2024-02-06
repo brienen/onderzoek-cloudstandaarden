@@ -6,8 +6,8 @@ let respecConfig = {
   specType: "ad",
   pubDomain: "dk",
   shortName: "Onderzoek Cloudstandaarden",
-  publishDate: "2023-08-13",
-  publishVersion: "0.2",
+  publishDate: "2024-02-04",
+  publishVersion: "1.0",
   
   previousVersion: "0.2",
   previousPublishDate: "2023-08-13",
@@ -27,12 +27,12 @@ let respecConfig = {
       {
         name: "Arjen Brienen",
         company: "E-Space",
-        companyURL: "https://www.e-space.nl",
+        companyURL: "https://www.linkedin.com/in/arjenbrienen/",
       },
       {
         name: "Jeroen de Ruig",
-        company: "E-Space",
-        companyURL: "https://www.e-space.nl",
+        company: "Waal en Berg",
+        companyURL: "https://www.waalenberg.nl",
       }
 
     ],

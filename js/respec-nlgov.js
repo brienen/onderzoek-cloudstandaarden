@@ -234,14 +234,6 @@ dd{margin-left:0}
             <dt>${Bn.latest_recommendation}</dt>
             <dd><a href="${e.prevRecURI}">${e.prevRecURI}</a></dd>
           `:""}
-      <dt>${e.multipleEditors?Bn.editors:Bn.editor}</dt>
-      ${On(e,"editors")}
-      ${Array.isArray(e.formerEditors)&&e.formerEditors.length>0?ye`
-            <dt>
-              ${e.multipleFormerEditors?Bn.former_editors:Bn.former_editor}
-            </dt>
-            ${On(e,"formerEditors")}
-          `:""}
       ${e.authors?ye`
             <dt>${e.multipleAuthors?Bn.authors:Bn.author}</dt>
             ${On(e,"authors")}
