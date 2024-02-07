@@ -1,96 +1,72 @@
-# Wat is cloud?
+# Bijlage - Scope en uitgangspunten
 
-In deze bijlage een toelichting op de cloud. Waar is het cloudbeleid op gericht? De verschillende clouddiensten en cloudvarianten worden toegelicht, een toelichting van het toenemende belang van cloudcomputing en een opsomming van belangrijke cloudleveranciers.
+Een belangrijk uitgangspunt voor het onderzoek is de brief van de Staatssecretaris van Huffelen van 29 augustus 2022 aan de Tweede Kamer, waarin zij een wijziging definieert ten opzichte van het tot dan toe geldende rijksbeleid van de overheid. In deze brief wordt geïnformeerd over het Rijksbrede cloudbeleid 2022. Dit beleid richt zich op het gebruik van public clouddiensten door de Rijksoverheid, als vervanging van het eerdere beleid uit 2011 dat de focus legde op private clouddiensten. De brief van de Staatssecretaris maakt het voor overheidsorganisaties mogelijk om gebruik te maken van de public cloud.
 
-## Clouddiensten
+## Hoofdpunten Rijksbreed Cloudbeleid 2022
 
-Als referentiemodel voor de definities van cloudcomputing hanteren wij in dit rapport [The NIST Definition of Cloud Computing](https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-145.pdf). Deze referentie onderscheidt vijf essentiële karakteristieken van clouddiensten:
+Hoofdpunten van het cloudbeleid zoals gedefinieerd in de [brief van de Staatssecretaris](https://www.rijksoverheid.nl/documenten/kamerstukken/2022/08/29/kamerbrief-rijksbreed-cloudbeleid-2022):
 
-1.  **On-Demand Self-Service**: Een afnemer van clouddiensten kan eenzijdig computercapaciteiten naar behoefte verkrijgen, zoals servertijd en netwerkopslag; automatisch zonder menselijke interactie met clouddienstverleners.
+1.  **Overheidsdiensten** mogen onder bepaalde voorwaarden en uitzonderingen gebruik maken van public clouddiensten. Onderdelen van de overheid die niet tot de Rijksdienst behoren wordt geadviseerd om dit Rijksbeleid te volgen.
 
-2.  **Broad Network Access**: Functionaliteiten zijn via standaard mechanismen over netwerken beschikbaar voor verschillende type clients zoals: mobiele telefoons, tablets, laptops en werkstations.
+2.  **Verwerking van persoonsgegevens** in public clouddiensten vereist een goedgekeurde pre-scan gegevens-beschermingseffectbeoordeling. Bij een hoog risico is een volledige Data Protection Impact Assessment (DPIA) noodzakelijk.
 
-3.  **Resource Pooling**: De computerbronnen (zoals: opslag, verwerking, geheugen en netwerkbandbreedte) van de aanbieder kunnen worden verdeeld om meerdere afnemers te bedienen met behulp van een multi-tenant model, waarbij verschillende fysieke en virtuele bronnen dynamisch worden toegewezen op basis van de vraag van de afnemers. Er is een gevoel van locatieonafhankelijkheid in die zin dat de afnemer over het algemeen geen controle of kennis heeft over de exacte locatie van de geboden bronnen, maar wellicht de locatie op een hoger abstractieniveau kan specificeren (bijv. land, staat of datacenter).
+3.  Elk **departement** is zelf verantwoordelijk voor het inzicht in de risico’s van het gebruik van public cloudtoepassingen.
 
-4.  **Rapid Elasticity**: Computerbronnen kunnen ‘elastisch’ worden geleverd en vrijgegeven, in sommige gevallen automatisch, om snel op en af te schalen. Voor de afnemers lijken de beschikbare computerbronnen vaak onbeperkt te zijn en kunnen op elk moment in elke hoeveelheid worden toegeëigend
+4.  Er komt een ‘implementatierichtlijn risicoafweging cloudgebruik’ voor het einde van 2022. Deze bestaat inmiddels, en is een [implementatiekader](https://www.rijksoverheid.nl/documenten/rapporten/2023/01/05/implementatiekader-risicoafweging-cloudgebruik) geworden in plaats van een richtlijn.
 
-5.  **Measured Service**: Cloudsystemen meten en optimaliseren automatisch het gebruik van computerbronnen. Dit op een bepaald abstractieniveau (bijvoorbeeld opslag, verwerking, geheugen en netwerkbandbreedte). Het gebruik van computerbronnen kan worden gecontroleerd, beheerd en gerapporteerd, wat transparantie biedt voor zowel de aanbieder als de consument van de gebruikte dienst.
+5.  **Uitzonderingen**: Public clouddiensten mogen niet worden gebruikt voor staatsgeheim gerubriceerde informatie. Het Ministerie van Defensie valt niet onder dit beleid.
 
-## Varianten van clouddiensten
+6.  **Voorwaarden**:
 
-NIST onderscheidt drie servicemodellen van clouddiensten. Deze verschillende servicemodellen worden afgenomen door overheidsorganisaties. Dit zijn Infrastructure as a Service (IaaS), Platform as a Service (PaaS) en Software as a Service (SaaS):
+    - Departementen moeten hun eigen cloudbeleid formuleren.
 
-1.  **Infrastructure as a Service (IaaS)**: IaaS biedt gebruikers toegang tot essentiële infrastructuur zoals fysieke machines, virtual machines, netwerk, opslag en andere fundamenten zonder dat ze de daadwerkelijke hardware hoeven te bezitten of te onderhouden. Voor de Nederlandse overheid kan dit betekenen dat er minder behoefte is aan grote datacenters of serverfarms, omdat deze resources op aanvraag vanuit de cloud kunnen worden verkregen.
+    - Een relevante risicoafweging is vereist.
 
-2.  **Platform as a Service (PaaS)**: PaaS gaat een stap verder door naast de basisinfrastructuur ook een platform te bieden waarop applicaties kunnen worden ontwikkeld, uitgevoerd en beheerd. Denk hierbij aan besturingssystemen, databases, webservers, ontwikkeltools, toegangsbeheer, identiteitenbeheer, portaalfunctionaliteiten en integratiefaciliteiten. Voor overheidsinstellingen die unieke applicaties willen bouwen voor hun diensten, kan PaaS een waardevol hulpmiddel zijn door het ontwikkelproces te stroomlijnen zonder zich zorgen te maken over het onderliggende systeembeheer.
+    - Jaarlijkse rapportage over het gebruik van public clouddiensten aan CIO Rijk.
 
-3.  **Software as a Service (SaaS)**: Dit is wellicht het bekendste model, waarbij gebruikers toegang hebben tot softwaretoepassingen via het web. Denk bijvoorbeeld aan e-maildiensten, CRM-systemen of samenwerkingstools, zoals: bijvoorbeeld kantoorapplicaties (bijv. Microsoft365), cliëntenbeheer (CRM, bijv. Salesforce), softwareontwikkeling (bijv. GitHub). Voor de Nederlandse overheid betekent dit dat verschillende departementen en agentschappen toegang kunnen hebben tot de nieuwste software zonder zich zorgen te hoeven maken over installaties, updates of compatibiliteitsproblemen.
+    - Er moet een ‘exit strategie’ zijn in overeenkomsten met cloudleveranciers.
 
-Opmerking: in het komende EUCS (en ook ISO 22123) wordt de term ‘as a service’ vervangen door ‘Cloud Capability Types’, dus ‘Infrastructure Capability’, ‘Platform Capability’ en ‘Application Capability’. In dit rapport hanteren we de terminologie die op het moment van schrijven vigeerde.
+    - Clouddienstverlening moet voldoen aan bestaande ICT-voorwaarden.
 
-Voor de overheid kunnen de drie modellen onder meer helpen om diensten efficiënter te leveren, te reageren op veranderende technologische behoeften en tegelijkertijd de overheadkosten te verlagen. Door de juiste mix van IaaS, PaaS en SaaS te kiezen, kan de Nederlandse overheid een technologische infrastructuur creëren die zowel flexibel als robuust is ten behoeve van primaire processen en binnen kaders standaarden.
+    - Cyberveiligheid is essentieel, vooral met betrekking tot gegevensverwerking in andere landen. De overheid hanteert bij het cloudgebruik daarom ook de C2000 criteria, waardoor leveranciers of diensten uit landen met een actief cyberprogramma dat gericht is tegen Nederlandse belangen worden uitgesloten.
 
-Tijdens het onderzoek gaven geïnterviewden aan dat er in de praktijk eigenlijk geen duidelijke splitsing is tussen IaaS en PaaS. De drie hyperscalers (Google, Microsoft en AWS) en de overige cloudleveranciers leveren een mix van deze twee dienstensoorten. Over het algemeen worden in een IaaS-omgeving via appstores allerlei aanvullende diensten geleverd, zoals: databasetoegang, AI-capaciteit en authenticatie en autorisatiediensten.
+    - Besluitvorming moet openbaar zijn volgens de Wet Open Overheid.
 
-## Implementatievarianten van clouddiensten
+    - Opslag en verwerking van persoonsgegevens moet in lijn zijn met de AVG.
 
-NIST onderscheidt 4 typen implementatie van clouddiensten bij een cloudleverancier:
+    - Extra bescherming is vereist voor bijzondere persoonsgegevens.
 
-1.  **Public**: De software en data staan dan volledig op de servers van de cloudprovider en er wordt een generieke (voor alle afnemers gelijke) functionaliteit geleverd.
+    - In geval van de opslag en verwerking van een basisregistratie, of een bron van een basisregistratie wordt, in principe géén gebruik gemaakt van public cloudvoorzieningen.
 
-2.  **Gemeenschappelijk**: De cloudvoorziening is toegankelijk voor een beperkte groep afnemers, die elkaar onderling voldoende vertrouwen.
+De brief benadrukt het belang van een evenwichtige benadering, waarbij gebruik wordt gemaakt van de voordelen van public clouddiensten terwijl de risico's worden beheerst.
 
-3.  **Privaat**: Er wordt gewerkt op een (virtueel) private ICT-infrastructuur. In deze cloud heeft de gebruiker volledige controle over data, beveiliging en kwaliteit van de dienst. De applicaties die via de Private Cloud beschikbaar worden gemaakt, maken gebruik van gedeelde infrastructuurcomponenten die slechts voor één organisatie worden ingezet.
+## Doelstellingen en uitgangspunten van het Forum voor het onderzoek
 
-4.  **Hybride**: een samenstelling uit meerdere van bovengenoemde implementatievarianten.
+De onderzoeksvraag is geformuleerd door het Forum Standaardisatie. Het Forum Standaardisatie adviseert de publieke sector over het gebruik van open standaarden. Het Forum hanteert daarbij diverse doelstellingen en uitganspunten. Deze doelstellingen en uitgangspunten vormen de basis van dit onderzoek:
 
-In het [Cloud Cybersecurity Market Analysis van Enisas](https://www.enisa.europa.eu/publications/cloud-cybersecurity-market-analysis) en andere achtergronddocumenten spreekt men ook de volgende implementatievariant, een variant die ook door de geïnterviewden werd genoemd: **multi-cloud.** Bij multi-cloud gaat het om een implementatievariant die net als de hybride-variant verschillende implementatievarianten combineert, en daarbij de implementatie van verschillende aanbieders combineert.
+1.  **Open standaarden**: Het Forum promoot het gebruik van open standaarden. Een open standaard is een specificatie die beschikbaar is en waarvan het gebruik niet beperkt is door patenten of licentierechten.
 
-## Waarom Cloud?
+2.  **Level playing field**: Door het gebruik van open standaarden wordt een gelijk speelveld gecreëerd voor aanbieders van ICT-producten en -diensten. Dit stimuleert innovatie en voorkomt dat overheidsorganisaties afhankelijk worden van één leverancier.
 
-Cloudcomputing biedt een scala aan voordelen voor zowel individuen als organisaties. Hier zijn enkele van de meest prominente voordelen:
+3.  **Interoperabiliteit**: Eén van de belangrijkste doelstellingen van het Forum is het waarborgen van interoperabiliteit. Dit betekent dat verschillende diensten van verschillende cloudproviders probleemloos met elkaar kunnen communiceren en gegevens kunnen uitwisselen.
 
-1.  **Kostenbesparing:** Door gebruik te maken van de cloud kunnen afnemers besparen op de kosten van aanschaf en onderhoud van hardware. Ze betalen vaak alleen voor wat ze daadwerkelijk gebruiken. De [Marktstudie Clouddiensten van het ACM](https://www.acm.nl/system/files/documents/marktstudie-clouddiensten.pdf) bevestigt dit beeld omdat grote datacenters duidelijke schaalvoordelen hebben en dus in staat zijn goedkoper diensten aan te bieden dan kleine datacenters.
+Cloudcomputing heeft een scala aan standaarden nodig om interoperabiliteit, veiligheid, privacy en portabiliteit te bevorderen. In het onderzoek wordt onderscheid gemaakt in de volgende soorten cloudstandaarden:
 
-2.  **Schaalbaarheid en flexibiliteit:** Een van de grootste voordelen van cloudservices is de mogelijkheid om gemakkelijk en snel op te schalen naarmate de behoefte van een organisatie groeit op het gebied van volume voor het optimaal laten werken van digitale toepassingen, zonder dat er grote investeringen in fysieke hardware nodig zijn. Bovendien maakt de enorme rekenkracht van de cloudtoepassingen toegankelijk die deze rekenkracht vereist. Denk hierbij aan Artificial Intelligence (AI) met als bekendste toepassing ChatGPT.
+1.  **Beveiligings- en privacystandaarden:** De beveiliginsstandaarden zorgen voor een veilige omgeving die niet toegankelijk is voor onbevoegden. De standaarden hebben betrekking op aspecten zoals data-encryptie, authenticatie, autorisatie en auditlogboekregistratie. Privacystandaarden richten zich op de bescherming van persoonlijke gegevens die worden opgeslagen of verwerkt in de cloud. Hierbij kan gedacht worden aan standaarden die betrekking hebben op gegevensmaskering, anonimisering en pseudonimisering.
 
-3.  **Toegankelijkheid en mobiliteit:** Gegevens en applicaties in de cloud kunnen vanaf elke locatie met internettoegang worden benaderd. Dit maakt telewerken en toegang onderweg gemakkelijker. Bovendien biedt het de mogelijkheid beter samen te werken, zoals bijvoorbeeld het gezamenlijk werken aan een document.
+2.  **Portabiliteitsstandaarden:** Deze standaarden maken het gemakkelijker om applicaties en gegevens van de ene cloudomgeving naar de andere te verplaatsen. Denk hierbij aan standaarden voor containerization.
 
-4.  **Beveiliging en Compliance:** Hoewel beveiliging in de cloud een veelbesproken onderwerp is, bieden veel cloudproviders geavanceerde beveiligingsfuncties die bedrijven wellicht niet zelf zouden kunnen implementeren omdat kennis of andere middelen ontberen. Gerenommeerde cloudaanbieders bieden geavanceerde beveiligingsfuncties en kunnen helpen om te voldoen aan strenge regelgevingsnormen.
+3.  **Interoperabiliteitsstandaarden:** Deze standaarden zorgen ervoor dat verschillende cloudservices en -componenten met elkaar op een gestandaardiseerde wijze kunnen communiceren en gegevens kunnen uitwisselen. Ze kunnen helpen bij het vermijden van vendor lockin en het ondersteunen van multi-cloudstrategieën.
 
-## Cloudleveranciers
+4.  **Overige standaarden:** Standaarden die niet passen in bovenstaande classificatie maar wel relevant zijn en daarom niet ongenoemd mogen blijven.
 
-De Nederlandse markt voor cloudcomputing is in veel opzichten een weerspiegeling van de bredere Europese en mondiale =markt, maar heeft ook zijn eigen unieke kenmerken. Hier is een overzicht van de cloudleveranciers in Nederland:
+In het onderzoek onderscheiden we naast standaarden ook normen en technologieën die gelden als de facto-standaard:
 
-De top-3 [hyperscalers](https://www.digitalrealty.nl/resources/articles/what-is-hyperscale) verdelen met elkaar het grootste deel van clouddiensten. De volgende hyperscalers zijn actief voor de Nederlandse overheid:
+- **Standaarden**: Technische specificaties of andere nauwkeurige criteria die worden gebruikt als regels of richtlijnen om consistentie en interoperabiliteit te waarborgen. Ze kunnen worden opgesteld door officiële normeringsorganisaties, door brancheorganisaties, of kunnen zelfs de facto standaarden worden door wijdverbreid gebruik.
 
-1.  Amazon Web Services (AWS
+- **Normen**: In de context van technologie en IT, zijn normen vaak officiële documenten die best practices, methodologieën, processen of specificaties bevatten die algemeen worden geaccepteerd. Normen worden meestal uitgegeven door officiële normeringsorganisaties.
 
-2.  Microsoft
+- **Technologieën** die als de facto-standaard opgevat kunnen worden. Hierbij gaat het niet om technische specificaties maar om werkende technische oplossingen die zo breed in de markt worden toegepast dat ze als standaard opgevat kunnen worden.
 
-3.  Google Cloud
-
-Naast bovengenoemde hyperscalers zijn de volgende bedrijven actief op de Nederlandse cloudmarkt:
-
-1.  IBM Cloud
-
-2.  Oracle Cloud
-
-3.  VMWare
-
-4.  Red Hat
-
-5.  OVHcloud
-
-Naast bovengenoemde mondiale spelers zijn er op het gebied van cloud een aantal Nederlandse bedrijven te noemen:
-
-1.  KPN Cloud
-
-2.  TransIP
-
-3.  LeaseWeb
-
-4.  Interxion
-
-Opvallend is dat de grote internationaal opererende cloudleveranciers bijna allemaal van Amerikaanse afkomst zijn met vestigingen in Europa, OVHCloud is de enige Europese speler. Nu de public cloud onder voorwaarden ook te gebruiken is door overheidsorganisaties neemt het marktaandeel van deze hyperscalers bij de overheid toe. De dreigende beperkte verdeling van de markt en de afkomst van de grote leveranciers buiten Europa, vereist regulering middels (Europese) wetgeving en onderliggende normen en standaarden.
+In hoofdstuk 4 wordt per soort cloudstandaard een opsomming gegeven van bestaande of standaarden die worden ontwikkeld. Indien mogelijk worden ‘witte vlekken’ beschreven.
 

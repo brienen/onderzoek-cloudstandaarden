@@ -7,7 +7,7 @@ let respecConfig = {
   pubDomain: "dk",
   shortName: "Onderzoek Cloudstandaarden",
   publishDate: "2024-02-04",
-  publishVersion: "1.0",
+  publishVersion: "versie 1.0",
   
   previousVersion: "0.2",
   previousPublishDate: "2023-08-13",

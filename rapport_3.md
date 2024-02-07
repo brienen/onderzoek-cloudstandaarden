@@ -2,7 +2,7 @@
 
 ## Soorten cloudstandaarden
 
-Voor het onderzoek is gebruik gemaakt van de drie servicemodellen van clouddiensten zoals gedefinieerd door NIST SP 800-145: Infrastructure as a Service (IaaS), Platform as a Service (PaaS) en Software as a Service (SaaS). [Bijlage 4](#wat-is-cloud) geeft een nadere toelichting van deze drie servicemodellen. Al deze servicemodellen worden door overheidsorganisaties bij leveranciers afgenomen.
+Voor het onderzoek is gebruik gemaakt van de drie servicemodellen van clouddiensten zoals gedefinieerd door NIST SP 800-145: Infrastructure as a Service (IaaS), Platform as a Service (PaaS) en Software as a Service (SaaS). [Bijlage 4](#_Bijlage_4:_Wat) geeft een nadere toelichting van deze drie servicemodellen. Al deze servicemodellen worden door overheidsorganisaties bij leveranciers afgenomen.
 
 De drie servicemodellen van cloudcomputing hebben een scala aan standaarden nodig om interoperabiliteit, informatiebeveiliging, privacy en portabiliteit te bevorderen:
 
