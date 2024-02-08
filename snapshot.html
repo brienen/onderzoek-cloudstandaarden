@@ -396,7 +396,7 @@ ul.index code{color:inherit}
 <p>Deze conclusies worden nader onderbouwd bij de verdere uitwerking van de servicemodellen in bijlage 4.</p>
 <blockquote>
 <p><em>“I see no gaps in standards for cloud security. There are in fact too many overlapping standards in this domain’.</em></p>
-<p><em>Linda Strick, director Cloud Security Alliance</em></p>
+<p><em><strong>Linda Strick, director Cloud Security Alliance</strong></em></p>
 </blockquote>
 </section><section id="adviezen-aan-de-overheid"><div class="header-wrapper"><h2 id="x3-adviezen-aan-de-overheid"><bdi class="secno">3. </bdi>Adviezen aan de overheid</h2><a class="self-link" href="#adviezen-aan-de-overheid" aria-label="Permalink for Section 3."></a></div>
 <p>Het onderzoek heeft een goed beeld gegeven van de uitdagingen met betrekking tot het verder toenemende gebruik van cloudvoorzieningen en clouddiensten. Uit de conclusies van het onderzoek komt een aantal adviezen aan de overheid voort, die hier worden weergegeven.</p>
@@ -492,9 +492,16 @@ ul.index code{color:inherit}
 </ol>
 <p>De beveiligings- en privacystandaarden bouwen voor een groot deel voort op de beveiligings- en privacystandaarden die al op de lijst aanbevolen standaarden staan opgenomen. Het gaat hier om:</p>
 <ol>
-<li><p><a href="https://www.forumstandaardisatie.nl/open-standaarden/oauth">Oauth2.0</a> : Met OAuth 2.0 kunnen gebruikers of organisaties een programma of website toegang geven tot specifieke (privé)gegevens, die opgeslagen zijn op een ander systeem, zonder hun gebruikersnaam en wachtwoord uit handen te geven.</p>
-<p>Tijdens het onderzoek werd aangegeven dat de attributen die in het kader van Oauth2.0 worden uitgewisseld uitbreiding behoeven als ze in het kader van Trusted Cloud van het Ministerie van Justitie en veiligheid worden ingezet;</p>
-</li>
+<li><a href="https://www.forumstandaardisatie.nl/open-standaarden/oauth">Oauth2.0</a> : Met OAuth 2.0 kunnen gebruikers of organisaties een programma of website toegang geven tot specifieke (privé)gegevens, die opgeslagen zijn op een ander systeem, zonder hun gebruikersnaam en wachtwoord uit handen te geven.</li>
+</ol>
+
+
+<ol>
+<li>Tijdens het onderzoek werd aangegeven dat de attributen die in het kader van Oauth2.0 worden uitgewisseld uitbreiding behoeven als ze in het kader van Trusted Cloud van het Ministerie van Justitie en veiligheid worden ingezet;</li>
+</ol>
+
+
+<ol start="2">
 <li><p><a href="https://www.forumstandaardisatie.nl/open-standaarden/ip-sec">IP Sec</a>: De standaard maakt het mogelijk om IP-verbindingen te encrypten. Hierdoor is het netwerk beveiligd waardoor gevoelige data kan worden uitgewisseld. Vooral relevant voor VPN's. In andere gevallen is beveiliging op transport niveau meer toepasselijk.&nbsp;</p>
 </li>
 <li><p><a href="https://www.forumstandaardisatie.nl/open-standaarden/oidc">OIDC</a>: OpenID Connect (OIDC) is een open en gedistribueerde manier om één authenticatiedienst naar keuze te kunnen hergebruiken bij meerdere (semi-)overheidsdienstverleners, bij gebruik vanuit onder andere webapplicaties en mobiele apps. Belangrijkste redenen om op OIDC in te zetten is de actieve ontwikkelingen en de mobile-first strategie ondersteuning van digitale overheidsdiensten.</p>
@@ -639,12 +646,14 @@ ul.index code{color:inherit}
 </ol>
 
 
-<ol>
+<ol start="2">
 <li><p><strong>ISO/IEC 22123-1:</strong>&nbsp; Information technology — Cloud computing — Part 1: Vocabulary</p>
-<p>Bevat definities voor termen die in het kader van cloud gebruikt worden zoals: IaaS, PaaS en SaaS. Heeft overlap met NIST SP 500-292.</p>
+</li>
+<li><p>Bevat definities voor termen die in het kader van cloud gebruikt worden zoals: IaaS, PaaS en SaaS. Heeft overlap met NIST SP 500-292.</p>
 </li>
 <li><p><strong>ISO/IEC 22123-2:</strong>&nbsp; Information technology — Cloud computing — Part 2: Concepts</p>
-<p>Deze norm, getiteld "Deel 2: Concepten", heeft als doel het definiëren en specificeren van concepten die gebruikt worden op het gebied van Cloudcomputing. Het dient als een uitbreiding van de cloudcomputing vocabulaire die oorspronkelijk gedefinieerd werd in ISO/IEC 22123-1. Door deze concepten verder uit te werken, legt ISO/IEC 22123-2:2023 een fundament dat andere documenten en normen ondersteunt die geassocieerd zijn met cloudcomputing.</p>
+</li>
+<li><p>Deze norm, getiteld "Deel 2: Concepten", heeft als doel het definiëren en specificeren van concepten die gebruikt worden op het gebied van Cloudcomputing. Het dient als een uitbreiding van de cloudcomputing vocabulaire die oorspronkelijk gedefinieerd werd in ISO/IEC 22123-1. Door deze concepten verder uit te werken, legt ISO/IEC 22123-2:2023 een fundament dat andere documenten en normen ondersteunt die geassocieerd zijn met cloudcomputing.</p>
 </li>
 <li><p><strong>ISO/IEC 22123-3:</strong>&nbsp; Information technology — Cloud computing — Part 3: Reference architecture. Deze norm, getiteld "Deel 3: Referentiearchitectuur", specificeert de referentiearchitectuur voor cloudcomputing (CCRA). Dit document is van belang omdat het richtlijnen en standaarden vastlegt die betrekking hebben op de structuur en organisatie van systemen en diensten binnen de cloudcomputing omgeving. De referentiearchitectuur die in dit document wordt beschreven, biedt een gestructureerde en gedetailleerde blauwdruk voor het opzetten en beheren van cloudgebaseerde systemen, waardoor het een essentiële bron is voor professionals in het veld van cloudcomputing.</p>
 </li>
@@ -829,23 +838,32 @@ ul.index code{color:inherit}
 <ol>
 <li><p><strong>Vendor-lockin:</strong> de cloudmarkt heeft een groot risico op vendor-lockin. Als eenmaal voor een cloudleverancier is gekozen dan zijn er grote drempels om over te stappen naar een ander leverancier. Het grote risico op vendor lockin lijkt groter dan bij traditionele on-premise oplossingen en heeft de volgende oorzaken:</p>
 <ol>
-<li><p>Clouddiensten worden binnen de overheid aanbesteed, waarna er één dienst overblijft en men zich daarop volledig richt. Een dergelijke aanbesteding kost veel tijd en moeite. Dit wordt nader onderbouwd in de <a href="https://www.acm.nl/system/files/documents/marktstudie-clouddiensten.pdf">Marktstudie clouddiensten door ACM</a>:</p>
+<li>Clouddiensten worden binnen de overheid aanbesteed, waarna er één dienst overblijft en men zich daarop volledig richt. Een dergelijke aanbesteding kost veel tijd en moeite. Dit wordt nader onderbouwd in de <a href="https://www.acm.nl/system/files/documents/marktstudie-clouddiensten.pdf">Marktstudie clouddiensten door ACM</a>:</li>
+</ol>
+<blockquote>
 <p><em>“Wanneer een gebruiker eenmaal heeft gekozen voor een specifieke clouddienst is de drempel om voor die dienst over te stappen naar een andere cloudaanbieder in veel gevallen zeer hoog. Uit de gesprekken die de ACM voor deze studie heeft gevoerd, komt het beeld naar voren dat er weinig overstap plaatsvindt tussen clouddiensten van verschillende cloudaanbieders. In het bijzonder gebruikers van PaaS- en SaaS-diensten kunnen moeilijkheden ervaren bij het overstappen. Voor gebruikers van IaaS-diensten geldt dit in iets mindere mate.”</em></p>
-</li>
-<li><p>Clouddiensten en met name de hyperscalers bieden allerlei makkelijk toegankelijke proprietary diensten aan. Andere cloudaanbieders hebben andere proprietary diensten die moeilijk overdraagbaar zijn van de ene cloudleverancier naar de andere. Met name de proprietary diensten, maken een overstap lastig. Een voorbeeld is Office 365 van Microsoft. Eenmaal in gebruik genomen beperken die de mogelijkheden tot een overstap naar een andere cloudleverancier. Ook dit punt wordt bevestigd door de <a href="https://www.acm.nl/system/files/documents/marktstudie-clouddiensten.pdf">Marktstudie clouddiensten door ACM</a>:</p>
+</blockquote>
+<ol start="2">
+<li>Clouddiensten en met name de hyperscalers bieden allerlei makkelijk toegankelijke proprietary diensten aan. Andere cloudaanbieders hebben andere proprietary diensten die moeilijk overdraagbaar zijn van de ene cloudleverancier naar de andere. Met name de proprietary diensten, maken een overstap lastig. Een voorbeeld is Office 365 van Microsoft. Eenmaal in gebruik genomen beperken die de mogelijkheden tot een overstap naar een andere cloudleverancier. Ook dit punt wordt bevestigd door de <a href="https://www.acm.nl/system/files/documents/marktstudie-clouddiensten.pdf">Marktstudie clouddiensten door ACM</a>:</li>
+</ol>
+<blockquote>
 <p><em>“De lock-in van afnemers geldt in het bijzonder wanneer er ook PaaS- en SaaS-diensten worden afgenomen in een geïntegreerd dienstenaanbod. Overstappen is bij ICT-producten en diensten – die in de praktijk vaak sterk verweven zijn met de processen binnen de organisatie – complex. Dat geldt voor geïntegreerde clouddiensten des te meer omdat er in veel gevallen opnieuw koppelingen moeten worden gemaakt en een overstap op meerdere diensten tegelijkertijd noodzakelijk is.”</em></p>
-</li>
-<li><p>Kosten van outbound data zijn veel hoger dan inbound. Het is dus goedkoop om data bij een cloudleverancier neer te zetten, maar de data verplaatsen naar een andere plek is duur. Dit kan organisatie ervan weerhouden om over te stappen naar een andere cloudleverancier. Dat zorgt voor onvoorspelbaarheid over de uiteindelijke totale kosten van gebruik van clouddiensten en de eventuele te realiseren besparingen als gevolg van een eventuele overstap. Vanuit de Data Act wordt beoogd dit tegen te gaan. Dit juist om switchen van de ene naar de andere provider niet te laten verhinderen door hoge kosten voor verplaatsen van data.</p>
-</li>
+</blockquote>
+<ol start="3">
+<li>Kosten van outbound data zijn veel hoger dan inbound. Het is dus goedkoop om data bij een cloudleverancier neer te zetten, maar de data verplaatsen naar een andere plek is duur. Dit kan organisatie ervan weerhouden om over te stappen naar een andere cloudleverancier. Dat zorgt voor onvoorspelbaarheid over de uiteindelijke totale kosten van gebruik van clouddiensten en de eventuele te realiseren besparingen als gevolg van een eventuele overstap. Vanuit de Data Act wordt beoogd dit tegen te gaan. Dit juist om switchen van de ene naar de andere provider niet te laten verhinderen door hoge kosten voor verplaatsen van data.</li>
 </ol>
 </li>
 </ol>
 
 
-<ol start="11">
-<li><p><strong>“Winner takes all”-markt:</strong> “Winner takes all” refereert aan een economisch principe waar de best performende platformen in staat zijn een hele markt of een zeer groot deel van een markt in handen te krijgen. De cloudmarkt heeft duidelijke kenmerken van een ‘Winner takes all’-markt. Dit wordt bevestigd door de Engelse <a href="https://www.ofcom.org.uk/__data/assets/pdf_file/0027/269127/Cloud-services-market-study-final-report.pdf">Cloud Services market study report</a>:</p>
+<ol start="2">
+<li><strong>“Winner takes all”-markt:</strong> “Winner takes all” refereert aan een economisch principe waar de best performende platformen in staat zijn een hele markt of een zeer groot deel van een markt in handen te krijgen. De cloudmarkt heeft duidelijke kenmerken van een ‘Winner takes all’-markt. Dit wordt bevestigd door de Engelse <a href="https://www.ofcom.org.uk/__data/assets/pdf_file/0027/269127/Cloud-services-market-study-final-report.pdf">Cloud Services market study report</a>:</li>
+</ol>
+<blockquote>
 <p><em>“There are two leading providers of cloud infrastructure services in the UK: Amazon Web Services (AWS) and Microsoft, who had a combined market share of 70% to 80% in 2022.2 Google is their closest competitor with a share of 5% to 10%.”</em></p>
-<p>Er is geen reden aan te nemen dat deze situatie voor de Nederlandse markt anders is dan dat in dit rapport wordt aangegeven. Ook wordt dit beeld van consolidatie bevestigd in de <a href="https://www.acm.nl/system/files/documents/marktstudie-clouddiensten.pdf">Marktstudie clouddiensten door ACM</a>. In dit rapport worden de mechanismen van deze consolidatie verder beschreven.</p>
+</blockquote>
+<ol start="3">
+<li><p>Er is geen reden aan te nemen dat deze situatie voor de Nederlandse markt anders is dan dat in dit rapport wordt aangegeven. Ook wordt dit beeld van consolidatie bevestigd in de <a href="https://www.acm.nl/system/files/documents/marktstudie-clouddiensten.pdf">Marktstudie clouddiensten door ACM</a>. In dit rapport worden de mechanismen van deze consolidatie verder beschreven.</p>
 </li>
 <li><p><strong>Kosten moeilijk te voorspellen:</strong> Terwijl initieel cloudservices kostenbesparingen kunnen opleveren, kunnen onverwachte kosten optreden bij verhoogd gebruik, met name als organisaties niet zorgvuldig hun verbruik monitoren. Uit het onderzoek komt naar voren dat de prijsstelling van clouddiensten vooraf vaak erg moeilijk is in te schatten. De prijsstructuur is vaak zeer complex opgezet waardoor deze moeilijk voorspelbaar is. Een van de geïnterviewden gaf aan dat cloudkosten vaak alleen empirisch te bepalen zijn, dus achteraf. Naast technisch/organisatorische zijn er ook financiële overstapbelemmeringen. Deze ontstaan met name door de tariefstructuur die veel cloudaanbieders hanteren. Deze tariefstructuur is complex: voor elke handeling, opgeslagen GB of seconde rekenkracht wordt betaald.</p>
 </li>
@@ -1111,7 +1129,6 @@ experts voor feedback</td>
 </li>
 <li><p><a href="https://digital-strategy.ec.europa.eu/en/library/study-presenting-assessments-codes-conduct-data-porting-and-cloud-switching">Study presenting assessments of codes of conduct on data porting and cloud switching</a></p>
 </li>
-<li></li>
 <li><p><a href="https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/09/201909-Factsheet-Is-mijn-leverancier-wel-of-geen-verwerker_v1.2.pdf">Factsheet-verwerkersovereenkomst IBD</a><a href="https://www.forumstandaardisatie.nl/sites/bfs/files/proceedings/Handreiking_CloudOverheden_Taskforce_LR_1_.pdf">Handreiking cloudcomputing</a></p>
 </li>
 <li><p><a href="https://www.rijksoverheid.nl/documenten/rapporten/2023/01/05/implementatiekader-risicoafweging-cloudgebruik">Implementatiekader risicoafweging cloudgebruik</a></p>
