@@ -14,8 +14,6 @@ De volgende bronnen zijn gebruikt als input voor dit rapport:
 
 - [Study presenting assessments of codes of conduct on data porting and cloud switching](https://digital-strategy.ec.europa.eu/en/library/study-presenting-assessments-codes-conduct-data-porting-and-cloud-switching)
 
-- 
-
 - [Factsheet-verwerkersovereenkomst IBD](https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/09/201909-Factsheet-Is-mijn-leverancier-wel-of-geen-verwerker_v1.2.pdf)[Handreiking cloudcomputing](https://www.forumstandaardisatie.nl/sites/bfs/files/proceedings/Handreiking_CloudOverheden_Taskforce_LR_1_.pdf)
 
 - [Implementatiekader risicoafweging cloudgebruik](https://www.rijksoverheid.nl/documenten/rapporten/2023/01/05/implementatiekader-risicoafweging-cloudgebruik)
