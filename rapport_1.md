@@ -18,5 +18,5 @@ Deze conclusies worden nader onderbouwd bij de verdere uitwerking van de service
 
 > *“I see no gaps in standards for cloud security. There are in fact too many overlapping standards in this domain’.*
 >
-> ***Linda Strick, director Cloud Security Alliance***
+> *Linda Strick, director Cloud Security Alliance*
 
