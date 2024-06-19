@@ -1,0 +1,1377 @@
+<!DOCTYPE html><html lang="nl"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<meta name="generator" content="ReSpec 34.1.4">
+<style>
+dfn{cursor:pointer}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
+.dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
+.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;top:0}
+.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1}
+.dfn-panel *{margin:0}
+.dfn-panel b{display:block;color:#000;margin-top:.25em}
+.dfn-panel ul a[href]{color:#333}
+.dfn-panel>div{display:flex}
+.dfn-panel a.self-link{font-weight:700;margin-right:auto}
+.dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
+.dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
+.dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+.dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
+.dfn-panel a[href]:hover{border-bottom-width:1px}
+.dfn-panel ul{padding:0}
+.dfn-panel li{margin-left:1em}
+.dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+</style>
+  
+  
+  
+  
+  
+  
+  
+<script>document.title = respecConfig.title</script>
+<title>Onderzoek naar standaarden en standaardisatieactiviteiten voor Cloud versie 1.0</title>
+  
+<title>Default</title>
+  
+<link rel="shortcut icon" type="image/x-icon" href="https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/logius.ico">
+  
+
+<style id="respec-mainstyle">
+@keyframes pop{
+0%{transform:scale(1,1)}
+25%{transform:scale(1.25,1.25);opacity:.75}
+100%{transform:scale(1,1)}
+}
+:is(h1,h2,h3,h4,h5,h6,a) abbr{border:none}
+dfn{font-weight:700}
+a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
+a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
+a.bibref{text-decoration:none}
+.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}
+.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}
+@supports not (text-decoration:red wavy underline){
+.respec-offending-element:not(pre){display:inline-block}
+.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
+}
+#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+cite .bibref{font-style:normal}
+a[href].orcid{padding-left:4px;padding-right:4px}
+a[href].orcid>svg{margin-bottom:-2px}
+.toc a,.tof a{text-decoration:none}
+a .figno,a .secno{color:#000}
+ol.tof,ul.tof{list-style:none outside none}
+.caption{margin-top:.5em;font-style:italic}
+table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}
+.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}
+.simple th a{color:#fff;padding:3px 5px;text-align:left}
+.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}
+.simple td{padding:3px 10px;border-top:1px solid #ddd}
+.simple tr:nth-child(even){background:#f0f6ff}
+.section dd>p:first-child{margin-top:0}
+.section dd>p:last-child{margin-bottom:0}
+.section dd{margin-bottom:1em}
+.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}
+#issue-summary>ul{column-count:2}
+#issue-summary li{list-style:none;display:inline-block}
+details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
+details.respec-tests-details>*{padding-right:2em}
+details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
+details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
+details.respec-tests-details>ul{width:100%;margin-top:-.3em}
+details.respec-tests-details>li{padding-left:1em}
+.self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
+aside.example .marker>a.self-link{color:inherit}
+.header-wrapper{display:flex;align-items:baseline;position:relative;left:-.5em}
+:is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-.7em;font-size:1rem;opacity:.5}
+:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
+:is(h2,h3)+a.self-link{top:-.2em}
+:is(h4,h5,h6)+a.self-link::before{color:#000}
+@media (max-width:767px){
+dd{margin-left:0}
+}
+@media print{
+.removeOnSave{display:none}
+}
+</style>
+<style id="respec-nlgov">
+img.license{float:left;padding-right:5px}
+</style>
+<meta name="description" content="In opdracht van het Bureau Forum Standaardisatie, richt dit rapport zich op het verstrekken van een grondige analyse en evaluatie van cloudstandaarden, met als doel het Forum Standaardisatie te adviseren over strategische standaardisatie voor de cloud, ten behoeve van de digitale overheid. Het Forum Standaardisatie streeft ernaar een helder beeld te krijgen van de standaarden die van strategisch belang zijn voor het cloudbeleid van de Nederlandse overheid. Dit omvat een beoordeling van bestaande cruciale standaarden, het identificeren van standaarden die nog gespecificeerd moeten worden, en het bepalen van de (Europese en internationale) standaardisatieactiviteiten waarop de overheid invloed kan en zou moeten uitoefenen.">
+<style>
+
+  .sidelabel {
+    position: fixed;
+    -webkit-transform-origin: top right;
+    right: 100%;
+    top: 0;
+    -webkit-transform: rotate(-90deg);
+    padding: 4px 50px 4px 10px;
+    color: white;
+    white-space: nowrap;
+    z-index: 1;
+    background-color: #154273;
+  }
+</style>
+<script type="text/javascript">
+   /* Any custom mermaid.js scripts will go here. */
+  </script>
+<style>
+
+  /* Any custom mermaid.js scripts will go here. */
+  }
+</style>
+<script id="initialUserConfig" type="application/json">{
+  "nl_organisationName": "E-Space",
+  "nl_organisationStylesURL": "https://brienen.github.io/publish/respec/style/",
+  "nl_organisationPublishURL": "https://brienen.github.io/publish/",
+  "logos": [
+    {
+      "src": "https://brienen.github.io/publish/respec/style/logos/Logo_E-Space_Small.jpg",
+      "alt": "E-Space",
+      "id": "E-Space",
+      "height": 78,
+      "width": 291,
+      "url": "https://www.linkedin.com/in/arjenbrienen/"
+    }
+  ],
+  "postProcess": [
+    null
+  ],
+  "latestVersion": [
+    "nl_organisationPublishURL",
+    "pubDomain",
+    "/",
+    "shortName"
+  ],
+  "thisVersion": [
+    "nl_organisationPublishURL",
+    "pubDomain",
+    "/",
+    "specStatus",
+    "-",
+    "specType",
+    "-",
+    "shortName",
+    "-",
+    "publishDate"
+  ],
+  "prevVersion": [
+    "nl_organisationPublishURL",
+    "pubDomain",
+    "/",
+    "previousMaturity",
+    "-",
+    "specType",
+    "-",
+    "shortName",
+    "-",
+    "previousPublishDate"
+  ],
+  "useLogo": true,
+  "useLabel": true,
+  "license": "cc-by",
+  "addSectionLinks": true,
+  "localizationStrings": {
+    "en": {
+      "wv": "Draft",
+      "cv": "Recommendation",
+      "vv": "Proposed recommendation",
+      "def": "Definitive version",
+      "basis": "Document",
+      "eo": "Outdated version",
+      "tg": "Rescinded version",
+      "no": "Norm",
+      "st": "Standard",
+      "im": "Information model",
+      "pr": "Guideline",
+      "hr": "Guide",
+      "wa": "Proposed recommendation",
+      "al": "General",
+      "bd": "Governance documentation",
+      "bp": "Best practice",
+      "ad": "Advisory Document"
+    },
+    "nl": {
+      "wv": "Werkversie",
+      "cv": "Consultatieversie",
+      "vv": "Versie ter vaststelling",
+      "def": "Vastgestelde versie",
+      "basis": "Document",
+      "eo": "Verouderde versie",
+      "tg": "Teruggetrokken versie",
+      "no": "Norm",
+      "st": "Standaard",
+      "im": "Informatiemodel",
+      "pr": "Praktijkrichtlijn",
+      "hr": "Handreiking",
+      "wa": "Werkafspraak",
+      "al": "Algemeen",
+      "bd": "Beheerdocumentatie",
+      "bp": "Best practice",
+      "ad": "Adviesdocument"
+    }
+  },
+  "sotdText": {
+    "nl": {
+      "sotd": "Status van dit document",
+      "def": "Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
+      "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen door het TO goedgekeurde consultatieversie.",
+      "cv": "Dit is een door het TO goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar ",
+      "vv": "Dit is een definitief concept van de nieuwe versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
+      "basis": "Dit is een document zonder officiële status."
+    },
+    "en": {
+      "sotd": "Status of This Document",
+      "def": "This is the definitive version of this document. Edits resulting from consultations have been applied.",
+      "wv": "This is a draft that could be altered, removed or replaced by other documents. It is not a recommendation approved by TO.",
+      "cv": "This is a proposed recommendation approved by TO. Comments regarding this document may be sent to ",
+      "vv": "This is the definitive concept of this document. Edits resulting from consultations have been applied.",
+      "basis": "This document has no official standing."
+    }
+  },
+  "labelColor": {
+    "def": "#154273",
+    "wv": "#39870c"
+  },
+  "licenses": {
+    "cc0": {
+      "name": "Creative Commons 0 Public Domain Dedication",
+      "short": "CC0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "image": "https://gitdocumentatie.logius.nl/publicatie/respec/media/logos/cc-zero.svg"
+    },
+    "cc-by": {
+      "name": "Creative Commons Attribution 4.0 International Public License",
+      "short": "CC-BY",
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "image": "https://gitdocumentatie.logius.nl/publicatie/respec/media/logos/cc-by.svg"
+    },
+    "cc-by-nd": {
+      "name": "Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal",
+      "short": "CC-BY-ND",
+      "url": "https://creativecommons.org/licenses/by-nd/4.0/legalcode.nl",
+      "image": "https://gitdocumentatie.logius.nl/publicatie/respec/media/logos/cc-by-nd.svg"
+    }
+  },
+  "localBiblio": {
+    "SemVer": {
+      "href": "https://semver.org",
+      "title": "Semantic Versioning 2.0.0",
+      "authors": [
+        "T. Preston-Werner"
+      ],
+      "date": "June 2013"
+    }
+  },
+  "specStatus": "def",
+  "specType": "ad",
+  "pubDomain": "dk",
+  "shortName": "Onderzoek Cloudstandaarden",
+  "publishDate": "2024-02-04",
+  "publishVersion": "versie 1.0",
+  "previousVersion": "0.2",
+  "previousPublishDate": "2023-08-13",
+  "previousMaturity": "WV",
+  "title": "Onderzoek naar standaarden en standaardisatieactiviteiten voor Cloud",
+  "content": {
+    "rapport_0": "",
+    "rapport_1": "",
+    "rapport_2": "",
+    "rapport_3": "",
+    "rapport_4": "",
+    "rapport_5": "",
+    "rapport_6": "",
+    "rapport_7": "",
+    "rapport_8": "",
+    "rapport_9": "",
+    "rapport_10": ""
+  },
+  "authors": [
+    {
+      "name": "Arjen Brienen",
+      "company": "E-Space",
+      "companyURL": "https://www.linkedin.com/in/arjenbrienen/"
+    },
+    {
+      "name": "Jeroen de Ruig",
+      "company": "Waal en Berg",
+      "companyURL": "https://www.waalenberg.nl"
+    }
+  ],
+  "github": "https://github.com/brienen/onderzoek-cloudstandaarden",
+  "alternateFormats": [
+    {
+      "label": "pdf",
+      "uri": "template.pdf"
+    }
+  ]
+}</script>
+<link rel="stylesheet" href="https://brienen.github.io/publish/respec/style/base.css"></head>
+
+<body class="h-entry toc-inline"><div class="head">
+    <a class="logo" href="https://www.linkedin.com/in/arjenbrienen/"><img alt="E-Space" height="78" id="E-Space" src="https://brienen.github.io/publish/respec/style/logos/Logo_E-Space_Small.jpg" width="291">
+  </a> <h1 id="title" class="title">Onderzoek naar standaarden en standaardisatieactiviteiten voor Cloud versie 1.0</h1>
+    
+    <h2>
+      E-Space Adviesdocument<br>
+      Vastgestelde versie
+      <time class="dt-published" datetime="2024-02-04">04 februari 2024</time>
+    </h2>
+    <dl>
+      
+      
+      
+      
+      <dt>Auteurs:</dt><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Arjen Brienen</span> (<a class="p-org org h-org" href="https://www.linkedin.com/in/arjenbrienen/">E-Space</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Jeroen de Ruig</span> (<a class="p-org org h-org" href="https://www.waalenberg.nl">Waal en Berg</a>)
+  </dd>
+      <dt>Opdrachtgever:</dt>
+      <dd><a href="https://www.forumstandaardisatie.nl">Forum Standaardisatie</a></dd>
+    </dl>
+    
+    
+    <p class="copyright">
+          Dit document valt onder de volgende licentie: 
+          <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot"><img class="license" src="https://gitdocumentatie.logius.nl/publicatie/respec/media/logos/cc-by.svg" alt="Logo Creative Commons Attribution 4.0 International Public License"><br> Creative Commons Attribution 4.0 International Public License</a>
+        </p>
+    <hr title="Separator for header">
+  </div>
+  <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>In opdracht van het Bureau Forum Standaardisatie, richt dit rapport zich op het verstrekken van een grondige analyse en evaluatie van cloudstandaarden, met als doel het Forum Standaardisatie te adviseren over strategische standaardisatie voor de cloud, ten behoeve van de digitale overheid. Het Forum Standaardisatie streeft ernaar een helder beeld te krijgen van de standaarden die van strategisch belang zijn voor het cloudbeleid van de Nederlandse overheid. Dit omvat een beoordeling van bestaande cruciale standaarden, het identificeren van standaarden die nog gespecificeerd moeten worden, en het bepalen van de (Europese en internationale) standaardisatieactiviteiten waarop de overheid invloed kan en zou moeten uitoefenen.</p>
+<p>Het rapport biedt een uitgebreid overzicht van de huidige Europese, internationale en nationale standaarden en standaardisatieactiviteiten die relevant zijn voor cloudplatformen, systemen en diensten. Het legt nadruk op het identificeren van 'witte vlekken', oftewel domeinen waar open standaarden voor de cloud nodig zijn maar nog niet bestaan, of juist eenduidig beleid nodig hebben. Door deze lacunes te belichten, streeft het rapport ernaar de overheid te voorzien van de nodige inzichten om gerichte acties te ondernemen en zo de veiligheid, efficiëntie en interoperabiliteit van cloudservices binnen de overheidssector te verbeteren.</p>
+<p>In de conclusie worden de belangrijkste bevindingen samengevat en worden concrete aanbevelingen gepresenteerd. Het rapport benadrukt het belang van een proactieve benadering bij het ontwikkelen en harmoniseren van cloudstandaarden, en het belang van samenwerking tussen overheidsinstanties, standaardiseringsorganisaties en relevante stakeholders. Het biedt strategieën voor het aanpakken van de geïdentificeerde 'witte vlekken' en het verbeteren van de participatie in Europese en internationale standaardisatie-initiatieven. Door deze aanbevelingen te volgen, kan de Nederlandse overheid een leidende rol spelen in het vormgeven van een veilige, efficiënte en toekomstbestendige cloudinfrastructuur.</p>
+</section>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#de-aanleiding-van-het-onderzoek"><bdi class="secno">1.1 </bdi>De aanleiding van het onderzoek</a></li><li class="tocline"><a class="tocxref" href="#de-onderzoeksvragen"><bdi class="secno">1.2 </bdi>De onderzoeksvragen</a></li><li class="tocline"><a class="tocxref" href="#uitvoering-van-het-onderzoek"><bdi class="secno">1.3 </bdi>Uitvoering van het onderzoek</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.4 </bdi>Leeswijzer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conclusies-van-het-onderzoek"><bdi class="secno">2. </bdi>Conclusies van het onderzoek</a></li><li class="tocline"><a class="tocxref" href="#adviezen-aan-de-overheid"><bdi class="secno">3. </bdi>Adviezen aan de overheid</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#meer-regie-op-cloudstandaarden"><bdi class="secno">3.1 </bdi>Meer regie op cloudstandaarden</a></li><li class="tocline"><a class="tocxref" href="#bouw-aan-kennis-en-capaciteit-bij-de-overheid"><bdi class="secno">3.2 </bdi>Bouw aan kennis en capaciteit bij de overheid</a></li><li class="tocline"><a class="tocxref" href="#maak-bindende-keuzen-in-normenkaders-voor-informatieveiligheid-en-privacy"><bdi class="secno">3.3 </bdi>Maak bindende keuzen in normenkaders voor informatieveiligheid en privacy</a></li><li class="tocline"><a class="tocxref" href="#verplicht-de-standaard-haven"><bdi class="secno">3.4 </bdi>Verplicht de standaard Haven</a></li><li class="tocline"><a class="tocxref" href="#verplicht-aanbevolen-standaarden-voor-dataportabiliteit"><bdi class="secno">3.5 </bdi>Verplicht aanbevolen standaarden voor dataportabiliteit</a></li><li class="tocline"><a class="tocxref" href="#laat-standaarden-toe-voor-leveranciersonafhankelijkheid-en-digitale-soevereiniteit-op-de-lijst-van-het-forum-standaardisatie"><bdi class="secno">3.6 </bdi>Laat standaarden toe voor leveranciersonafhankelijkheid en digitale soevereiniteit op de lijst van het Forum Standaardisatie</a></li><li class="tocline"><a class="tocxref" href="#zet-in-op-uitbreiding-van-de-pas-toe-of-leg-uit-lijst-met-standaarden-voor-dataportabiliteit"><bdi class="secno">3.7 </bdi>Zet in op uitbreiding van de ‘pas toe of leg uit’-lijst met standaarden voor dataportabiliteit</a></li><li class="tocline"><a class="tocxref" href="#verplicht-standaarden-cloudinteroperabiliteit"><bdi class="secno">3.8 </bdi>Verplicht standaarden cloudinteroperabiliteit</a></li><li class="tocline"><a class="tocxref" href="#leg-best-practices-vast"><bdi class="secno">3.9 </bdi>Leg best practices vast</a></li></ol></li><li class="tocline"><a class="tocxref" href="#standaarden-voor-de-cloud"><bdi class="secno">4. </bdi>Standaarden voor de cloud</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#soorten-cloudstandaarden"><bdi class="secno">4.1 </bdi>Soorten cloudstandaarden</a></li><li class="tocline"><a class="tocxref" href="#beveiligings-en-privacystandaarden"><bdi class="secno">4.2 </bdi>Beveiligings- en privacystandaarden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#standaarden-op-de-lijst-van-open-standaarden"><bdi class="secno">4.2.1 </bdi>Standaarden op de lijst van Open standaarden</a></li><li class="tocline"><a class="tocxref" href="#normen-en-auditing-frameworks-niet-op-de-lijst-van-open-standaarden"><bdi class="secno">4.2.2 </bdi>Normen en (auditing) frameworks niet op de lijst van Open standaarden</a></li><li class="tocline"><a class="tocxref" href="#witte-vlekken"><bdi class="secno">4.2.3 </bdi>Witte vlekken</a></li></ol></li><li class="tocline"><a class="tocxref" href="#portabiliteitstandaarden"><bdi class="secno">4.3 </bdi>Portabiliteitstandaarden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#standaarden-voor-systeem-en-applicatieportabiliteit-niet-op-de-lijst-van-open-standaarden"><bdi class="secno">4.3.1 </bdi>Standaarden voor systeem- en applicatieportabiliteit niet op de lijst van Open standaarden</a></li><li class="tocline"><a class="tocxref" href="#witte-vlekken-0"><bdi class="secno">4.3.2 </bdi>Witte vlekken</a></li><li class="tocline"><a class="tocxref" href="#standaarden-voor-dataportabiliteit-niet-op-de-lijst-van-open-standaarden"><bdi class="secno">4.3.3 </bdi>Standaarden voor dataportabiliteit niet op de lijst van open standaarden</a></li><li class="tocline"><a class="tocxref" href="#witte-vlekken-1"><bdi class="secno">4.3.4 </bdi>Witte vlekken</a></li></ol></li><li class="tocline"><a class="tocxref" href="#interoperabiliteitsstandaarden"><bdi class="secno">4.4 </bdi>Interoperabiliteitsstandaarden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#standaarden-op-de-lijst-van-open-standaarden-0"><bdi class="secno">4.4.1 </bdi>Standaarden op de lijst van Open standaarden</a></li><li class="tocline"><a class="tocxref" href="#standaarden-niet-op-de-lijst-van-open-standaarden"><bdi class="secno">4.4.2 </bdi>Standaarden niet op de lijst van Open standaarden</a></li><li class="tocline"><a class="tocxref" href="#witte-vlekken-2"><bdi class="secno">4.4.3 </bdi>Witte vlekken</a></li></ol></li><li class="tocline"><a class="tocxref" href="#overige-standaarden"><bdi class="secno">4.5 </bdi>Overige standaarden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#witte-vlekken-3"><bdi class="secno">4.5.1 </bdi>Witte vlekken</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#bijlage-wat-is-cloud"><bdi class="secno">5. </bdi>Bijlage - Wat is cloud?</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#clouddiensten"><bdi class="secno">5.1 </bdi>Clouddiensten</a></li><li class="tocline"><a class="tocxref" href="#varianten-van-clouddiensten"><bdi class="secno">5.2 </bdi>Varianten van clouddiensten</a></li><li class="tocline"><a class="tocxref" href="#implementatievarianten-van-clouddiensten"><bdi class="secno">5.3 </bdi>Implementatievarianten van clouddiensten</a></li><li class="tocline"><a class="tocxref" href="#waarom-cloud"><bdi class="secno">5.4 </bdi>Waarom Cloud?</a></li><li class="tocline"><a class="tocxref" href="#cloudleveranciers"><bdi class="secno">5.5 </bdi>Cloudleveranciers</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bijlage-cloudontwikkelingen-en-trends"><bdi class="secno">6. </bdi>Bijlage - Cloudontwikkelingen en trends</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mondiale-trends"><bdi class="secno">6.1 </bdi>Mondiale trends</a></li><li class="tocline"><a class="tocxref" href="#europese-ontwikkelingen"><bdi class="secno">6.2 </bdi>Europese ontwikkelingen</a></li><li class="tocline"><a class="tocxref" href="#cloudontwikkelingen-binnen-de-nederlandse-overheid"><bdi class="secno">6.3 </bdi>Cloudontwikkelingen binnen de Nederlandse Overheid</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bijlage-risico-s-van-de-toepassing-van-cloud-en-clouddiensten"><bdi class="secno">7. </bdi>Bijlage - Risico’s van de toepassing van cloud en clouddiensten</a></li><li class="tocline"><a class="tocxref" href="#bijlage-scope-en-uitgangspunten"><bdi class="secno">8. </bdi>Bijlage - Scope en uitgangspunten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#hoofdpunten-rijksbreed-cloudbeleid-2022"><bdi class="secno">8.1 </bdi>Hoofdpunten Rijksbreed Cloudbeleid 2022</a></li><li class="tocline"><a class="tocxref" href="#doelstellingen-en-uitgangspunten-van-het-forum-voor-het-onderzoek"><bdi class="secno">8.2 </bdi>Doelstellingen en uitgangspunten van het Forum voor het onderzoek</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bijlage-aanpak-en-planning-onderzoek"><bdi class="secno">9. </bdi>Bijlage - Aanpak en planning onderzoek</a></li><li class="tocline"><a class="tocxref" href="#bijlage-de-betrokken-experts"><bdi class="secno">10. </bdi>Bijlage - De betrokken experts</a></li><li class="tocline"><a class="tocxref" href="#bijlage-gebruikte-bronnen-bij-het-onderzoek"><bdi class="secno">11. </bdi>Bijlage - Gebruikte bronnen bij het onderzoek</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">12. </bdi>Conformiteit</a></li></ol></nav><section id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
+<section id="de-aanleiding-van-het-onderzoek"><div class="header-wrapper"><h3 id="x1-1-de-aanleiding-van-het-onderzoek"><bdi class="secno">1.1 </bdi>De aanleiding van het onderzoek</h3><a class="self-link" href="#de-aanleiding-van-het-onderzoek" aria-label="Permalink for Section 1.1"></a></div>
+<p>Het <a href="https://forumstandaardisatie.nl/">Forum Standaardisatie</a> adviseert de overheid over de al dan niet verplichte toepassing van de Open ICT standaarden in de publieke sector. Om de overheid te kunnen adviseren over standaardisatie in relatie tot de cloud, wil het Forum Standaardisatie een beeld krijgen van de standaarden die van belang zijn voor het beleid van de overheid voor het gebruik van cloudiensten. Hiervoor heeft Bureau Forum Standaardisatie een onderzoek laten doen door het onafhankelijk adviesbureau E-Space.</p>
+<p>Een belangrijk uitgangspunt voor het onderzoek is de <a href="https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2022Z15892&amp;did=2022D33299">brief van de Staatssecretaris van Huffelen van 29 augustus 2022</a>, waarin zij een wijziging aankondigt in het beleid van de Rijksoverheid voor het gebruik van clouddiensten. Het nieuwe beleid stelt kaders voor het gebruik van commerciële public clouddiensten door de Rijksoverheid en actualiseert het voormalige beleid uit 2011, dat zich vooral richtte op het in eigen beheer houden van clouddiensten.</p>
+<p>Het overheidsbeleid voor clouddiensten brengt vragen met zich mee over digitale soevereiniteit, leveranciersonafhankelijkheid en informatiebeveiliging. Open standaarden voor dataportabiliteit, cloud interoperabiliteit en informatiebeveiliging kunnen deze waarden helpen ondersteunen. Het onderzoek had daarom als hoofddoel om een overzicht te geven van Europese, internationale en nationale standaarden en standaardisatieactiviteiten die relevant zijn voor cloud platformen, systemen en diensten. Ook werden trends en risico’s in beeld gebracht.</p>
+</section><section id="de-onderzoeksvragen"><div class="header-wrapper"><h3 id="x1-2-de-onderzoeksvragen"><bdi class="secno">1.2 </bdi>De onderzoeksvragen</h3><a class="self-link" href="#de-onderzoeksvragen" aria-label="Permalink for Section 1.2"></a></div>
+<p>Forum Standaardisatie formuleerde de volgende onderzoeksvragen voor dit onderzoek:</p>
+<ol>
+<li><p>Welke Europese, internationale en nationale standaarden bestaan er in relatie tot cloud, in het bijzonder voor cloudinteroperabiliteit, dataportabiliteit, informatiebeveiliging en orchestratie?</p>
+</li>
+<li><p>Welke Europese, internationale en nationale cloudstandaarden zijn nog in ontwikkeling, of gepland?</p>
+</li>
+<li><p>Zijn er witte vlekken? Dat wil zeggen, cloudtechnologieën of - toepassingen waar open standaarden nodig zijn, maar nog niet bestaan en nog niet ontwikkeling zijn?</p>
+</li>
+<li><p>Op welke (Europese en internationale) standaardisatieactiviteiten voor de cloud zou de overheid of de private sector in Nederland invloed moeten uitoefenen? Bijvoorbeeld omdat zij zich bewegen in een richting die niet overeenstemt met de waarden van de overheid, waaronder openheid, inclusie, informatiebeveiliging, privacy, digitale soevereiniteit en een evenwichtige markt? En is dat nog mogelijk?</p>
+</li>
+</ol>
+</section><section id="uitvoering-van-het-onderzoek"><div class="header-wrapper"><h3 id="x1-3-uitvoering-van-het-onderzoek"><bdi class="secno">1.3 </bdi>Uitvoering van het onderzoek</h3><a class="self-link" href="#uitvoering-van-het-onderzoek" aria-label="Permalink for Section 1.3"></a></div>
+<p>Het onderzoek werd tussen september en december 2023 uitgevoerd. Voor het onderzoek zijn bronnen geanalyseerd (<a href="#bijlage---wat-is-cloud">zie bijlage 7</a>) en interviews gehouden met 27 experts van onder andere NEN, TNO, VNG, ICTU, ACM, Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, Ministerie van Justitie en Veiligheid, NCSC, Cloud Security Alliance, Microsoft en IBM (zie <a href="#_Bijlage_2:_De">bijlage 6</a> voor de volledige lijst met geïnterviewde experts).</p>
+<p>Ook zijn bijeenkomsten bijgewoond over het onderwerp cloud en standaarden. Dit betrof bijeenkomsten tijdens het <a href="https://magazine.ibestuur.nl/ibestuur_congres_2023_terugblik/cover">iBestuur congres van 13 september 2023</a>, de <a href="https://haven.commonground.nl/">Haven</a> community dag van 31 oktober 2023 en het <a href="https://ecp.nl/jaarfestival/">ECP Jaarfestival van 16 november 2023</a>.</p>
+</section><section id="leeswijzer"><div class="header-wrapper"><h3 id="x1-4-leeswijzer"><bdi class="secno">1.4 </bdi>Leeswijzer</h3><a class="self-link" href="#leeswijzer" aria-label="Permalink for Section 1.4"></a></div>
+<p>Dit rapport is zo piramidaal mogelijk opgesteld, waarbij we beginnen met de conclusies (<a href="#conclusies-van-het-onderzoek">hoofdstuk 2</a>) en adviezen aan de overheid (<a href="#adviezen-aan-de-overheid">hoofdstuk 3</a>), gevolgd door de onderbouwing (<a href="#standaarden-voor-de-cloud">hoofdstuk 4</a>).</p>
+<p>De aanpak, scope en uitgangspunten en de resultaten van de deskresearch zijn in bijlagen opgenomen. In <a href="#_Bijlage_3:_Aanpak">bijlage 5</a> is een overzicht opgenomen van de uitgevoerde stappen in het onderzoek met de bestede tijdsperiode per stap. <a href="#_Bijlage_4:_Wat">Bijlage 1</a> bevat een uitleg van de cloud en clouddiensten, implementatievarianten van clouddiensten en een opsomming van belangrijke cloudleveranciers wereldwijd, in Europa en in Nederland. In <a href="#_Bijlage_5:_Scope">bijlage 4</a> zijn de uitgebreide scope en uitgangspunten van het onderzoek beschreven, onder andere een samenvatting van het vernieuwde Rijkscloudbeleid van augustus 2022. <a href="#_Bijlage_6:_Cloudontwikkelingen">Bijlage 2</a> bestaat uit een overzicht van de mondiale trends, Europese ontwikkelingen en initiatieven vanuit de Nederlandse overheid met betrekking tot het cloudbeleid.</p>
+</section></section><section id="conclusies-van-het-onderzoek"><div class="header-wrapper"><h2 id="x2-conclusies-van-het-onderzoek"><bdi class="secno">2. </bdi>Conclusies van het onderzoek</h2><a class="self-link" href="#conclusies-van-het-onderzoek" aria-label="Permalink for Section 2."></a></div>
+<p>In het onderzoek kwamen de onderzoekers tot de volgende conclusies:</p>
+<ol>
+<li><p>Er bestaan nog onvoldoende open dataportabiliteit- en interoperabiliteitstandaarden die algemeen geaccepteerd zijn en breed ondersteund worden. Mede hierdoor wordt de overheid steeds afhankelijker van leveranciers van clouddiensten.</p>
+</li>
+<li><p>Met name voor de portabiliteit van <em>complexe data</em> zoals databases bestaan nog geen Europese standaarden. Leveranciers ontwikkelen vooralsnog hun eigen data transfer technologieën. Voor de portabiliteit van minder complexe data op bestandsniveau kunnen wel beproefde open standaarden worden gebruikt zoals IMAP, WebDAV, JSON, XML en CSV. De overheid zou de ondersteuning hiervan voor bestanduitwisseling tussen clouddiensten moeten verplichten.</p>
+</li>
+<li><p>Voor cloud security bestaan er juist veel overlappende standaarden, vooral voor de management-, proces- en certificeringsaspecten. Hierin moet de overheid een duidelijke lijn kiezen en daarbij aansluiten op de Europese en internationale actualiteit.</p>
+</li>
+<li><p>De verweving van commerciële clouddiensten met (proprietary) AI maakt het&nbsp;moeilijker om dataportabiliteit en interoperabiliteit met open standaarden te realiseren. Leveranciers gebruiken AI om afnemers afhankelijker te maken van hun diensten.</p>
+</li>
+<li><p>Leveranciers van clouddiensten willen deels meebewegen als de overheid regie neemt en duidelijkheid geeft over welke open standaarden ondersteund moeten worden. Dit is onder andere te zien bij de Haven standaard die is ontwikkeld vanuit de Vereniging Nederlandse Gemeenten (VNG). Door beleid op Europees niveau af te stemmen zullen de grote hyperscalers meer bereid zijn mee te bewegen.</p>
+</li>
+<li><p>Door de discussie rond digitale soevereiniteit en opkomende regelgeving als de Data Act gaan er nieuwe normen en standaarden ontstaan. Daarom is het belangrijk om standaarden voor clouddiensten actief te blijven monitoren.</p>
+</li>
+</ol>
+<p>Deze conclusies worden nader onderbouwd bij de verdere uitwerking van de servicemodellen in bijlage 4.</p>
+<blockquote>
+<p><em>“I see no gaps in standards for cloud security. There are in fact too many overlapping standards in this domain’.</em></p>
+<p><em>Linda Strick, director Cloud Security Alliance</em></p>
+</blockquote>
+</section><section id="adviezen-aan-de-overheid"><div class="header-wrapper"><h2 id="x3-adviezen-aan-de-overheid"><bdi class="secno">3. </bdi>Adviezen aan de overheid</h2><a class="self-link" href="#adviezen-aan-de-overheid" aria-label="Permalink for Section 3."></a></div>
+<p>Het onderzoek heeft een goed beeld gegeven van de uitdagingen met betrekking tot het verder toenemende gebruik van cloudvoorzieningen en clouddiensten. Uit de conclusies van het onderzoek komt een aantal adviezen aan de overheid voort, die hier worden weergegeven.</p>
+<section id="meer-regie-op-cloudstandaarden"><div class="header-wrapper"><h3 id="x3-1-meer-regie-op-cloudstandaarden"><bdi class="secno">3.1 </bdi>Meer regie op cloudstandaarden</h3><a class="self-link" href="#meer-regie-op-cloudstandaarden" aria-label="Permalink for Section 3.1"></a></div>
+<p>Grote leveranciers van clouddiensten zijn deels bereid om mee te werken aan standaarden die interoperabiliteit en dataportabiliteit mogelijk maken. Tegelijkertijd blijft de afhankelijkheid van deze leveranciers groeien. In het <a href="https://www.acm.nl/system/files/documents/marktstudie-clouddiensten.pdf">marktonderzoek van de ACM</a> van 2022 is deze tendens al duidelijk zichtbaar.</p>
+<p>Voor clouddiensten is een ‘<em>winner takes all</em>’ aan het ontstaan die ertoe leidt dat het marktaandeel van de grootste hyperscalers alleen maar groeit ten koste van kleinere marktpartijen. De verweving van clouddiensten met proprietary AI versterkt deze ontwikkeling. Kleinere beschikken niet over de kennis en rekenkracht voor grootschalige AI, wat de positie van de grote hyperscalers verder versterkt. De Data Act is een stap in de goede richting om de markt meer in evenwicht te brengen, maar deze moet wel worden geïmplementeerd, onder andere door de ontwikkeling en verplichting van open standaarden. Daarvoor is initiatief en regie nodig.</p>
+<p>Advies aan de overheid: pak meer regie op de markt voor clouddiensten, zowel op nationaal als Europees niveau. Leveranciers van clouddiensten willen best meebewegen, maar hebben duidelijkheid nodig over de te implementeren standaarden. Open standaarden op Europees niveau zijn nodig om afhankelijkheid van hyperscalers en andere aanbieders te verkleinen. Deze zijn er nog niet, hier moet de overheid in Europees verband op inzetten. De overheid en de Europese Commissie kunnen daarnaast druk uitoefenen op cloudleveranciers om hun proprietary standaarden openbaar te maken, zodat deze ook door derden te gebruiken zijn.</p>
+<blockquote>
+<p><em>“Cloud is een netwerkmarkt, die zich niet houdt aan de regels van de traditionele markten. Open standaarden zijn nodig om deze markt gezond te houden.”</em></p>
+<p><em>Rudi Bekkers, Professor of Standardisation and Intellectual Property at Eindhoven University of Technology, tijdens ECP congres 16 november 2023</em></p>
+</blockquote>
+</section><section id="bouw-aan-kennis-en-capaciteit-bij-de-overheid"><div class="header-wrapper"><h3 id="x3-2-bouw-aan-kennis-en-capaciteit-bij-de-overheid"><bdi class="secno">3.2 </bdi>Bouw aan kennis en capaciteit bij de overheid</h3><a class="self-link" href="#bouw-aan-kennis-en-capaciteit-bij-de-overheid" aria-label="Permalink for Section 3.2"></a></div>
+<p>Kennis en kunde op het gebied van public clouddiensten is schaars en versnipperd bij de overheid. Dit in tegenstelling tot <em>on-premise</em> cloud-omgevingen waar veel meer kennis en ervaring over beschikbaar is. Meerdere ondervraagden geven aan dat er binnen de overheid weinig coördinatie is op alle maatregelen en acties die moeten worden ondernomen om de snelle ontwikkeling op het gebied van clouddiensten bij te houden en in goede banen te leiden. Zonder eigen, gebundelde expertise wordt de overheid ook qua kennis steeds afhankelijker van marktpartijen, en in het bijzonder de grote buitenlandse clouddienstverleners.</p>
+<p>Advies aan de overheid: zet in op training, kennisopbouw en kennisbehoud, en op samenwerking tussen overheidsorganisaties. Sluit hiervoor aan bij internationale organisaties als <a href="https://www.nen.nl/">NEN</a> en de <a href="https://exams.cloudsecurityalliance.org/en">Cloud Security Aliance</a>. Overweeg om een overheidsorganisatie hier verantwoordelijk voor te maken, zodat de coördinatie centraal wordt geregeld. Dit zou wellicht de <a href="https://www.it-academieoverheid.nl/">Rijksacademie voor Digitalisering en Informatisering Overheid</a> (RADIO) kunnen zijn. En trek meer experts aan binnen de overheid.</p>
+</section><section id="maak-bindende-keuzen-in-normenkaders-voor-informatieveiligheid-en-privacy"><div class="header-wrapper"><h3 id="x3-3-maak-bindende-keuzen-in-normenkaders-voor-informatieveiligheid-en-privacy"><bdi class="secno">3.3 </bdi>Maak bindende keuzen in normenkaders voor informatieveiligheid en privacy</h3><a class="self-link" href="#maak-bindende-keuzen-in-normenkaders-voor-informatieveiligheid-en-privacy" aria-label="Permalink for Section 3.3"></a></div>
+<p>Met betrekking tot standaarden en normenkaders voor informatiebeveiliging en privacy is er al veel gaande. Sommige ontwikkelingen overlappen elkaar, en dit kan tot onduidelijkheid leiden. In het onderzoek kwam aan het licht dat de overheid werkt aan <em>security controls</em> zonder aan te sluiten bij internationale standaarden of organisaties. Dit terwijl internationale samenwerking juist de positie van de overheid kan versterken.</p>
+<p>Advies aan de overheid: doe verdiepend onderzoek naar de samenhang en de overlap tussen nationale, Europese en internationale normenkaders. Kies vervolgens een duidelijke lijn, maak keuzes en sluit daarbij aan bij Europese en internationale organisaties en ontwikkelingen. Zorg dat deze tot verplichte norm verheven worden zodat partijen zich hieraan moeten houden.</p>
+</section><section id="verplicht-de-standaard-haven"><div class="header-wrapper"><h3 id="x3-4-verplicht-de-standaard-haven"><bdi class="secno">3.4 </bdi>Verplicht de standaard Haven</h3><a class="self-link" href="#verplicht-de-standaard-haven" aria-label="Permalink for Section 3.4"></a></div>
+<p>Met betrekking tot standaarden voor systeem- en applicatieportabiliteit in de cloud heeft <a href="https://haven.commonground.nl/">Haven</a> (initiatief van de VNG) een goede basis gelegd voor uniform gebruik van Kubernetes. Haven wordt ondersteund door de commerciële hyperscalers en kent al diverse implementaties bij gemeenten. Deze ontwikkeling draagt sterk bij aan interoperabiliteitsverbetering.</p>
+<p>Advies aan de overheid: meld de standaard Haven aan voor opname op de ‘pas toe of leg uit’-lijst van het Forum Standaardisatie. Help de ontwikkeling van Haven te versterken door te zorgen voor een bredere toepassing en solide financiering. Versterk Haven door een breder pallet aan functies te laten ondersteunen, die de standaard doorontwikkelen tot een vervanging van proprietary diensten.</p>
+</section><section id="verplicht-aanbevolen-standaarden-voor-dataportabiliteit"><div class="header-wrapper"><h3 id="x3-5-verplicht-aanbevolen-standaarden-voor-dataportabiliteit"><bdi class="secno">3.5 </bdi>Verplicht aanbevolen standaarden voor dataportabiliteit</h3><a class="self-link" href="#verplicht-aanbevolen-standaarden-voor-dataportabiliteit" aria-label="Permalink for Section 3.5"></a></div>
+<p>Op de <a href="https://forumstandaardisatie.nl/open-standaarden/aanbevolen">lijst aanbevolen standaarden van het Forum Standaardisatie</a> staan standaarden die dataportabiliteit op bestandsniveau ondersteunen en verplicht zouden moeten worden gesteld aan cloudleveranciers. Het gaat bijvoorbeeld om open standaarden zoals <a href="https://forumstandaardisatie.nl/open-standaarden/imap">IMAP</a>, waarmee e-mailberichten van een cloudleverancier naar een andere kunnen worden overgezet. En <a href="https://forumstandaardisatie.nl/open-standaarden/webdav-en-caldav">WebDAV</a>, waarmee bestanden met een standaard interface kunnen worden beheerd. Door deze standaarden op de ‘pas toe of leg uit’ lijst te zetten, moeten overheden ze uitvragen in hun aanbesteding van clouddiensten en moeten leveranciers ze dus ook aanbieden.</p>
+<p>Advies aan de overheid: meld aanbevolen standaarden die relevant zijn voor dataportabiliteit aan voor opname op de ‘pas toe of leg uit’ lijst van het Forum Standaardisatie. Oefen via het strategisch leveranciers management (SLM) van de overheid druk uit op de cloudleveranciers om open standaarden te implementeren. Nog beter is het om deze druk met gelijkgestemde lidstaten op Europees niveau uit te oefenen.</p>
+</section><section id="laat-standaarden-toe-voor-leveranciersonafhankelijkheid-en-digitale-soevereiniteit-op-de-lijst-van-het-forum-standaardisatie"><div class="header-wrapper"><h3 id="x3-6-laat-standaarden-toe-voor-leveranciersonafhankelijkheid-en-digitale-soevereiniteit-op-de-lijst-van-het-forum-standaardisatie"><bdi class="secno">3.6 </bdi>Laat standaarden toe voor leveranciersonafhankelijkheid en digitale soevereiniteit op de lijst van het Forum Standaardisatie</h3><a class="self-link" href="#laat-standaarden-toe-voor-leveranciersonafhankelijkheid-en-digitale-soevereiniteit-op-de-lijst-van-het-forum-standaardisatie" aria-label="Permalink for Section 3.6"></a></div>
+<p>Forum Standaardisatie richt zich vooralsnog alleen op standaarden voor gegevensuitwisseling <em>tussen</em> organisaties. Dat maakt het moeilijk om standaarden te verplichten zoals IMAP, die cruciaal zijn voor dataportabiliteit en leveranciersonafhankelijkheid, maar die doorgaans niet worden gebruikt voor gegevensuitwisselingsstandaarden tussen organisaties.</p>
+<p>Advies aan het Forum Standaardisatie: onderzoek of de scope van de ‘pas toe of leg uit’-lijst binnen het bestaande mandaat kan worden verbreed met standaarden die leveranciersonafhankelijkheid en digitale soevereiniteit bevorderen, ook als deze standaarden niet overwegend worden toegepast op gegevensuitwisseling <em>tussen</em> organisaties.</p>
+</section><section id="zet-in-op-uitbreiding-van-de-pas-toe-of-leg-uit-lijst-met-standaarden-voor-dataportabiliteit"><div class="header-wrapper"><h3 id="x3-7-zet-in-op-uitbreiding-van-de-pas-toe-of-leg-uit-lijst-met-standaarden-voor-dataportabiliteit"><bdi class="secno">3.7 </bdi>Zet in op uitbreiding van de ‘pas toe of leg uit’-lijst met standaarden voor dataportabiliteit</h3><a class="self-link" href="#zet-in-op-uitbreiding-van-de-pas-toe-of-leg-uit-lijst-met-standaarden-voor-dataportabiliteit" aria-label="Permalink for Section 3.7"></a></div>
+<p>Er zijn nog weinig open standaarden die dataportabiliteit ondersteunen. ISO 8000 biedt richtlijnen voor het effectief en efficiënt uitwisselen van data tussen verschillende systemen, organisaties en technologieën. Dit omvat standaardisatie van formats en terminologie om misverstanden en fouten te voorkomen. Er is echter geen vastgestelde standaard voor uitwisseling van gegevens opgenomen in databases.</p>
+<p>Advies aan de overheid: richt een werkgroep op die open standaarden voor dataportabiliteit identificeert en aanmeldt voor verplichting op de ‘pas toe of leg uit’-lijst van het Forum Standaardisatie. Het kan ook gaan om standaarden die nog ontwikkeld worden of moeten worden. In het laatste geval kan de werkgroep aangeven wie deze standaarden zou moeten ontwikkelen, liefst in Europees verband. Maak praktische keuzen voor de periode waarin deze standaarden nog niet bestaan. Kies bijvoorbeeld voor Amazon Simple Storage Service (S3) API-specificatie voor bestandsuitwisseling tot hier een open standaard voor is ontwikkeld. Stel een lijst op van te ondersteunen opensource databaseformaten die cloudaanbieders tenminste moeten implementeren, en die door overheidspartijen gebruikt worden zoals Postgres, Mysql en Mongo.</p>
+</section><section id="verplicht-standaarden-cloudinteroperabiliteit"><div class="header-wrapper"><h3 id="x3-8-verplicht-standaarden-cloudinteroperabiliteit"><bdi class="secno">3.8 </bdi>Verplicht standaarden cloudinteroperabiliteit</h3><a class="self-link" href="#verplicht-standaarden-cloudinteroperabiliteit" aria-label="Permalink for Section 3.8"></a></div>
+<p>Ter bevordering van de interoperabiliteit tussen clouddiensten van verschillende leveranciers zijn in dit onderzoek diverse standaarden geïdentificeerd die nog niet op de lijst van Open standaarden van het Forum Standaardisatie staan, maar mogelijk wel in aanmerking komen voor verplichting.</p>
+<p>Advies aan de overheid: doe nader onderzoek welke van deze standaarden in aanmerking komen voor opname op de ‘pas toe of leg uit’ lijst van het Forum Standaardisatie. Sluit hierbij aan op standaarden die via de Data Act worden verplicht, en zet druk op leveranciers om ze te implementeren. Dit onderzoek kan worden gedaan door dezelfde werkgroep die in advies 3.6 genoemd werd.</p>
+</section><section id="leg-best-practices-vast"><div class="header-wrapper"><h3 id="x3-9-leg-best-practices-vast"><bdi class="secno">3.9 </bdi>Leg best practices vast</h3><a class="self-link" href="#leg-best-practices-vast" aria-label="Permalink for Section 3.9"></a></div>
+<p>Standaarden en normenkaders zijn cruciaal, maar ook belangrijk is het delen van kennis en ervaring over de toepassing ervan.</p>
+<p>Advies aan de overheid: leg ook <em>best practices</em> vast over de implementatie van clouddiensten met normenkaders en standaarden. Net zoals ISO 27002 een soort <em>best practice</em> uitwerking is van ISO 27001. Dit geeft meer praktische handvatten aan overheden die de standaarden moeten uitvragen en normenkaders moeten toepassen.</p>
+</section></section><section id="standaarden-voor-de-cloud"><div class="header-wrapper"><h2 id="x4-standaarden-voor-de-cloud"><bdi class="secno">4. </bdi>Standaarden voor de cloud</h2><a class="self-link" href="#standaarden-voor-de-cloud" aria-label="Permalink for Section 4."></a></div>
+<section id="soorten-cloudstandaarden"><div class="header-wrapper"><h3 id="x4-1-soorten-cloudstandaarden"><bdi class="secno">4.1 </bdi>Soorten cloudstandaarden</h3><a class="self-link" href="#soorten-cloudstandaarden" aria-label="Permalink for Section 4.1"></a></div>
+<p>Voor het onderzoek is gebruik gemaakt van de drie servicemodellen van clouddiensten zoals gedefinieerd door NIST SP 800-145: Infrastructure as a Service (IaaS), Platform as a Service (PaaS) en Software as a Service (SaaS). <a href="#_Bijlage_4:_Wat">Bijlage 4</a> geeft een nadere toelichting van deze drie servicemodellen. Al deze servicemodellen worden door overheidsorganisaties bij leveranciers afgenomen.</p>
+<p>De drie servicemodellen van cloudcomputing hebben een scala aan standaarden nodig om interoperabiliteit, informatiebeveiliging, privacy en portabiliteit te bevorderen:</p>
+<ol>
+<li><p><strong>Beveiligings- en privacystandaarden:</strong> De implementatie van de beveiligingsstandaarden draagt bij aan het beperken van het risico van toegang door onbevoegden van informatie die impact kan hebben op de "informatieveiligheid" van de eigenaren en gebruikers van die informatie. De standaarden hebben betrekking op aspecten zoals data-encryptie, authenticatie, autorisatie en auditlogboekregistratie.<br>Privacystandaarden richten zich op het betrouwbaar verwerken en vertrouwelijk houden van persoonsgegevens die in de cloud worden opgeslagen en/of daar worden verwerkt. Hierbij kan ook gedacht worden aan standaarden die betrekking hebben op gegevensmaskering, anonimisering en pseudonimisering.</p>
+</li>
+<li><p><strong>Portabiliteitstandaarden:</strong> Deze standaarden maken het gemakkelijker om applicaties en gegevens van de ene cloudomgeving naar de andere te verplaatsen. Denk hierbij aan standaarden voor containerization en orchestratie. Ze kunnen helpen bij het vermijden van vendor lockin en het ondersteunen van multi-cloudstrategieën.</p>
+</li>
+<li><p><strong>Interoperabiliteitsstandaarden:</strong> Deze standaarden zorgen ervoor dat verschillende cloudservices en -componenten met elkaar op een gestandaardiseerde wijze kunnen communiceren en gegevens kunnen uitwisselen. Deze kunnen ook helpen bij het vermijden van vendor lockin en het ondersteunen van multi-cloudstrategieën.</p>
+</li>
+<li><p><strong>Overige standaarden:</strong> Standaarden die niet passen in bovenstaande classificatie maar wel relevant zijn voor cloud en clouddiensten en daarom niet ongenoemd mogen blijven.</p>
+</li>
+</ol>
+<p>Per soort standaard worden in onderliggen rapport de volgende beschouwingsaspecten behandeld:</p>
+<ul>
+<li><p>Normen.</p>
+</li>
+<li><p>Bestaande standaarden opgenomen op de lijst van Open standaarden van het Forum Standaardisatie.</p>
+</li>
+<li><p>Bestaande standaarden en standaard technologieën die nog niet zijn opgenomen op de lijst van Open standaarden.</p>
+</li>
+<li><p>Standaarden die in ontwikkeling zijn.</p>
+</li>
+<li><p>Ontbrekende standaarden, zogenaamde witte vlekken.</p>
+</li>
+</ul>
+<p>Bij het onderscheid tussen <em>standaarden</em> en <em>normen</em> zijn in het onderzoek de volgende definities gehanteerd: een <em>standaard</em> is een algemeen aanvaarde specificatie of richtlijn voor de beste praktijk, terwijl een <em>norm</em> een officieel vastgestelde eis is waaraan producten, diensten of processen moeten voldoen.</p>
+<p>Dit document gebruikt het woord ‘standaard’ in brede zin. Hieronder vallen zowel open standaarden en leveranciersafhankelijke (‘proprietary’) standaarden, als technologieën die als de facto standaard opgevat kunnen worden.</p>
+</section><section id="beveiligings-en-privacystandaarden"><div class="header-wrapper"><h3 id="x4-2-beveiligings-en-privacystandaarden"><bdi class="secno">4.2 </bdi>Beveiligings- en privacystandaarden</h3><a class="self-link" href="#beveiligings-en-privacystandaarden" aria-label="Permalink for Section 4.2"></a></div>
+<p>Privacy en veiligheid is een belangrijk aandachtsgebied voor gebruikers van clouddiensten. De cloudvoorziening moet voldoen aan alle privacy en veiligheidseisen, net zoals deze nu gelden voor on-premise voorzieningen.</p>
+<p>Beveiligings- en privacystandaarden zijn te bezien op meerdere lagen (strategisch, tactisch en operationeel). Uit de interviews met de experts komt het beeld naar voren van meerdere en elkaar deels overlappende certificatieschema’s op tactisch niveau, elkaar deels overlappende auditingframeworks op operationeel niveau, en daarnaast ook meerdere frameworks en richtlijnen voor cloudbeveiliging.</p>
+<p>In het kader van de cloud is het ook belangrijk dat de persoonsgegevens veilig worden opgeslagen en verwerkt. Hiervoor zijn er binnen de kaders van Europese wetgeving drie varianten. Persoonsgegevens worden:</p>
+<ul>
+<li><p>in de EU opgeslagen en verwerkt,</p>
+</li>
+<li><p>worden in een land waarvoor een adequaatheidsbesluit geldt verwerkt en opgeslagen, of</p>
+</li>
+<li><p>worden in een land verwerkt en opgeslagen waarbij er ten aanzien van die verwerkingen waarborgen zijn vastgesteld waaruit blijkt dat de bescherming van persoonsgegevens dezelfde bescherming heeft als ware de verwerking in de EU.</p>
+</li>
+</ul>
+<p>Voor een gebruiker is het momenteel is nog niet altijd duidelijk waar de cloudvoorziening fysiek staat en wie toegang heeft tot deze voorziening. Ook is het tot nu toe is het vrij gebruikelijk dat het beheer van een cloudvoorziening in landen wordt uitgevoerd die niet dezelfde regels hebben ten aanzien van de bescherming van persoonsgegevens. Cloudleveranciers werken hard aan de realisatie van cloudvoorzieningen die voldoen aan een van de drie eerdergenoemde varianten.</p>
+<section id="standaarden-op-de-lijst-van-open-standaarden"><div class="header-wrapper"><h4 id="x4-2-1-standaarden-op-de-lijst-van-open-standaarden"><bdi class="secno">4.2.1 </bdi>Standaarden op de lijst van Open standaarden</h4><a class="self-link" href="#standaarden-op-de-lijst-van-open-standaarden" aria-label="Permalink for Section 4.2.1"></a></div>
+<p>De beveiligings- en privacystandaarden bouwen voor een groot deel voort op de beveiligings- en privacystandaarden die al op de ‘pas toe of leg uit’-lijst van het Forum Standaardisatie zijn opgenomen. Het gaat hier om:</p>
+<ol>
+<li><p><a href="https://www.forumstandaardisatie.nl/open-standaarden/tls"><strong>TLS</strong></a>: TLS zorgt voor beveiligde internetverbindingen, met als doel de veilige uitwisseling van gegevens tussen een internetsystemen (zoals websites of mailservers);</p>
+</li>
+<li><p><a href="https://www.forumstandaardisatie.nl/open-standaarden/dnssec"><strong>DNSSEC</strong></a>: Met DNSSEC kan de ontvanger de echtheid van de domeinnaaminformatie (waaronder IP-adressen) controleren. Dit voorkomt bijvoorbeeld dat een aanvaller het IP-adres ongemerkt manipuleert (DNS-spoofing) en daarmee verstuurde e-mails omleidt naar een eigen mailserver of gebruikers misleidt naar een frauduleuze website.</p>
+</li>
+<li><p><a href="https://www.forumstandaardisatie.nl/open-standaarden/starttls-en-dane"><strong>STARTTLS en DANE</strong></a>: Mailverkeer tussen mailservers verloopt via SMTP. STARTTLS in combinatie met DANE gaan, in aanvulling op SMTP, afluisteren of manipuleren van dit mailverkeer&nbsp;door internetcriminelen&nbsp;tegen.&nbsp;</p>
+</li>
+<li><p><a href="https://www.forumstandaardisatie.nl/open-standaarden/https-en-hsts"><strong>HTTPS en HSTS</strong></a>: HTTPS en HSTS zorgen samen voor beveiligde verbindingen met websites, met als doel de veilige uitwisseling van gegevens tussen een webserver en client (vaak een webbrowser). Dit maakt het voor cybercriminelen moeilijker om verkeer om te leiden naar valse websites en om de inhoud van webverkeer te onderscheppen;</p>
+</li>
+<li><p><a href="https://www.forumstandaardisatie.nl/open-standaarden/nen-isoiec-27001"><strong>NEN-ISO/IEC 27001</strong></a>: De norm ISO 27001 beschrijft eisen waar een 'Information Security Management System' (ISMS) aan moet voldoen;&nbsp;</p>
+</li>
+<li><p><a href="https://www.forumstandaardisatie.nl/open-standaarden/saml"><strong>SAML</strong></a>: Security Assertion Markup Language (SAML) is een standaard voor het veilig uitwisselen van authenticatie- en autorisatiegegevens van gebruikers tussen verschillende organisaties. SAML maakt het mogelijk om op een veilige manier via het internet toegang te krijgen tot diensten van verschillende organisaties, zonder dat je per dienst eigen inloggegevens nodig hebt, of bij elke dienst apart moet inloggen. SAML wordt gebruik bij onder andere DigiD machtigen en eHerkenning.</p>
+</li>
+</ol>
+<p>De beveiligings- en privacystandaarden bouwen voor een groot deel voort op de beveiligings- en privacystandaarden die al op de lijst aanbevolen standaarden staan opgenomen. Het gaat hier om:</p>
+<ol>
+<li><a href="https://www.forumstandaardisatie.nl/open-standaarden/oauth"><strong>Oauth2.0</strong></a>: Met OAuth 2.0 kunnen gebruikers of organisaties een programma of website toegang geven tot specifieke (privé)gegevens, die opgeslagen zijn op een ander systeem, zonder hun gebruikersnaam en wachtwoord uit handen te geven.</li>
+</ol>
+<blockquote>
+<p>Tijdens het onderzoek werd aangegeven dat de attributen die in het kader van Oauth2.0 worden uitgewisseld uitbreiding behoeven als ze in het kader van Trusted Cloud van het Ministerie van Justitie en veiligheid worden ingezet;</p>
+</blockquote>
+<ol start="2">
+<li><p><a href="https://www.forumstandaardisatie.nl/open-standaarden/ip-sec"><strong>IP Sec</strong></a>: De standaard maakt het mogelijk om IP-verbindingen te encrypten. Hierdoor is het netwerk beveiligd waardoor gevoelige data kan worden uitgewisseld. Vooral relevant voor VPN's. In andere gevallen is beveiliging op transport niveau meer toepasselijk.&nbsp;</p>
+</li>
+<li><p><a href="https://www.forumstandaardisatie.nl/open-standaarden/oidc"><strong>OIDC</strong></a>: OpenID Connect (OIDC) is een open en gedistribueerde manier om één authenticatiedienst naar keuze te kunnen hergebruiken bij meerdere (semi-)overheidsdienstverleners, bij gebruik vanuit onder andere webapplicaties en mobiele apps. Belangrijkste redenen om op OIDC in te zetten is de actieve ontwikkelingen en de mobile-first strategie ondersteuning van digitale overheidsdiensten.</p>
+</li>
+</ol>
+</section><section id="normen-en-auditing-frameworks-niet-op-de-lijst-van-open-standaarden"><div class="header-wrapper"><h4 id="x4-2-2-normen-en-auditing-frameworks-niet-op-de-lijst-van-open-standaarden"><bdi class="secno">4.2.2 </bdi>Normen en (auditing) frameworks niet op de lijst van Open standaarden</h4><a class="self-link" href="#normen-en-auditing-frameworks-niet-op-de-lijst-van-open-standaarden" aria-label="Permalink for Section 4.2.2"></a></div>
+<ol>
+<li><p><a href="https://www.enisa.europa.eu/topics/certification/public-consultation-on-cybersecurity-schemes/draf-eucs"><strong>Certification Scheme on Cloud Services (EUCS):</strong></a> Het Certification Scheme on Cloud Services (EUCS) wordt in opdracht van de Europese Commissie ontwikkeld door ENISA en omgevormd tot twee Europese standaarden door CEN/CENELEC. De verwachting is dat dit schema in 2024 beschikbaar komt. Dit schema stelt normen vast voor de beveiliging van gegevens die worden opgeslagen en verwerkt in de cloud. Het doel is om het vertrouwen in cloudserviceproviders te vergroten en tegelijkertijd de naleving van de EU-regelgeving, zoals de Algemene Verordening Gegevensbescherming (AVG), te verzekeren. Clouddienstverleners kunnen zich dan laten certificeren op 3 verschillende Assurance levels (Basic, Substantial en High). De certificaten worden dan Europees erkend en spelen ook een rol bij de ontwikkeling van Europese regelgeving waar de mogelijkheid bestaat "verwacht conform" te zijn als de clouddienstenleverancier is gecertificeerd voor EUCS. Door middel van EUCS kunnen cloudserviceproviders aantonen dat ze voldoen aan hoge beveiligingsnormen, wat essentieel is voor bedrijven en organisaties die gevoelige gegevens in de cloud willen opslaan en verwerken. Opmerkelijk feit: er is nog geen link gelegd vanuit de GDPR/AVG naar deze certificering.</p>
+</li>
+<li><p><a href="https://cloudsecurityalliance.org/research/cloud-controls-matrix"><strong>CCM-framework</strong></a>: De Cloud Control Matrix (CCM) is een besturingsframework dat specifiek is ontworpen voor cloudcomputing-omgevingen. Het biedt een gedetailleerde structuur van beveiligingsbeleid, procedures en technische maatregelen die kunnen worden toegepast op verschillende cloudservicemodellen, waaronder Infrastructure as a Service (IaaS), Platform as a Service (PaaS) en Software as a Service (SaaS). Naast de kerncontroledoelstellingen omvat CCM:<br>⦁ Implementatierichtlijnen<br>⦁ Model voor gedeelde veiligheidsverantwoordelijkheid<br>⦁ Auditrichtlijnen<br>⦁ In kaart brengen van andere relevante beveiligingsnormen en -kaders en wettelijke en regelgevende vereisten<br>⦁ Continue zekerheidsstatistieken<br>⦁ Beoordelingsvragenlijst (Consensus Initiative-vragenlijst - CAIQ)<br>De CCM is ook een open standaard die gratis beschikbaar is. De CCM vormt de ruggengraat van het Security, Trust, Assurance, and Risk (STAR)-programma van de <a href="https://exams.cloudsecurityalliance.org/en">Cloud Security Aliance</a> (CSA), een breed toegepast cloud-borgingsprogramma dat een ecosysteem vormt van de best practices, standaarden, technologie en auditpartners. STAR ondersteunt organisaties bij het effectief en efficiënt aanpakken van het definiëren van vertrouwen in de cloud, het bevorderen van verantwoordelijkheid, het evalueren van risico's, het meten van zekerheid en het vereenvoudigen van compliance en inkoop.<br>Als onderdeel van het STAR-programma kunnen organisaties de naleving van de CCM-vereisten aantonen via een reeks beoordelingsmechanismen, zoals:<br>⦁ STAR Self Assessment: een zelfevaluatie op basis van een gestandaardiseerde vragenlijst (CAIQ)<br>⦁ STAR-certificering: een onafhankelijk certificeringsproces van derden op basis van ISO27001-vereisten, aangevuld met CCM-controles en aanvullende transparantievereisten.<br>⦁ STAR Attestation: een onafhankelijk attesteringsproces van derden op basis van SOC 2-vereisten, aangevuld met CCM-controles en aanvullende transparantievereisten.<br>Het STAR-programma vereist dat organisaties details over hun beveiligings- en nalevingspositie, inclusief de naleving van regelgeving, standaarden en raamwerken, publiceren in een openbaar beschikbaar register, genaamd STAR Registry. Deze informatie is waardevol voor huidige en potentiële klanten die zekerheid zoeken over de beveiligingspraktijken van cloudserviceproviders (CSP's). Samenvattend bieden het STAR-programma en CCM een gestructureerde aanpak voor organisaties, zowel aanbieders van clouddiensten als gebruikers, om hun cloudbeveiligingspraktijken te verbeteren en onder de aandacht te brengen, waardoor risicobeheer, naleving van de regelgeving en transparantie in de cloudcomputingruimte worden vergemakkelijkt.</p>
+</li>
+<li><p><a href="https://www.etsi.org/deliver/etsi_en/319500_319599/319531/01.01.01_60/en_319531v010101p.pdf"><strong>QERMS (Qualified Registered Electronic Mail Service)</strong></a>: QERMS, of Qualified Registered Electronic Mail Service, is een geavanceerde vorm van elektronische communicatie die bedoeld is om de traditionele aangetekende post te vervangen. Het biedt een juridisch erkende manier om elektronische berichten met een hoge mate van zekerheid te verzenden en te ontvangen, waarbij de identiteit van de afzender en de ontvanger wordt geverifieerd en de integriteit en de onweerlegbaarheid van de verzonden inhoud wordt gewaarborgd. Dit houdt in dat zowel de verzend- als ontvangsttijden van berichten nauwkeurig worden vastgelegd, wat QERMS ideaal maakt voor juridische en officiële correspondentie waarbij bewijs van verzending en ontvangst essentieel is. QERMS wordt vaak gebruikt in zakelijke en overheidsomgevingen voor het betrouwbaar uitwisselen van gevoelige of juridisch bindende documenten. QERMS is opgesteld conform EU Regulation eIDAS (EU) No. 910/2014 en is gebaseerd op ETSI 319 401, ETSI EN 319 521 en ETSI EN 319 531.</p>
+</li>
+<li><p><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwi8ufTdlu6CAxUWh_0HHZwyAMgQFnoECBsQAQ&amp;url=https%3A%2F%2Fwww.nen.nl%2Fnta-7516&amp;usg=AOvVaw3usjyc4uUW3rr6xOjeAf7j&amp;opi=89978449"><strong>NTA7516</strong></a>: NTA 7516 is een Nederlandse technische afspraak (NTA) die richtlijnen biedt voor het veilig uitwisselen van gezondheidsinformatie via e-mail. Deze norm is specifiek ontwikkeld om de privacy en de beveiliging van patiëntgegevens te waarborgen bij het versturen van medische informatie tussen zorgverleners en patiënten of tussen verschillende zorginstellingen. NTA 7516 stelt eisen aan aspecten zoals de identificatie en authenticatie van de verzender en ontvanger, de versleuteling van de data, en de integriteit en vertrouwelijkheid van de verstuurde informatie. Het doel van deze norm is om te zorgen dat elektronische communicatie in de zorgsector voldoet aan de strikte privacy vereisten, zoals vastgelegd in de Algemene Verordening Gegevensbescherming (AVG), en om een veilige en betrouwbare uitwisseling van medische gegevens te faciliteren.</p>
+</li>
+<li><p><a href="https://datatracker.ietf.org/doc/rfc8461/"><strong>MTA-STS</strong></a> (Mail Transfer Agent Strict Transport Security) is een beveiligingsstandaard die de veiligheid van e-mailtransport tussen servers verhoogt door het afdwingen van TLS (Transport Layer Security) encryptie en het specificeren van de vereiste TLS-beleidsniveaus. Deze standaard is ontworpen om veelvoorkomende beveiligingsproblemen aan te pakken, zoals man-in-the-middle-aanvallen, waarbij e-mails tijdens het transport onderschept kunnen worden. Door het publiceren van een MTA-STS-beleid op hun domein, kunnen domeineigenaren aangeven dat hun servers TLS ondersteunen en definiëren welke versie van TLS moet worden gebruikt, wat zorgt voor een veiligere e-mailuitwisseling. Dit helpt bij het waarborgen van de vertrouwelijkheid en integriteit van e-mails tijdens de overdracht en is een belangrijke stap in de richting van een veiligere e-mailinfrastructuur. MTA-STS verbetert dus de beveiliging van e-mailcommunicatie door te zorgen voor gecodeerde verbindingen en het verminderen van de kans op onderschepping of afluisteren.<br>Opmerking: in het <a href="https://www.forumstandaardisatie.nl/sites/default/files/Downloads/Bijlagen%20OS/STARTTLS%20en%20DANE/20180803-Expertadvies-STARTTLS-en-DANE-itbreiding-functioneel-toepassingsgebied.pdf">expertadvies over STARTTLS en DANE</a> van augustus 2018 wordt het Forum Standaardisatie opgeroepen om over een jaar na de expertbijeenkomst van STARTTLS en DANE de stand van zaken rond de alternatieve technologie MTA-STS te evalueren.</p>
+</li>
+<li><p><a href="https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/"><strong>mTLS</strong></a>: Mutual TLS (mTLS) is een beveiligingsprotocol waarbij zowel de client als de server elkaar verifiëren via TLS (Transport Layer Security) certificaten, een proces dat een extra beveiligingslaag biedt bovenop de standaard TLS/SSL-handshake. In tegenstelling tot standaard TLS, waarbij alleen de server identiteit aantoont aan de client, vereist mTLS dat beide partijen hun identiteit aantonen door middel van digitale certificaten. Dit versterkt de beveiliging doordat het beide partijen zekerheid geeft over de identiteit van de ander, waardoor het risico op onderschepping of vervalsing van gegevens vermindert. mTLS wordt vaak gebruikt in omgevingen waar strenge beveiligingseisen gelden, zoals in financiële diensten, gezondheidszorg en bij interne netwerkcommunicatie van bedrijven. Het zorgt voor een betrouwbaardere en veiligere communicatie doordat ongeautoriseerde toegang tot netwerken en data wordt voorkomen.</p>
+</li>
+</ol>
+<p>Er zijn vele <strong>ISO</strong>-standaarden op het vlak informatiebeveiliging, cyberveiligheid en privacybescherming, waaronder de ISO 27100-serie. Het gaat hier om generieke standaarden. De volgende ISO-standaarden richten zich op cloud:</p>
+<ol>
+<li><p><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwi8_eyiqe6CAxVGhP0HHWpgAt8QFnoECBMQAQ&amp;url=https%3A%2F%2Fwww.iso.org%2Fstandard%2F43757.html&amp;usg=AOvVaw1cDdrlAzdWUs21LSyGgVSq&amp;opi=89978449"><strong>ISO/IEC 27017</strong></a>: ISO/IEC 27017 is een internationale norm die richtlijnen en best practices biedt voor informatiebeveiliging in cloudomgevingen. Deze norm is een uitbreiding op ISO/IEC 27002, specifiek gericht op cloudbeveiliging, en biedt aanvullende beveiligingscontroles en implementatiebegeleiding voor zowel cloudserviceproviders als cloudgebruikers. ISO/IEC 27017 richt zich op aspecten zoals de beveiliging van cloudinfrastructuur, beheer van virtuele machines, gegevensencryptie, en operationele beveiligingsprocedures in de cloud. Het helpt organisaties bij het identificeren en beheren van de beveiligingsrisico's die gepaard gaan met het gebruik van cloudservices en ondersteunt hen bij het naleven van regelgeving en industrienormen. Door het volgen van deze norm kunnen organisaties de integriteit, vertrouwelijkheid en beschikbaarheid van hun gegevens in de cloud beter waarborgen, wat van cruciaal belang is in het huidige digitale tijdperk.</p>
+</li>
+<li><p><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjdg5LNqe6CAxVL_7sIHWSTBVsQFnoECBIQAQ&amp;url=https%3A%2F%2Fwww.iso.org%2Fstandard%2F76559.html&amp;usg=AOvVaw0an8TN5-NJKBnM_OEfA3O1&amp;opi=89978449"><strong>ISO/IEC 27018</strong></a>: ISO/IEC 27018 is een internationale standaard die richtlijnen biedt voor de bescherming van persoonlijke gegevens in de cloud. Deze norm is een code voor de praktijk voor cloudserviceproviders die persoonlijke data verwerken, en vormt een aanvulling op bestaande ISO/IEC 27001- en 27002-normen voor informatiebeveiligingsbeheer. ISO/IEC 27018 richt zich specifiek op privacyaspecten, waaronder het beheer van persoonlijke identificeerbare informatie (PII), transparantie over het gebruik van gegevens, en sterke beveiligingsmaatregelen om de privacy van de gebruikers te beschermen. Deze standaard is van bijzonder belang voor organisaties die cloudgebaseerde diensten aanbieden of gebruiken, en helpt hen te voldoen aan wettelijke privacyvereisten en het vertrouwen van klanten en stakeholders te behouden door aan te tonen dat ze serieuze maatregelen nemen om persoonlijke gegevens te beschermen.</p>
+</li>
+</ol>
+</section><section id="witte-vlekken"><div class="header-wrapper"><h4 id="x4-2-3-witte-vlekken"><bdi class="secno">4.2.3 </bdi>Witte vlekken</h4><a class="self-link" href="#witte-vlekken" aria-label="Permalink for Section 4.2.3"></a></div>
+<p>Voor de privacy en beveiligingstandaarden zijn geen witte vlekken gedefinieerd. Het beeld is dat er voldoende normen, standaarden en frameworks zijn, die zelfs overlappend zijn aan elkaar. Voor privacy en beveiliging moet juist worden gewerkt aan het verminderen van de overlap.</p>
+</section></section><section id="portabiliteitstandaarden"><div class="header-wrapper"><h3 id="x4-3-portabiliteitstandaarden"><bdi class="secno">4.3 </bdi>Portabiliteitstandaarden</h3><a class="self-link" href="#portabiliteitstandaarden" aria-label="Permalink for Section 4.3"></a></div>
+<p>Portabiliteitstandaarden zijn richtlijnen en specificaties die ontworpen zijn om de overdraagbaarheid van gegevens, software, systemen tussen verschillende platforms, systemen en apparaten te vergemakkelijken. In de context van cloudstandaarden zijn portabiliteitstandaarden essentieel om applicaties, systemen en gegevens te kunnen verplaatsen van de ene cloudomgeving naar de andere.</p>
+<p>We maken onderscheid tussen twee typen portabiliteitstandaarden:</p>
+<ol>
+<li><p><strong>Standaarden voor systeem- en applicatieportabiliteit:</strong> Dit betreft de mogelijkheid van software om te functioneren op verschillende hardware of besturingssystemen zonder significante wijzigingen. Deze standaarden helpen bij het verminderen van afhankelijkheden van specifieke platformen.</p>
+</li>
+<li><p><strong>Standaarden voor dataportabiliteit:</strong> Dit verwijst naar het vermogen om gegevens gemakkelijk van het ene systeem of platform naar het andere te verplaatsen. Dataportabiliteit is cruciaal in het digitale tijdperk, waar gegevens vaak moeten worden overgedragen tussen verschillende applicaties, databases of opslagsystemen. Standaarden voor dataportabiliteit zorgen ervoor dat deze gegevensoverdracht soepel verloopt, met behoud van de integriteit en bruikbaarheid van de gegevens.</p>
+</li>
+</ol>
+<section id="standaarden-voor-systeem-en-applicatieportabiliteit-niet-op-de-lijst-van-open-standaarden"><div class="header-wrapper"><h4 id="x4-3-1-standaarden-voor-systeem-en-applicatieportabiliteit-niet-op-de-lijst-van-open-standaarden"><bdi class="secno">4.3.1 </bdi>Standaarden voor systeem- en applicatieportabiliteit niet op de lijst van Open standaarden</h4><a class="self-link" href="#standaarden-voor-systeem-en-applicatieportabiliteit-niet-op-de-lijst-van-open-standaarden" aria-label="Permalink for Section 4.3.1"></a></div>
+<p>De basis bij systeem- en applicatieportabiliteit ligt bij containerization en virtualisatie. Containerization is een technologie die applicaties en hun afhankelijkheden inpakt in containers, waardoor een consistente, geïsoleerde en lichtgewicht omgeving voor applicaties ontstaat. Het resultaat is makkelijk verplaatsbare containers tussen verschillende cloudleveranciers. Deze aanpak bevordert portabiliteit, schaalbaarheid en efficiëntie, en is cruciaal voor moderne ontwikkelmethoden.</p>
+<p>Naast containerization speelt virtualisatie nog een belangrijke rol. Virtualisatie is een zwaardere vorm van abstractie van de fysieke machine, aangezien virtuele machine een volledig OS bevat.</p>
+<p>In de praktijk worden deze technologieën vaak complementair gebruikt. Veel bedrijven gebruiken VM's voor het creëren van robuuste, geïsoleerde omgevingen voor hun infrastructuur, terwijl ze containers gebruiken binnen die VM's om hun applicaties efficiënt en consistent te beheren.</p>
+<p>Tijdens het onderzoek zijn de volgende standaarden op het gebied van systeem- en applicatieportabiliteit genoemd die niet op de lijst van Open standaarden van het Forum Standaardisatie voorkomen:</p>
+<ol>
+<li><p><a href="https://kubernetes.io/"><strong>Kubernetes</strong></a>: Kubernetes, vaak afgekort als K8s, is een krachtig opensource systeem voor het beheren van containerized applicaties in een cluster. Het werd oorspronkelijk ontwikkeld door Google en is gebaseerd op hun interne systeem genaamd Borg. Kubernetes werd in 2014 vrijgegeven als open-source software. Kubernetes is op dit moment dé de facto standaard voor containerorchestratie wereldwijd. Kubernetes is een open-source platform ontworpen voor het automatiseren van het deployen, schalen en beheren van containerized applicaties, waardoor het eenvoudiger wordt om complexe applicaties betrouwbaar en op schaal uit te rollen en te beheren. Kubernetes wordt breed ondersteund door nagenoeg alle cloudproviders. De drie hyperscalers bieden ieder een standaard setup gebaseerd op Kubernetes. Kubernetes is strikt genomen geen standaard maar een opensource technologie en daarom een standaard technologie ter bevordering van de portabiliteit.</p>
+</li>
+<li><p><a href="https://opencontainers.org/"><strong>OCI (Docker)</strong></a>: De Open Container Initiative (OCI), opgericht in 2015 door Docker en andere leiders in de containerindustrie, is een project onder de Linux Foundation. Het doel van OCI is het creëren van open industriestandaarden rond containerformaten en -runtimes. Een belangrijk onderdeel van de OCI is de specificatie van de container runtime en image formaat. Docker, als een toonaangevend platform in containerization, speelt een cruciale rol in deze standaardisatie-inspanningen. Docker containers zijn gebaseerd op OCI-specificaties, wat betekent dat ze compatibel zijn met andere OCI-conforme tools en systemen. Dit zorgt voor consistentie in de manier waarop containers worden gebouwd, gedeeld en uitgevoerd, ongeacht de onderliggende omgeving. Docker heeft ook bijgedragen aan de ontwikkeling van belangrijke standaarden en tools in het OCI-ecosysteem, wat de algemene acceptatie en het succes van containerization in de software-industrie verder heeft gestimuleerd. De OCI-specificaties zijn te vinden op <a href="https://github.com/opencontainers">GitHub</a>.</p>
+</li>
+<li><p><strong><a href="https://haven.commonground.nl/">Haven</a>:</strong> Haven kan gezien worden als het Nederlandse implementatieprofiel voor Kubernetes. Het schrijft een specifieke configuratie van&nbsp;<a href="https://www.kubernetes.io/">Kubernetes</a>&nbsp;voor die dient te worden geïmplementeerd op bestaande technische infrastructuur, bijvoorbeeld een cloud of on-premise platform. Hiermee voorziet het in een standaard inrichting gericht voor de Nederlandse overheid. De&nbsp;<a href="https://haven.commonground.nl/techniek/checks">voorgeschreven configuratie</a>&nbsp;zorgt ervoor dat iedere Haven omgeving functioneel gelijk is ongeacht de onderliggende technische infrastructuur. Zie het als een abstractielaag die resulteert in een gezamenlijk vertrekpunt. Dit brengt diverse voordelen met zich mee: uniformiteit in technische infrastructuur, uitwisselbaarheid van toepassingen, leveranciersonafhankelijkheid, platformonafhankelijkheid en kostenreductie.</p>
+</li>
+<li><p><a href="https://www.terraform.io/"><strong>Terraform</strong></a>: Terraform, ontwikkeld door HashiCorp, is een invloedrijke opensource infrastructuur als code (IaC) tool die het mogelijk maakt om infrastructuur te definiëren en te beheren met behulp van een hoog-niveau configuratietaal. Het stelt gebruikers in staat om zowel cloud als on-premise middelen op een consistente en voorspelbare manier te implementeren en te beheren. Terraform gebruikt declaratieve configuratiebestanden die de gewenste staat van de infrastructuur specificeren, variërend van fysieke apparaten zoals servers en netwerkapparatuur tot hoog-niveau componenten zoals DNS-entries, SaaS-kenmerken en meer. Dit maakt het mogelijk voor ontwikkelaars en operators om infrastructuur op een efficiënte, herhaalbare manier uit te rollen en te beheren. Eén van de sleutelkenmerken van Terraform is de ondersteuning van een breed scala aan infrastructuurproviders, zoals AWS, Microsoft Azure, Google Cloud, VMWare, OpenStack, en vele anderen. Het brede bereik van compatibiliteit stelt gebruikers in staat om multi-cloud strategieën te implementeren en te beheren zonder te hoeven leren omgaan met de implementatiedetails van elke provider. Terraform, hoewel geen implementatie van een formele externe standaard, is gebouwd rond een aantal kernprincipes en -ontwerpen. Terraform is een standaard in de wereld van infrastructuur als code (IaC). De belangrijkste standaard die Terraform introduceert en volgt, is zijn eigen configuratietaal genaamd HashiCorp Configuration Language (HCL). Aangezien Terraform wereldwijd als de de facto standaard wordt gezien is deze opgenomen in dit rapport.Terraform was een volledig opensource product, maar is dat sinds enige tijd niet meer. Alhoewel het nog breed wordt toegepast zijn er ook opensource forks, waarvan <a href="https://opentofu.org/">OpenTofu</a> de bekendste is.</p>
+</li>
+<li><p><a href="https://www.dmtf.org/standards/ovf"><strong>Open Virtualization Format (OVF)</strong></a>: Open Virtualization Format (OVF) is een open standaard voor het verpakken en distribueren van softwareoplossingen voor virtuele machines, ontwikkeld door de Distributed Management Task Force (DMTF). OVF is ontworpen om portabiliteit en eenvoudige installatie van virtuele applicaties over verschillende virtualisatieplatforms heen te vergemakkelijken. Dit formaat beschrijft een virtuele machine, inclusief de structuur van de VM, de benodigde hardwarebronnen en de vereiste software-afbeeldingen. Het omvat ook metadata zoals productinformatie, licenties en configuratieopties. OVF biedt een standaardmanier om virtuele machines en bijbehorende configuraties te verpakken in één distributie-eenheid. Deze aanpak vereenvoudigt het beheer van multi-tier applicaties, vermindert de complexiteit van het inzetten en verplaatsen van VM's tussen verschillende omgevingen en zorgt voor grotere interoperabiliteit tussen verschillende virtualisatieplatforms. Door het gebruik van OVF kunnen organisaties en individuele gebruikers eenvoudig complexe multi-platform, multi-VM-workloads distribueren en beheren. OVF wordt ondersteund door alle belangrijke virtualisatie leveranciers waaronder: Virtual Box, Red Hat, VMWare, Microsoft, IBM, Google en AWS.</p>
+</li>
+<li><p><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjf7vjx6PCCAxVyUKQEHY2aBh0QFnoECA0QAQ&amp;url=https%3A%2F%2Fwww.iso.org%2Fstandard%2F66639.html&amp;usg=AOvVaw2nHdYqSa6Ci6odrqIEFz5L&amp;opi=89978449"><strong>ISO/IEC 19941:2017</strong></a>: ISO/IEC 19941:2017 is een internationale norm die richtlijnen en best practices biedt voor cloudcomputing interoperabiliteit en portabiliteit. Deze norm richt zich op het vergemakkelijken van de uitwisseling en het gebruik van data en toepassingen over verschillende cloudservices en platforms heen. Het definieert termen en concepten gerelateerd aan interoperabiliteit (het vermogen van verschillende systemen om effectief samen te werken) en portabiliteit (het vermogen om toepassingen en data gemakkelijk te verplaatsen tussen verschillende cloudomgevingen). ISO/IEC 19941:2017 behandelt essentiële onderwerpen zoals het ontwerp van cloudsystemen, dataformaat en -uitwisseling, en de interactie tussen verschillende cloudservice-modellen. Het streeft ernaar om organisaties te ondersteunen bij het verminderen van vendor lockin risico's en het verbeteren van de flexibiliteit en keuzevrijheid in cloudcomputing oplossingen.</p>
+</li>
+</ol>
+<p>Naast bovengenoemde is een aantal standaarden nog in ontwikkeling die wellicht in de toekomst relevant zullen worden, waaronder Liqo.io. <a href="http://liqo.io/">Liqo.io</a> is een opensource project dat dynamische en naadloze Kubernetes federated cluster topologieën mogelijk maakt. Het ondersteunt heterogene infrastructuren, waaronder on-premise, cloud en edge omgevingen. Het is ontwikkeld door de Italiaanse universiteit van Turijn.</p>
+</section><section id="witte-vlekken-0"><div class="header-wrapper"><h4 id="x4-3-2-witte-vlekken"><bdi class="secno">4.3.2 </bdi>Witte vlekken</h4><a class="self-link" href="#witte-vlekken-0" aria-label="Permalink for Section 4.3.2"></a></div>
+<p>De hierboven opgesomde standaarden staan niet op de lijst van Open standaarden van het Forum Standaardisatie. Deze lijst van standaarden voorzien voor een groot deel in de behoefte van systeem en applicatieportabiliteit met betrekking tot clouddiensten. Het is dus van belang om te onderzoeken of deze standaarden opgenomen kunnen worden op de lijst van Open standaarden.</p>
+</section><section id="standaarden-voor-dataportabiliteit-niet-op-de-lijst-van-open-standaarden"><div class="header-wrapper"><h4 id="x4-3-3-standaarden-voor-dataportabiliteit-niet-op-de-lijst-van-open-standaarden"><bdi class="secno">4.3.3 </bdi>Standaarden voor dataportabiliteit niet op de lijst van open standaarden</h4><a class="self-link" href="#standaarden-voor-dataportabiliteit-niet-op-de-lijst-van-open-standaarden" aria-label="Permalink for Section 4.3.3"></a></div>
+<p>Dataportabiliteit gaat over het makkelijk kunnen overdragen van gegevens van het ene systeem naar het andere systeem. De ISO-norm <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjWke_Tr-6CAxUl7rsIHXAxCPIQFnoECBEQAQ&amp;url=https%3A%2F%2Fwww.iso.org%2Fstandard%2F60544.html&amp;usg=AOvVaw1xzPExUgHSEvXHddbAyQoZ&amp;opi=89978449">ISO 17788</a> geeft de volgende definitie van dataportabiliteit:</p>
+<blockquote>
+<p><em>“Het vermogen om gegevens gemakkelijk over te dragen van het ene systeem naar het andere, zonder dat het nodig is om gegevens opnieuw in te voeren. Het gaat hier om het gemak waarmee de gegevens verplaatst kunnen worden. Dit kan bereikt worden doordat het bronsysteem de gegevens levert in precies het formaat dat geaccepteerd wordt door het doelsysteem. Zelfs als de formaten niet overeenkomen, kan de transformatie tussen deze formaten eenvoudig en rechttoe rechtaan zijn met behulp van algemeen beschikbare hulpmiddelen. Aan de andere kant, een proces van het uitprinten van de gegevens en deze opnieuw invoeren in het doelsysteem kan niet beschreven worden als ‘gemakkelijk’.”</em></p>
+</blockquote>
+<p>Bij standaarden voor dataportabiliteit dient onderscheid gemaakt te worden tussen data in de vorm van bestanden (zoals: foto’s, video’s of officebestanden) en complexe data, zoals databases.</p>
+<p>Op lijst open standaarden van het Forum Standaardisatie is een beperkt aantal standaarden opgenomen voor dataportabiliteit op bestandsniveau:</p>
+<ol>
+<li><p><a href="https://www.forumstandaardisatie.nl/open-standaarden/webdav-en-caldav"><strong>CalDAV</strong></a>: CalDAV is een internetstandaard die wordt gebruikt voor het synchroniseren en delen van kalendergegevens op servers. Het is een uitbreiding op WebDAV (Web-based Distributed Authoring and Versioning), een protocol gebaseerd op HTTP, en is ontworpen om gebruikers toegang te geven tot planningsinformatie op een server. CalDAV stelt gebruikers in staat om afspraken en geplande evenementen te creëren, wijzigen en verwijderen op een gedeelde server, waarbij de wijzigingen automatisch worden bijgewerkt en gesynchroniseerd over alle apparaten van de gebruiker.</p>
+</li>
+<li><p><a href="https://www.forumstandaardisatie.nl/open-standaarden/webdav-en-caldav"><strong>WebDAV</strong></a>: WebDAV (Web-based Distributed Authoring and Versioning) is een uitbreiding van het HTTP-protocol dat gebruikers in staat stelt om op een collaboratieve manier bestanden te creëren, bewerken en beheren op webservers. Deze technologie maakt het mogelijk voor meerdere gebruikers om samen te werken aan documenten en bestanden alsof ze zich op een lokale netwerkschijf bevinden, met functionaliteiten zoals het uploaden en downloaden van bestanden, het creëren van mappen, het kopiëren en verplaatsen van bestanden, en het bijhouden van versies. Veelgebruikt in verschillende toepassingen zoals contentmanagementsystemen, online samenwerkingstools en cloudopslagdiensten, biedt WebDAV een gestandaardiseerde manier voor gebruikers om direct via hun webbrowser of specifieke clientsoftware toegang te krijgen tot en te werken met bestanden op afstand.</p>
+</li>
+</ol>
+<p>Beide standaarden hebben de status ‘aanbevolen’ op de lijst van het Forum Standaardisatie. Verschillende experts pleiten ervoor om CalDAV en WebDAV de status ‘pas toe of leg uit’ te geven, en zo te verplichten bij de aanschaf van clouddiensten. Naast genoemde standaarden bestaan er ook gangbare tools zoals <em>rsync</em> en <em>dd</em> om bestanden tussen systemen uit te wisselen.</p>
+<p>Er is geen breed geaccepteerde open standaard voor Cloud-opslag. Amazon <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwiZ7OmNs-6CAxXY_bsIHd_3C0kQFnoECBUQAQ&amp;url=https%3A%2F%2Faws.amazon.com%2Fs3%2Fstorage-classes%2F&amp;usg=AOvVaw0Ps4V0kfXuKPOV5L4WjZjY&amp;opi=89978449">Simple Storage Service (S3)</a> kan beschouwd worden als een de facto standaard in cloudopslag, vanwege zijn uitgebreide acceptatie en gebruik in de industrie. Veel andere cloudopslagdiensten en -tools bieden compatibiliteit bieden met de S3 API (Application Programming Interface Naast Amazon zijn er diverse leveranciers die objectstorage producten en diensten aanbieden volgens de S3-standaard, zoals <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwign4r_su6CAxWng_0HHTlHCyoQFnoECAYQAQ&amp;url=https%3A%2F%2Fmin.io%2F&amp;usg=AOvVaw3EUWhejF1FLHNl2GaGJVOY&amp;opi=89978449">Minio</a>. Vergelijkbare functionaliteit wordt geboden door Microsoft Azure Blob Storage.</p>
+<p>Naast bovengenoemde standaarden is het DTP het vermelden waard. Het <a href="https://github.com/google/data-transfer-project">Data Transfer Project (DTP)</a> is een open-source initiatief dat zich richt op het mogelijk maken van dataportabiliteit tussen meerdere online platforms. Het project werd op 20 juli 2018 gelanceerd door Google en heeft partnerschappen met grote technologiebedrijven zoals Facebook, Microsoft, Twitter en Apple. DTP faciliteert door de klant gecontroleerde bulkgegevensoverdrachten tussen twee online-diensten, waardoor gebruikers hun gegevens gemakkelijker tussen verschillende platforms kunnen verplaatsen.</p>
+<p>Door de samenwerking tussen verschillende technologiegiganten streeft het project ernaar om een naadloze en efficiënte ervaring te creëren voor gebruikers die hun gegevens willen overzetten, bijvoorbeeld bij het wisselen van e-maildiensten, sociale mediaplatforms, of dataopslagdiensten. DTP is in de eerste fase van ontwikkeling.</p>
+</section><section id="witte-vlekken-1"><div class="header-wrapper"><h4 id="x4-3-4-witte-vlekken"><bdi class="secno">4.3.4 </bdi>Witte vlekken</h4><a class="self-link" href="#witte-vlekken-1" aria-label="Permalink for Section 4.3.4"></a></div>
+<p>Voor data opgeslagen in databases is geen vastgestelde standaard wat gestandaardiseerde uitwisseling beperkt. De volgende typen database-onafhankelijke bestandsformaten worden genoemd die ook opgenomen zijn op de lijst van aanbevolen standaarden van de Forum Standaardisatie:</p>
+<ul>
+<li><p>CSV (Comma-Separated Values),</p>
+</li>
+<li><p>JSON (JavaScript Object Notation)</p>
+</li>
+<li><p>XML(eXtensible Markup Language)</p>
+</li>
+<li><p>SQL ISO/IEC 9075 (Standaard SQL)</p>
+</li>
+</ul>
+<p>Dit zijn veelgebruikte formaten voor het exporteren en importeren van gegevens tussen verschillende systemen. Ze worden breed ondersteund en maken het eenvoudig om gestructureerde gegevens te verplaatsen.</p>
+<p>Een aantal geïnterviewden opperde om een lijst van veel gebruikte opensource databases vast te stellen en de exportformaten van die databases als de standaard vast te stellen. Veel genoemde databases in dit verband zijn: Postgres, MySql, MariaDb, Mongo en Redis.</p>
+</section></section><section id="interoperabiliteitsstandaarden"><div class="header-wrapper"><h3 id="x4-4-interoperabiliteitsstandaarden"><bdi class="secno">4.4 </bdi>Interoperabiliteitsstandaarden</h3><a class="self-link" href="#interoperabiliteitsstandaarden" aria-label="Permalink for Section 4.4"></a></div>
+<p>Interoperabiliteitstandaarden in de context van cloudcomputing zijn cruciaal voor het waarborgen van een naadloze, effectieve interactie tussen verschillende cloudsystemen en -diensten van diverse aanbieders. Interoperabiliteit bevordert dus een meer open, flexibele en schaalbare cloudomgeving, waar gebruikers de vrijheid hebben om diensten van verschillende leveranciers te kiezen en te combineren op basis van hun specifieke behoeften.</p>
+<p>In de context van cloudcomputing zijn portabiliteitstandaarden en interoperabiliteitstandaarden nauw met elkaar verbonden, maar ze dienen verschillende doelen. Portabiliteitstandaarden zijn gericht op het mogelijk maken van de overdracht van applicaties, data en diensten tussen verschillende cloudomgevingen zonder significante wijzigingen of verlies van functionaliteit. Interoperabiliteitstandaarden focussen op het waarborgen van de compatibiliteit tussen verschillende cloudsystemen en -services, zodat ze naadloos met elkaar kunnen samenwerken. Interoperabiliteit is cruciaal voor het creëren van een coherente, functioneel rijke cloudomgeving waar verschillende cloudservices en -componenten van verschillende leveranciers kunnen integreren en effectief samenwerken.</p>
+<p>Hoewel beide beschouwingsgebieden van standaarden verschillende doelen hebben, zijn ze complementair. Goede portabiliteit vergemakkelijkt interoperabiliteit, omdat systemen die gemakkelijk van het ene naar het andere platform kunnen worden verplaatst, doorgaans ook beter kunnen samenwerken met systemen op die platforms. Er is echter wel overlap tussen beide type standaarden. Overlappende standaarden zijn in paragraaf 4.3 (Portabiliteitstandaarden) opgenomen.</p>
+<section id="standaarden-op-de-lijst-van-open-standaarden-0"><div class="header-wrapper"><h4 id="x4-4-1-standaarden-op-de-lijst-van-open-standaarden"><bdi class="secno">4.4.1 </bdi>Standaarden op de lijst van Open standaarden</h4><a class="self-link" href="#standaarden-op-de-lijst-van-open-standaarden-0" aria-label="Permalink for Section 4.4.1"></a></div>
+<p>De volgende interoperabiliteitstandaarden die al op de <strong>‘pas toe of leg uit’-lijst</strong> staan kwamen tijdens het onderzoek naar voren:</p>
+<ol>
+<li><p><a href="https://gitdocumentatie.logius.nl/publicatie/dk/restapi/"><strong>REST</strong></a> (als onderdeel van <a href="https://forumstandaardisatie.nl/open-standaarden/digikoppeling">Digikoppeling</a>): Representational State Transfer (REST) is een architecturale stijl voor het ontwerpen van netwerktoepassingen. Het wordt veel gebruikt voor het bouwen van interactieve applicaties die gebruikmaken van webdiensten. Een RESTful systeem gebruikt HTTP-verzoeken om data te verkrijgen, te creëren, te wijzigen en te verwijderen, wat het geschikt maakt voor gebruik in internettoepassingen. REST is eenvoudig, lichtgewicht en gemakkelijk te begrijpen en te implementeren, waardoor het een populaire keuze is voor het ontwikkelen van API's (Application Programming Interfaces) in webapplicaties.</p>
+</li>
+<li><p><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwiGz86AxO6CAxUDhv0HHfl6CLgQFnoECBsQAQ&amp;url=https%3A%2F%2Fforumstandaardisatie.nl%2Fopen-standaarden%2Frest-api-design-rules&amp;usg=AOvVaw1ToPu6QELTnUkWT1Olbrcv&amp;opi=89978449"><strong>REST API Design Rules</strong></a>: De standaard REST-API Design Rules geeft een verzameling basisregels voor structuur en naamgeving waarmee de overheid op een uniforme en eenduidige manier REST-API's aanbiedt. Dit maakt het voor ontwikkelaars gemakkelijker om betrouwbare applicaties met te ontwikkelen met API's van de overheid.</p>
+</li>
+<li><p><a href="https://www.forumstandaardisatie.nl/open-standaarden/verplicht"><strong>OpenAPI Specification&nbsp;(OAS)</strong></a>: OAS geeft ontwikkelaars van applicaties een eenduidige en leesbare beschrijving van een REST API waarmee zij de API kunnen gebruiken zonder te hoeven weten hoe deze geïmplementeerd is. OAS 3.0 zorgt voor gemakkelijker (her)gebruik van API’s en minder leveranciersafhankelijkheid.</p>
+</li>
+</ol>
+<p>Ook kwam de standaard <a href="https://www.forumstandaardisatie.nl/open-standaarden/scim">SCIM</a> naar voren die al op de lijst open standaarden is opgenomen met de status ‘aanbevolen’. SCIM zorgt ervoor dat identiteitsinformatie van gebruikers systeem overstijgend op de juiste plek aanwezig is. Hierdoor kunnen gegevens die niet meer in systemen horen te staan, omdat een gebruiker bijvoorbeeld niet langer in dat systeem hoeft te zijn opgenomen, worden verwijderd. Doordat dit geautomatiseerd gebeurt is relatief weinig inspanning nodig om de gewenste toevoeging of verwijdering van gegevens te realiseren. Deze standaard is gericht op het reduceren van kosten en complexiteit én het voortbouwen op bestaande protocollen. SCIM heeft als doel om gebruikers snel, goedkoop en eenvoudig in, uit en tussen clouddiensten te brengen.</p>
+</section><section id="standaarden-niet-op-de-lijst-van-open-standaarden"><div class="header-wrapper"><h4 id="x4-4-2-standaarden-niet-op-de-lijst-van-open-standaarden"><bdi class="secno">4.4.2 </bdi>Standaarden niet op de lijst van Open standaarden</h4><a class="self-link" href="#standaarden-niet-op-de-lijst-van-open-standaarden" aria-label="Permalink for Section 4.4.2"></a></div>
+<p>De volgende interoperabiliteitstandaarden kwamen tijdens het onderzoek naar voren die nog niet op de lijst Open Standaarden staan:</p>
+<ol>
+<li><p><a href="https://commonground.nl/cms/view/088008fb-ca43-4f93-9d4d-d7b0bc65edc4/techniek/f8071742-35b3-4a67-ba0b-128e0be1a0e5"><strong>FSC NLX</strong></a>: De software van Federated Service Connectivity NLX stelt (overheids)organisaties in staat om&nbsp;<a href="https://commonground.gitlab.io/standards/fsc/">FSC compliant</a>&nbsp;op een eenvoudige, veilige en toegankelijke manier data uit te wisselen. Dit helpt overheidsorganisaties onder andere om aan de nieuwe privacywetgeving te voldoen en om inwoners inzicht te geven in hun gegevens. FSC NLX regelt de volgende zaken:</p>
+<ol>
+<li><p>opzetten van veilige verbindingen;</p>
+</li>
+<li><p>vindbaar en toegankelijk maken van diensten;</p>
+</li>
+<li><p>monitoren en beheren van verbindingen binnen een organisatie;</p>
+</li>
+<li><p>centraal monitoren van gebruik en beschikbaarheid van diensten;</p>
+</li>
+<li><p>lokaal bijhouden van het gebruik van diensten (logging).</p>
+</li>
+</ol>
+</li>
+</ol>
+<p>FSC NLX is onderdeel van <a href="https://commonground.nl/">Common Ground</a>.</p>
+<ol start="2">
+<li><p><a href="https://en.wikipedia.org/wiki/Open_Cloud_Computing_Interface"><strong>Open Cloud Computing Interface (OCCI)</strong>:</a> OCCI is een set van open specificaties voor cloudcomputing, ontwikkeld door de Open Grid Forum. Het biedt een API-standaard voor het beheren van allerlei cloudinfrastructuur, waaronder IaaS (Infrastructure as a Service).</p>
+</li>
+<li><p><a href="https://joinup.ec.europa.eu/collection/ict-standards-procurement/solution/dsp0263-cloud-infrastructure-management-interface-cimi-model-and-restful-http-based-protocol-v200/about"><strong>Cloud Infrastructure Management Interface (CIMI)</strong></a>: Ontwikkeld door de Distributed Management Task Force (DMTF), richt CIMI zich op het beheer van cloudinfrastructuur en streeft het naar een uniforme interface voor de interactie met infrastructuur als een service (IaaS) modellen.</p>
+</li>
+<li><p><a href="https://www.techtarget.com/searchstorage/definition/Cloud-Data-Management-Interface"><strong>Cloud Data Management Interface (CDMI)</strong></a>: CDMI is een standaard die specifiek is ontworpen voor dataopslag en datamanagement in de cloud. Het stelt gebruikers in staat om data en bijbehorende metadata in de cloud te creëren, te verwijderen, bij te werken en op te halen.</p>
+</li>
+<li><p><a href="https://spec.graphql.org/October2021/"><strong>GraphQL</strong></a>: GraphQL is een querytaal voor API’s en een server-side runtime voor het uitvoeren van query’s. GraphQL is niet gebonden aan een specifieke database of opslagsysteem en wordt in plaats daarvan gebruikt om bestaande code en gegevens in termen van een API te beschrijven. Het biedt een efficiëntere, krachtigere en flexibelere aanpak van API-design dan traditionele REST-API's. Met GraphQL kan een client precies specificeren welke gegevens het nodig heeft, wat over- of onder-fetching van gegevens vermindert. Het stelt ook gebruikers in staat om complexe query’s samen te stellen, waarbij gegevens uit meerdere bronnen in een enkel verzoek kunnen worden samengevoegd. Hierdoor is het bijzonder nuttig in moderne web- en mobiele toepassingen, waar het efficiënt beheren van data-overdracht en het verminderen van netwerkverzoeken cruciaal is voor de prestaties.</p>
+</li>
+</ol>
+</section><section id="witte-vlekken-2"><div class="header-wrapper"><h4 id="x4-4-3-witte-vlekken"><bdi class="secno">4.4.3 </bdi>Witte vlekken</h4><a class="self-link" href="#witte-vlekken-2" aria-label="Permalink for Section 4.4.3"></a></div>
+<p>Clouddiensten en met name de hyperscalers bieden allerlei makkelijk toegankelijke proprietary diensten aan ondersteund door proprietary standaarden. Andere cloudaanbieders hebben andere proprietary diensten en standaarden, dit bemoeilijkt de gewenste naadloze, effectieve interactie tussen verschillende cloudsystemen en -diensten van diverse aanbieders. De hierboven genoemde standaarden bevorderen de interoperabiliteit, maar zijn niet afdoende om dit volledig af te dekken. Het gebruik van proprietary standaarden door de verschillende hyperscalers en de vervlechting van deze standaarden, maakt het niet eenvoudig om open standaarden te implementeren. Hier ligt dus een grote uitdaging. Europese wetgeving zal dit op termijn moeten afdwingen.</p>
+</section></section><section id="overige-standaarden"><div class="header-wrapper"><h3 id="x4-5-overige-standaarden"><bdi class="secno">4.5 </bdi>Overige standaarden</h3><a class="self-link" href="#overige-standaarden" aria-label="Permalink for Section 4.5"></a></div>
+<p>Ondanks dat het onderzoek zich richt op standaarden voor beveiliging en privacy, portabiliteit en interoperabiliteit met betrekking tot cloudcomputing kwam een aantal aanpalende standaarden en normen ter sprake. Het betreft de volgende standaarden, normen en frameworks:</p>
+<ol>
+<li><p><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwix7_7AtZuEAxWF3AIHHVB3AqcQFnoECBIQAQ&amp;url=https%3A%2F%2Fnvlpubs.nist.gov%2Fnistpubs%2FLegacy%2FSP%2Fnistspecialpublication500-292.pdf&amp;usg=AOvVaw1vQPKXFN1SBtz9l225I5Nw&amp;opi=89978449"><strong>NIST SP 500-292</strong></a>: Het NIST Cloud Computing Reference Architecture is een generiek high-level conceptueel model dat dient als een gebruikersgericht referentiepunt.</p>
+</li>
+<li><p><strong><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwiTgI3OtZuEAxXd9gIHHTuGCxkQFnoECBAQAQ&amp;url=https%3A%2F%2Fwww.iso.org%2Fstandard%2F82758.html&amp;usg=AOvVaw2n7z3JY1ThlAw1nwZR5Hfe&amp;opi=89978449">ISO/IEC 22123-1</a>:</strong>&nbsp; Information technology — Cloud computing — Part 1: Vocabulary. Deze norm bevat definities voor termen die in het kader van cloud gebruikt worden zoals: IaaS, PaaS en SaaS. Heeft overlap met NIST SP 500-292.</p>
+</li>
+<li><p><strong><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjCnZLYtZuEAxVD9QIHHfgGCl4QFnoECBEQAQ&amp;url=https%3A%2F%2Fwww.iso.org%2Fstandard%2F80351.html&amp;usg=AOvVaw1SUp89eC3VMzBc5BSJOvp9&amp;opi=89978449">ISO/IEC 22123-2</a>:</strong>&nbsp; Information technology — Cloud computing — Part 2: Concepts. Deze norm, getiteld "Deel 2: Concepten", heeft als doel het definiëren en specificeren van concepten die gebruikt worden op het gebied van Cloudcomputing. Het dient als een uitbreiding van de cloudcomputing vocabulaire die oorspronkelijk gedefinieerd werd in ISO/IEC 22123-1. Door deze concepten verder uit te werken, legt ISO/IEC 22123-2:2023 een fundament dat andere documenten en normen ondersteunt die geassocieerd zijn met cloudcomputing.</p>
+</li>
+<li><p><strong><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwimz-fgtZuEAxU23gIHHS7qANYQFnoECA4QAQ&amp;url=https%3A%2F%2Fwww.iso.org%2Fstandard%2F82759.html&amp;usg=AOvVaw3oQRgfzL5AjxKXlWkSED2X&amp;opi=89978449">ISO/IEC 22123-3</a>:</strong>&nbsp; Information technology — Cloud computing — Part 3: Reference architecture. Deze norm, getiteld "Deel 3: Referentiearchitectuur", specificeert de referentiearchitectuur voor cloudcomputing (CCRA). Dit document is van belang omdat het richtlijnen en standaarden vastlegt die betrekking hebben op de structuur en organisatie van systemen en diensten binnen de cloudcomputing omgeving. De referentiearchitectuur die in dit document wordt beschreven, biedt een gestructureerde en gedetailleerde blauwdruk voor het opzetten en beheren van cloudgebaseerde systemen, waardoor het een essentiële bron is voor professionals in het veld van cloudcomputing.</p>
+</li>
+<li><p><strong><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwiG_ZPttZuEAxVN5wIHHd4pA4wQFnoECBIQAQ&amp;url=https%3A%2F%2Fcsrc.nist.gov%2Fpubs%2Fsp%2F800%2F154%2Fipd&amp;usg=AOvVaw1ES-cHtztiXIV35QN0_kOh&amp;opi=89978449">NIST SP 800-154</a>:</strong> Het Nationale Instituut van Standaarden en Technologische definities van cloudcomputing, dat een duidelijk beknopt raamwerk biedt voor het begrijpen van cloudtechnologie.</p>
+</li>
+<li><p><strong><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjr8uL5tZuEAxVu1QIHHRLhBrMQFnoECBsQAQ&amp;url=http%3A%2F%2Fcsc.etsi.org%2F&amp;usg=AOvVaw15bocGTiE-NEtBj42QaFx7&amp;opi=89978449">ETSI cloud standards</a>:</strong> De Europese Telecommunicatie Standaarden Instituut hanteert verschillende standaarden en specificaties voor clouddiensten, gericht op interoperabiliteit, veiligheid en SLA’s.</p>
+</li>
+<li><p><a href="https://www.enisa.europa.eu/publications/cloud-computing-risk-assessment"><strong>ENISA Cloud Computing Risk Assessment</strong></a>: De Cloudcomputing Risk Assessment van ENISA (European Union Agency for Cybersecurity) is een uitgebreid document dat de potentiële risico's evalueert die samenhangen met de adoptie van cloudcomputingdiensten.</p>
+</li>
+<li><p><strong><a href="https://www.iso.org/standard/62816.html">ISO/IEC 38500:</a></strong> ISO 38500 is een internationale norm die richtlijnen biedt voor effectief corporate governance van informatie- en communicatietechnologie (ICT).</p>
+</li>
+<li><p><a href="https://www.finops.org/framework/"><strong>FinOps-framework</strong></a>: Het FinOps-framework is een reeks principes ontworpen om organisaties te helpen hun cloudkosten effectiever te beheren en te optimaliseren.</p>
+</li>
+<li><p><a href="https://www.iso.org/standard/67545.html"><strong>ISO/IEC 19086</strong></a>: ISO/IEC 19086 is een reeks internationale normen die richtlijnen en best practices biedt voor cloud service level agreements (SLA's). Deze normen helpen bij het definiëren, documenteren en overeenkomen van service level doelstellingen, metingen en verantwoordelijkheden tussen cloud service providers en hun klanten.</p>
+</li>
+<li><p><strong><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwi4toPH6fCCAxVuV6QEHRpCDjUQFnoECA4QAQ&amp;url=https%3A%2F%2Fwww.iso.org%2Fstandard%2F66674.html&amp;usg=AOvVaw1waD80Lvzt0_QfZ5qeeWEd&amp;opi=89978449">ISO/IEC 19944</a>:</strong> ISO/IEC 19944 (Deel 1 en 2) is een internationale standaard die zich richt op cloudcomputing en distributed platforms, met speciale aandacht voor het vaststellen van een raamwerk voor data flow en data categorieën in de cloud. Deze norm biedt richtlijnen voor het classificeren van data, inclusief de oorsprong, beweging, en het gebruik ervan binnen cloud en gedistribueerde computing omgevingen. Het helpt organisaties bij het identificeren van de verschillende soorten data die in de cloud worden verwerkt, zoals gebruikersgegevens, operationele data en metadata, en geeft aanbevelingen voor het beheer en de behandeling van deze data, rekening houdend met zaken als privacy, beveiliging en compliance.</p>
+</li>
+</ol>
+<section id="witte-vlekken-3"><div class="header-wrapper"><h4 id="x4-5-1-witte-vlekken"><bdi class="secno">4.5.1 </bdi>Witte vlekken</h4><a class="self-link" href="#witte-vlekken-3" aria-label="Permalink for Section 4.5.1"></a></div>
+<p>Voor de algemene standaarden zijn geen witte vlekken gedefinieerd.</p>
+</section></section></section><section id="bijlage-wat-is-cloud"><div class="header-wrapper"><h2 id="x5-bijlage-wat-is-cloud"><bdi class="secno">5. </bdi>Bijlage - Wat is cloud?</h2><a class="self-link" href="#bijlage-wat-is-cloud" aria-label="Permalink for Section 5."></a></div>
+<p>In deze bijlage een toelichting op de cloud. Waar is het cloudbeleid op gericht? De verschillende clouddiensten en cloudvarianten worden toegelicht, een toelichting van het toenemende belang van cloudcomputing en een opsomming van belangrijke cloudleveranciers.</p>
+<section id="clouddiensten"><div class="header-wrapper"><h3 id="x5-1-clouddiensten"><bdi class="secno">5.1 </bdi>Clouddiensten</h3><a class="self-link" href="#clouddiensten" aria-label="Permalink for Section 5.1"></a></div>
+<p>Als referentiemodel voor de definities van cloudcomputing hanteren wij in dit rapport <a href="https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-145.pdf">The NIST Definition of Cloud Computing</a>. Deze referentie onderscheidt vijf essentiële karakteristieken van clouddiensten:</p>
+<ol>
+<li><p><strong>On-Demand Self-Service</strong>: Een afnemer van clouddiensten kan eenzijdig computercapaciteiten naar behoefte verkrijgen, zoals servertijd en netwerkopslag; automatisch zonder menselijke interactie met clouddienstverleners.</p>
+</li>
+<li><p><strong>Broad Network Access</strong>: Functionaliteiten zijn via standaard mechanismen over netwerken beschikbaar voor verschillende type clients zoals: mobiele telefoons, tablets, laptops en werkstations.</p>
+</li>
+<li><p><strong>Resource Pooling</strong>: De computerbronnen (zoals: opslag, verwerking, geheugen en netwerkbandbreedte) van de aanbieder kunnen worden verdeeld om meerdere afnemers te bedienen met behulp van een multi-tenant model, waarbij verschillende fysieke en virtuele bronnen dynamisch worden toegewezen op basis van de vraag van de afnemers. Er is een gevoel van locatieonafhankelijkheid in die zin dat de afnemer over het algemeen geen controle of kennis heeft over de exacte locatie van de geboden bronnen, maar wellicht de locatie op een hoger abstractieniveau kan specificeren (bijv. land, staat of datacenter).</p>
+</li>
+<li><p><strong>Rapid Elasticity</strong>: Computerbronnen kunnen ‘elastisch’ worden geleverd en vrijgegeven, in sommige gevallen automatisch, om snel op en af te schalen. Voor de afnemers lijken de beschikbare computerbronnen vaak onbeperkt te zijn en kunnen op elk moment in elke hoeveelheid worden toegeëigend</p>
+</li>
+<li><p><strong>Measured Service</strong>: Cloudsystemen meten en optimaliseren automatisch het gebruik van computerbronnen. Dit op een bepaald abstractieniveau (bijvoorbeeld opslag, verwerking, geheugen en netwerkbandbreedte). Het gebruik van computerbronnen kan worden gecontroleerd, beheerd en gerapporteerd, wat transparantie biedt voor zowel de aanbieder als de consument van de gebruikte dienst.</p>
+</li>
+</ol>
+</section><section id="varianten-van-clouddiensten"><div class="header-wrapper"><h3 id="x5-2-varianten-van-clouddiensten"><bdi class="secno">5.2 </bdi>Varianten van clouddiensten</h3><a class="self-link" href="#varianten-van-clouddiensten" aria-label="Permalink for Section 5.2"></a></div>
+<p>NIST onderscheidt drie servicemodellen van clouddiensten. Deze verschillende servicemodellen worden afgenomen door overheidsorganisaties. Dit zijn Infrastructure as a Service (IaaS), Platform as a Service (PaaS) en Software as a Service (SaaS):</p>
+<ol>
+<li><p><strong>Infrastructure as a Service (IaaS)</strong>: IaaS biedt gebruikers toegang tot essentiële infrastructuur zoals fysieke machines, virtual machines, netwerk, opslag en andere fundamenten zonder dat ze de daadwerkelijke hardware hoeven te bezitten of te onderhouden. Voor de Nederlandse overheid kan dit betekenen dat er minder behoefte is aan grote datacenters of serverfarms, omdat deze resources op aanvraag vanuit de cloud kunnen worden verkregen.</p>
+</li>
+<li><p><strong>Platform as a Service (PaaS)</strong>: PaaS gaat een stap verder door naast de basisinfrastructuur ook een platform te bieden waarop applicaties kunnen worden ontwikkeld, uitgevoerd en beheerd. Denk hierbij aan besturingssystemen, databases, webservers, ontwikkeltools, toegangsbeheer, identiteitenbeheer, portaalfunctionaliteiten en integratiefaciliteiten. Voor overheidsinstellingen die unieke applicaties willen bouwen voor hun diensten, kan PaaS een waardevol hulpmiddel zijn door het ontwikkelproces te stroomlijnen zonder zich zorgen te maken over het onderliggende systeembeheer.</p>
+</li>
+<li><p><strong>Software as a Service (SaaS)</strong>: Dit is wellicht het bekendste model, waarbij gebruikers toegang hebben tot softwaretoepassingen via het web. Denk bijvoorbeeld aan e-maildiensten, CRM-systemen of samenwerkingstools, zoals: bijvoorbeeld kantoorapplicaties (bijv. Microsoft365), cliëntenbeheer (CRM, bijv. Salesforce), softwareontwikkeling (bijv. GitHub). Voor de Nederlandse overheid betekent dit dat verschillende departementen en agentschappen toegang kunnen hebben tot de nieuwste software zonder zich zorgen te hoeven maken over installaties, updates of compatibiliteitsproblemen.</p>
+</li>
+</ol>
+<p>Opmerking: in het komende EUCS (en ook ISO 22123) wordt de term ‘as a service’ vervangen door ‘Cloud Capability Types’, dus ‘Infrastructure Capability’, ‘Platform Capability’ en ‘Application Capability’. In dit rapport hanteren we de terminologie die op het moment van schrijven vigeerde.</p>
+<p>Voor de overheid kunnen de drie modellen onder meer helpen om diensten efficiënter te leveren, te reageren op veranderende technologische behoeften en tegelijkertijd de overheadkosten te verlagen. Door de juiste mix van IaaS, PaaS en SaaS te kiezen, kan de Nederlandse overheid een technologische infrastructuur creëren die zowel flexibel als robuust is ten behoeve van primaire processen en binnen kaders standaarden.</p>
+<p>Tijdens het onderzoek gaven geïnterviewden aan dat er in de praktijk eigenlijk geen duidelijke splitsing is tussen IaaS en PaaS. De drie hyperscalers (Google, Microsoft en AWS) en de overige cloudleveranciers leveren een mix van deze twee dienstensoorten. Over het algemeen worden in een IaaS-omgeving via appstores allerlei aanvullende diensten geleverd, zoals: databasetoegang, AI-capaciteit en authenticatie en autorisatiediensten.</p>
+</section><section id="implementatievarianten-van-clouddiensten"><div class="header-wrapper"><h3 id="x5-3-implementatievarianten-van-clouddiensten"><bdi class="secno">5.3 </bdi>Implementatievarianten van clouddiensten</h3><a class="self-link" href="#implementatievarianten-van-clouddiensten" aria-label="Permalink for Section 5.3"></a></div>
+<p>NIST onderscheidt 4 typen implementatie van clouddiensten bij een cloudleverancier:</p>
+<ol>
+<li><p><strong>Public</strong>: De software en data staan dan volledig op de servers van de cloudprovider en er wordt een generieke (voor alle afnemers gelijke) functionaliteit geleverd.</p>
+</li>
+<li><p><strong>Gemeenschappelijk</strong>: De cloudvoorziening is toegankelijk voor een beperkte groep afnemers, die elkaar onderling voldoende vertrouwen.</p>
+</li>
+<li><p><strong>Privaat</strong>: Er wordt gewerkt op een (virtueel) private ICT-infrastructuur. In deze cloud heeft de gebruiker volledige controle over data, beveiliging en kwaliteit van de dienst. De applicaties die via de Private Cloud beschikbaar worden gemaakt, maken gebruik van gedeelde infrastructuurcomponenten die slechts voor één organisatie worden ingezet.</p>
+</li>
+<li><p><strong>Hybride</strong>: een samenstelling uit meerdere van bovengenoemde implementatievarianten.</p>
+</li>
+</ol>
+<p>In het <a href="https://www.enisa.europa.eu/publications/cloud-cybersecurity-market-analysis">Cloud Cybersecurity Market Analysis van Enisas</a> en andere achtergronddocumenten spreekt men ook de volgende implementatievariant, een variant die ook door de geïnterviewden werd genoemd: <strong>multi-cloud.</strong> Bij multi-cloud gaat het om een implementatievariant die net als de hybride-variant verschillende implementatievarianten combineert, en daarbij de implementatie van verschillende aanbieders combineert.</p>
+</section><section id="waarom-cloud"><div class="header-wrapper"><h3 id="x5-4-waarom-cloud"><bdi class="secno">5.4 </bdi>Waarom Cloud?</h3><a class="self-link" href="#waarom-cloud" aria-label="Permalink for Section 5.4"></a></div>
+<p>Cloudcomputing biedt een scala aan voordelen voor zowel individuen als organisaties. Hier zijn enkele van de meest prominente voordelen:</p>
+<ol>
+<li><p><strong>Kostenbesparing:</strong> Door gebruik te maken van de cloud kunnen afnemers besparen op de kosten van aanschaf en onderhoud van hardware. Ze betalen vaak alleen voor wat ze daadwerkelijk gebruiken. De <a href="https://www.acm.nl/system/files/documents/marktstudie-clouddiensten.pdf">Marktstudie Clouddiensten van het ACM</a> bevestigt dit beeld omdat grote datacenters duidelijke schaalvoordelen hebben en dus in staat zijn goedkoper diensten aan te bieden dan kleine datacenters.</p>
+</li>
+<li><p><strong>Schaalbaarheid en flexibiliteit:</strong> Een van de grootste voordelen van cloudservices is de mogelijkheid om gemakkelijk en snel op te schalen naarmate de behoefte van een organisatie groeit op het gebied van volume voor het optimaal laten werken van digitale toepassingen, zonder dat er grote investeringen in fysieke hardware nodig zijn. Bovendien maakt de enorme rekenkracht van de cloudtoepassingen toegankelijk die deze rekenkracht vereist. Denk hierbij aan Artificial Intelligence (AI) met als bekendste toepassing ChatGPT.</p>
+</li>
+<li><p><strong>Toegankelijkheid en mobiliteit:</strong> Gegevens en applicaties in de cloud kunnen vanaf elke locatie met internettoegang worden benaderd. Dit maakt telewerken en toegang onderweg gemakkelijker. Bovendien biedt het de mogelijkheid beter samen te werken, zoals bijvoorbeeld het gezamenlijk werken aan een document.</p>
+</li>
+<li><p><strong>Beveiliging en Compliance:</strong> Hoewel beveiliging in de cloud een veelbesproken onderwerp is, bieden veel cloudproviders geavanceerde beveiligingsfuncties die bedrijven wellicht niet zelf zouden kunnen implementeren omdat kennis of andere middelen ontberen. Gerenommeerde cloudaanbieders bieden geavanceerde beveiligingsfuncties en kunnen helpen om te voldoen aan strenge regelgevingsnormen.</p>
+</li>
+</ol>
+</section><section id="cloudleveranciers"><div class="header-wrapper"><h3 id="x5-5-cloudleveranciers"><bdi class="secno">5.5 </bdi>Cloudleveranciers</h3><a class="self-link" href="#cloudleveranciers" aria-label="Permalink for Section 5.5"></a></div>
+<p>De Nederlandse markt voor cloudcomputing is in veel opzichten een weerspiegeling van de bredere Europese en mondiale =markt, maar heeft ook zijn eigen unieke kenmerken. Hier is een overzicht van de cloudleveranciers in Nederland:</p>
+<p>De top-3 <a href="https://www.digitalrealty.nl/resources/articles/what-is-hyperscale">hyperscalers</a> verdelen met elkaar het grootste deel van clouddiensten. De volgende hyperscalers zijn actief voor de Nederlandse overheid:</p>
+<ol>
+<li><p>Amazon Web Services (AWS</p>
+</li>
+<li><p>Microsoft</p>
+</li>
+<li><p>Google Cloud</p>
+</li>
+</ol>
+<p>Naast bovengenoemde hyperscalers zijn de volgende bedrijven actief op de Nederlandse cloudmarkt:</p>
+<ol>
+<li><p>IBM Cloud</p>
+</li>
+<li><p>Oracle Cloud</p>
+</li>
+<li><p>VMWare</p>
+</li>
+<li><p>Red Hat</p>
+</li>
+<li><p>OVHcloud</p>
+</li>
+</ol>
+<p>Naast bovengenoemde mondiale spelers zijn er op het gebied van cloud een aantal Nederlandse bedrijven te noemen:</p>
+<ol>
+<li><p>KPN Cloud</p>
+</li>
+<li><p>TransIP</p>
+</li>
+<li><p>LeaseWeb</p>
+</li>
+<li><p>Interxion</p>
+</li>
+</ol>
+<p>Opvallend is dat de grote internationaal opererende cloudleveranciers bijna allemaal van Amerikaanse afkomst zijn met vestigingen in Europa, OVHCloud is de enige Europese speler. Nu de public cloud onder voorwaarden ook te gebruiken is door overheidsorganisaties neemt het marktaandeel van deze hyperscalers bij de overheid toe. De dreigende beperkte verdeling van de markt en de afkomst van de grote leveranciers buiten Europa, vereist regulering middels (Europese) wetgeving en onderliggende normen en standaarden.</p>
+</section></section><section id="bijlage-cloudontwikkelingen-en-trends"><div class="header-wrapper"><h2 id="x6-bijlage-cloudontwikkelingen-en-trends"><bdi class="secno">6. </bdi>Bijlage - Cloudontwikkelingen en trends</h2><a class="self-link" href="#bijlage-cloudontwikkelingen-en-trends" aria-label="Permalink for Section 6."></a></div>
+<p>Cloudcomputing heeft de manier waarop bedrijven, overheden en individuen technologie gebruiken en benaderen getransformeerd. Dit dynamische topic blijft evolueren met nieuwe innovaties, gebruikspatronen en businessmodellen. In dit hoofdstuk een overzicht van de mondiale trends op het gebied van cloudcomputing. Daarnaast een opsomming van cloudontwikkelingen in Europa en in Nederland.</p>
+<section id="mondiale-trends"><div class="header-wrapper"><h3 id="x6-1-mondiale-trends"><bdi class="secno">6.1 </bdi>Mondiale trends</h3><a class="self-link" href="#mondiale-trends" aria-label="Permalink for Section 6.1"></a></div>
+<p>Hier onder een overzicht van de belangrijkste mondiale trends in cloudcomputing:</p>
+<ol>
+<li><p><strong>Hybride en Multi-Cloud Strategieën</strong>: Bedrijven en organisaties gaan steeds meer voor een hybride cloudbenadering, waarbij ze zowel private als public cloud resources combineren. Bovendien adopteren ze multi-cloud strategieën, waarbij ze gebruikmaken van diensten van meerdere cloudproviders, om flexibiliteit te vergroten en risico's te verminderen.</p>
+</li>
+<li><p><strong>Serverloze Architecturen</strong>: Serverloos computing, vaak aangeduid als 'Function as a Service' (FaaS), stelt ontwikkelaars in staat om applicaties te bouwen en uit te voeren zonder zich zorgen te maken over de onderliggende infrastructuur en benodigde diensten. Deze onderliggende infrastructuur en benodigde diensten worden geboden door clouddiensten Dit leidt tot snellere ontwikkeling en kan kosten verminderen.</p>
+</li>
+<li><p><strong>AI en Machine Learning Integratie</strong>: Cloudproviders breiden hun diensten uit met tools en platforms die AI en machine learning integreren. Dit stelt organisaties in staat om krachtige data-analyses uit te voeren en intelligentie toe te voegen aan hun applicaties zonder grote voorafgaande investeringen. Hier zijn alle hyperscalers mee bezig én er wordt veel van verwacht gezien de investeringen die deze partijen nu doen.</p>
+</li>
+<li><p><strong>Verbeterde Beveiligingsmaatregelen</strong>: Met de toenemende zorgen over cyberbeveiliging investeren cloudproviders in geavanceerde beveiligingstechnologieën, zoals AI-gedreven beveiligingsanalyses, encryptie en zero-trust beveiligingsmodellen.</p>
+</li>
+<li><p><strong>Containers en Orkestratie</strong>: Ontwikkeling op basis van containers, zoals <a href="https://www.docker.com/">Docker</a>, en orkestratietools, zoals <a href="https://kubernetes.io/">Kubernetes</a>, zijn in populariteit gestegen, omdat ze ontwikkelaars helpen om applicaties te bouwen die gemakkelijk kunnen worden geschaald en over verschillende cloudomgevingen kunnen worden verplaatst wat de portabiliteit vergroot.</p>
+</li>
+<li><p><strong>Duurzaamheid</strong>: Met de groeiende zorgen over klimaatverandering kijken bedrijven en consumenten steeds meer naar de milieueffecten van technologie. Cloudproviders reageren hierop door duurzamere datacenters te bouwen en groene energie te gebruiken.</p>
+</li>
+<li><p><strong>Data-soevereiniteit en lokale Regulaties</strong>: Met strengere gegevensbeschermingswetten in verschillende landen en regio's werken cloudproviders aan regionale datacenters en het aanbieden van specifieke oplossingen om aan de regelgeving te voldoen.</p>
+</li>
+</ol>
+<p>De mondiale trends in cloudcomputing zijn een reflectie van het snel veranderende technologische landschap en de behoeften van organisaties en individuen. Terwijl cloudcomputing blijft evolueren, zullen de fundamentele principes van flexibiliteit, schaalbaarheid en on-demand toegang de drijvende krachten achter deze transformatie blijven.</p>
+</section><section id="europese-ontwikkelingen"><div class="header-wrapper"><h3 id="x6-2-europese-ontwikkelingen"><bdi class="secno">6.2 </bdi>Europese ontwikkelingen</h3><a class="self-link" href="#europese-ontwikkelingen" aria-label="Permalink for Section 6.2"></a></div>
+<p>We hebben eerder vastgesteld dat de cloud ons veel voordelen gaat bieden. Om te zorgen voor een gecontroleerde ontwikkeling conform de normen en waarden die gelden in de Europese samenleving is het van belang om passende maatregelen te nemen. Deze maatregelen moeten leiden tot passende wet en regelgeving met daarin een verwijzing naar de verplichte toepassing van open standaarden door cloudleveranciers.</p>
+<p>De EU ziet wetgeving en standaardisatie als een&nbsp;<a href="https://joinup.ec.europa.eu/collection/rolling-plan-ict-standardisation/cloud-and-edge-computing-0">strategisch instrument</a>&nbsp;om de markt voor clouddiensten gezonder en veiliger te maken. Acties voor cloudcomputing in het Rolling Plan 2022:</p>
+<blockquote>
+<p>“Action 1&nbsp;- Identify needs for ICT standards and open source technologies to further improve the interoperability, data protection and portability of cloud services and continue or start respective development activities…</p>
+<p>Action 2&nbsp;- Promote the use of the ICT standards needed to further improve the interoperability, data protection and portability of cloud services as well as multi-cloud management.”</p>
+</blockquote>
+<p>Hieronder een opsomming van interessante Europese ontwikkelingen die van invloed zijn op de manier waarop gegevens worden opgeslagen, verwerkt en gedeeld op Europees niveau en die van invloed zijn op de vormgeving van clouddiensten:</p>
+<ol>
+<li><p><strong>Data Governance Act:</strong> Op 24 september 2023 is de Data Governance ACT in werking getreden. De verordening creëert een nieuwe Europese manier van data governance, gebaseerd op een toenemend vertrouwen in het delen van data. Het heeft tot doel een veilige omgeving te creëren voor het delen van gegevens tussen sectoren en lidstaten, ten behoeve van de samenleving en de economie. Deze strategie heeft directe implicaties voor cloudcomputing, aangezien het beoogt sectorspecifieke, gedeelde Europese datasystemen te ontwikkelen. Voor Nederland betekent dit dat overheidssystemen compatibel en in lijn moeten zijn met deze Europese initiatieven.</p>
+</li>
+<li><p><strong>Data Act:</strong> Deze Europese Verordening verplicht aanbieders van clouddiensten om het voor gebruikers mogelijk te maken om gemakkelijk over te stappen naar een andere aanbieder zonder verlies van gegevens en functionaliteit (portabiliteit). De Verordening schrijft geen specifieke standaarden voor die aanbieders hiervoor moeten gebruiken; wel worden een aantal functionele eisen gedefinieerd waaraan zijn moeten voldoen. Naast de verplichting om portabiliteit mogelijk te maken, moeten aanbieders van clouddiensten ook interoperabiliteit mogelijk maken; dat wil zeggen dat gebruikers ervoor moeten kunnen kiezen om zonder problemen parallel gebruik te maken van twee of meer aanbieders van clouddiensten. Op het laatste punt heeft de ACM ook aangedrongen, naar aanleiding van de bevindingen die zij heeft opgedaan in de marktstudie naar clouddiensten. Hoewel de Data Act geen specifieke standaarden voorschrijft voor portabiliteit en interoperabiliteit, biedt de Data Act wel de mogelijkheid dat de Europese Commissie dergelijke standaarden in de toekomst alsnog opstelt in de vorm van gedelegeerde wetgeving. Het Europees Parlement en de Europese raad hebben de <a href="https://www.europarl.europa.eu/news/en/press-room/20231106IPR09025/parliament-backs-plans-for-better-access-to-and-use-of-data">Data Act</a> inmiddels aangenomen. Daarna kan de Data Act gepubliceerd worden. Vanaf het moment van publicatie duurt het dan nog twintig maanden voor de Data Act van toepassing wordt. Dat is dus in het najaar van 2025.. Een Europese focus groep gaat beoordelen welke kaders en voorzieningen moeten worden ontwikkeld om de lidstaten te ondersteunen bij de invulling van de Data Act. De groep gaat zich o.a. richten op open standaarden en data spaces.</p>
+</li>
+<li><p><strong>GAIA-X</strong>: Dit initiatief, voornamelijk aangestuurd door Duitsland en Frankrijk, streeft of streefde naar de oprichting van een concurrerend, veilig en betrouwbaar cloudaanbod voor Europa. GAIA-X heeft als doel Europese waarden en regelgeving rondom data te waarborgen. GAIA-x lijkt de doelstelling om te komen tot een concurrerend cloudaanbod te hebben verschoven naar het gezamenlijk ontwikkelen van een digitale governance laag die (overheids)organisaties in staat stelt grip te houden op de public cloudvoorzieningen, waarbij de interactie tussen cloudvoorzieningen en de migratie van een cloudplatform naar een ander cloudplatform eenvoudiger wordt. Grip betekent ook het voldoen aan allerlei beveiligingsstandaarden. Diverse experts zijn kritisch over de resultaten die tot nu toe zijn gerealiseerd vanuit GAIA-x. De Nederlandse overheid moet de ontwikkelingen rondom GAIA-X nauwlettend volgen, gezien de potentiële implicaties voor interoperabiliteit en data-soevereiniteit.</p>
+</li>
+<li><p><strong>Digitale Soevereiniteit</strong>: De EU heeft de ambitie uitgesproken om de digitale soevereiniteit van haar lidstaten te vergroten. Dit heeft betrekking op de capaciteit van Europa om onafhankelijke digitale oplossingen te ontwikkelen, waaronder cloud infrastructuren. Dit kan gevolgen hebben voor waar en hoe overheidsgegevens worden opgeslagen.</p>
+</li>
+<li><p><strong>Versterking van de GDPR</strong>: De Algemene Verordening Gegevensbescherming (AVG of GDPR in het Engels) blijft zich ontwikkelen met aanvullende richtlijnen en interpretaties. Het is cruciaal voor de Nederlandse overheid om zich aan te passen aan deze evoluerende normen, vooral in de context van clouddiensten.</p>
+</li>
+<li><p><strong>EU Cloud Code of Conduct</strong>: Deze gedragscode, goedgekeurd door de Europese Autoriteit voor gegevensbescherming, biedt richtlijnen voor cloud service providers over hoe zij de GDPR in hun diensten kunnen integreren. Het zorgt voor een uniforme interpretatie van de GDPR binnen de cloudsector, wat relevant is voor de Nederlandse overheid bij het selecteren van cloud partners.</p>
+</li>
+<li><p><strong>Europese Cybersecurity Act</strong>: Ingesteld in 2019, deze wet introduceert een EU-breed kader voor cybersecurity-certificering. Het is een framework met toetsbare criteria. Diverse organisaties zijn gemandateerd om te certificeren. De certificering kent verschillende niveau’s. Onderdeel van de Europese Cybersecurity Act is de NIS2 (opvolger van de NIS1). Net als de Europese GDPR voor privacywetgeving wordt de Europese NIS2 ook verplichte wetgeving. De GDPR is in Nederland de AVG geworden, de NIS2 heeft ook een Nederlandse naam, de NIB2 (Netwerk- en Informatiebeveiligingsrichtlijn). Deze zal als Nederlandse wetgeving in de tweede helft (september) van 2024 geïmplementeerd moeten zijn (21 maanden na goedkeuring). Overigens geldt dit voor alle 27 Europese lidstaten. De NIS2 moet de cyberweerbaarheid versterken door het beveiligingsniveau te verhogen en het nemen van “basismaatregelen” afdwingen om cyberaanvallen te voorkomen en de impact ervan te verkleinen. Als de Nederlandse overheid gebruik maakt van clouddiensten, is het belangrijk te waarborgen dat deze diensten voldoen aan de Europese cybersecurity-normen en aan de Nederlandse versie van de NIS2.</p>
+</li>
+<li><p><strong>European cloud rulebook:</strong> Om Europese bedrijven en publieke organisaties, die in toenemende mate afhankelijk zijn van cloudtechnologieën, te beschermen, is het belangrijk dat cloud- en edgediensten die in Europa worden aangeboden volledig voldoen aan de relevante (algemene en sectorale) wetten, maar ook aan de belangrijkste Europese zelfregulerende normen en standaarden met betrekking tot veiligheid, energie-efficiëntie, gegevensbescherming, interoperabiliteit en eerlijke concurrentie. De afgelopen jaren hebben belanghebbenden uit de sector in Europa samengewerkt om dergelijke zelfregulerende normen en standaarden te ontwikkelen. Het komende EU Cloud Rulebook zal een uitgebreide catalogus van dergelijke regelingen bieden en de mechanismen beschrijven om de naleving ervan aan te tonen.</p>
+</li>
+<li><p><strong>Simpl-project:</strong> Met het Smart Middleware Platform (Simpl) kunnen EU-belanghebbenden middelen bundelen om meer bedrijfswaarde en efficiënt gebruik van hulpbronnen te creëren, de kosten te verlagen en dubbel te vermijden. Deze middleware vergemakkelijkt de verbinding tussen geïsoleerde datacentra en EU-actoren die kunnen profiteren van onderbenutte infrastructuur. Ook zal deze databronnen openstellen voor publieke instellingen, kmo's, organisaties en de industrie om de dienstverlening in het algemeen publiek belang te verbeteren. De middleware kan worden benut in de ambitie van de commissie om een ​​open marktplaats voor EU-middelen te creëren, wat leidt tot efficiënt hergebruik van inspanningen van andere EU-partijen. In lijn met de Europese Green Deal zal het Smart Middleware Platform gebaseerd zijn op energiezuinige software. De diensten zijn ook gericht op het optimaliseren van het energieverbruik in alle sectoren**.**</p>
+</li>
+<li><p><strong>DOME-marketplace:</strong> DOME is een ecosysteem dat alle belanghebbenden van Cloud &amp; Edge-diensten verenigt, inclusief infrastructuur- en platformaanbieders, dienstenintegrators, certificeringsbureaus en klanten uit elke sector. Het doel is om de huidige praktijken te vereenvoudigen en een continuüm van gebundelde diensten aan te bieden die de nationale grenzen overschrijden.</p>
+</li>
+</ol>
+<p>De ontwikkelingen en uitdagingen op het gebied van cloudcomputing zijn groot. Te groot voor een land als Nederland alleen. Het is daarom essentieel voor de Nederlandse overheid om op de hoogte te blijven en bij te dragen aan de ontwikkelingen op Europees niveau. Door proactief te zijn en een weloverwogen benadering van cloudadoptie te handhaven en op Europees niveau gezamenlijk op te trekken, kan Nederland bijdragen aan een veilige, efficiënte en conform de regelgeving functionerende cloudinfrastructuur voor zijn burgers en instellingen.</p>
+</section><section id="cloudontwikkelingen-binnen-de-nederlandse-overheid"><div class="header-wrapper"><h3 id="x6-3-cloudontwikkelingen-binnen-de-nederlandse-overheid"><bdi class="secno">6.3 </bdi>Cloudontwikkelingen binnen de Nederlandse Overheid</h3><a class="self-link" href="#cloudontwikkelingen-binnen-de-nederlandse-overheid" aria-label="Permalink for Section 6.3"></a></div>
+<p>De cloudtransitie heeft zich wereldwijd volop ingezet, ook bijde Nederlandse. De Nederlandse overheid realiseert zich dat ze bij het stellen van voorwaarden aan het gebruik van de cloud moet optrekken met de Europese bondgenoten, vallend onder de paraplu van de Europese Unie.</p>
+<p>Nederland levert de nodige kennis en inbreng bij diverse eerder toegelichte Europese ontwikkelingen. Naast deze inbreng in Europa heeft de Nederlandse overheid verschillende cloudinitiatieven ontplooid. Hier volgt een overzicht van de belangrijkste cloudontwikkelingen binnen de Nederlandse overheid:</p>
+<ol>
+<li><p><strong>Gebruik van de public cloud onder bepaalde voorwaarden:</strong> Aangezien de cloud veel voordelen biedt en de publiccloud met de opkomst van onder andere AI, waar de benodigde rekenkracht alleen te verkrijgen is middels gebruik van de public cloud, heeft de Nederlandse overheid het gebruik hiervan mogelijk gemaakt onder strikte voorwaarden. De <a href="https://www.rijksoverheid.nl/documenten/kamerstukken/2022/08/29/kamerbrief-rijksbreed-cloudbeleid-2022">Kamerbrief Rijksbreed cloudbeleid 2022</a> van Staatssecretaris van Huffelen beschrijft de voorwaarden en is een opmaat tot gecontroleerd gebruik van de public cloudvoorzieningen.</p>
+</li>
+<li><p><strong>Handreiking risicobeheersing toepassing publieke clouddiensten:</strong> In 2022 is het cloudbeleid, en het ‘Implementatiekader risicoafweging cloudgebruik’ vastgesteld. Daarin zijn de kaders bepaald voor public en hybride cloudgebruik. De handreiking is bedoeld voor specialisten in projectteams, opdrachtgevers (CIO’s) en specifieke functionarissen (CISO, CPO) die aan de slag gaan met een traject waarbij public cloudgebruik een rol speelt. Daarnaast krijgen opdrachtgevers beter inzicht op het beheersen van risico’s van public cloudgebruik. Het cloudbeleid en het implementatiekader zijn verplicht voor de Rijksdienst voor materieel gebruik van de public cloud.</p>
+</li>
+<li><p><strong>Strategisch leveranciersmanagement (SLM):</strong> Strategisch Leveranciersmanagement Microsoft, Google Cloud en Amazon Web Services is sinds 2014 initiatiefnemer van rijksbrede contractafspraken en inkoopvoorwaarden voor software en clouddienstverlening met genoemde partijen. Taken o.a.: Overheidsinstellingen adviseren bij de aanschaf van software en cloudproducten en -diensten. Het evalueren van de risico’s van cloudproducten en -diensten voor onder meer het naleven van privacywetgeving (AVG/GDPR). Het organiseren van nationale en internationale netwerken van inkopers en contractmanagers van cloudproducten en -diensten. Het afsluiten van contracten namens de Nederlandse overheid een overeenkomst tussen de Rijksoverheid en de hyperscalers om te komen tot passende voorwaarden, zoals AVG en BIO compliancy. &nbsp;</p>
+</li>
+<li><p><strong>Common ground-Haven:</strong> Iedere gemeente heeft zijn IT-infrastructuur anders georganiseerd. Bij de ene gemeente draait bijvoorbeeld veel lokaal en bij de ander juist meer in de cloud. Applicaties moeten worden aangepast aan de infrastructuur waarop ze draaien. Dat maakt het voor gemeenten lastig om samen applicaties te ontwikkelen en deze snel in te zetten bij alle gemeenten. Haven is een standaard voor platform-onafhankelijke cloud hosting. Met Haven kunnen gemeenten applicaties overal hosten zonder dat zij daarvoor hun IT infrastructuur hoeven aan te passen. Dit zorgt onder meer voor uniformiteit, lagere kosten en minder afhankelijkheid van leveranciers. Haven schrijft een specifieke configuratie van&nbsp;<a href="https://www.kubernetes.io/">Kubernetes</a>&nbsp;voor die dient te worden geïmplementeerd op bestaande technische infrastructuur, bijvoorbeeld een cloud of on-premise platform. De&nbsp;<a href="https://haven.commonground.nl/techniek/checks">voorgeschreven configuratie</a>&nbsp;zorgt ervoor dat iedere Haven omgeving van iedere willekeurige cloudleverancier die de standaard heeft geïmplementeerd, functioneel gelijk is ongeacht de onderliggende technische infrastructuur. Zie het als een abstractielaag die resulteert in een gezamenlijk vertrekpunt. Dit brengt diverse voordelen met zich mee: uniformiteit in technische infrastructuur, uitwisselbaarheid van toepassingen, leveranciersonafhankelijkheid, platformonafhankelijkheid en kostenreductie. Haven heeft een eigen compliancy voorziening.</p>
+</li>
+<li><p><strong>Baseline Microsoft 365:</strong> Steeds meer overheidsorganisaties maken gebruik van clouddiensten. Een bekend voorbeeld van een clouddienst is Microsoft Office 365. Ook binnen de overheid neemt het gebruik van deze clouddienst toe. Departementaal vertrouwelijke informatie van het niveau BBN2 mag alleen naar de cloud als voldaan is aan hogere eisen en maatregelen zoals versleuteling. Het moet voldoen aan bijvoorbeeld de&nbsp;AVG, het Voorschrift Informatiebeveiliging Rijk Bijzondere Informatie en diverse normen en standaarden zoals de Baseline Informatiebeveiliging Overheid. Vanwege het steeds groter wordende gebruik van de clouddienst Office 365 werkt de Nederlandse Overheid samen met Microsoft aan de Baseline voor de Microsoft suite.</p>
+</li>
+</ol>
+<p>Tenslotte heeft de NORA organisatie een <a href="https://www.noraonline.nl/wiki/BIO_Thema_Clouddiensten/Beslisbomen_voor_risicobeoordeling_IV-diensten">beslisboom voor risicobeoordeling Clouddiensten</a> als onderdeel van het <a href="https://www.noraonline.nl/wiki/BIO_Thema_Clouddiensten/Inleiding">BIO thema Clouddiensten</a>. Daarnaast onderhoudt de NORA organisatie een <a href="https://www.noraonline.nl/wiki/Cloud_computing">Wiki over cloudcomputing</a>. Hier staan vooralsnog oudere artikelen over Cloud, en de NORA organisatie is nog op zoek naar een expertgroep die deze Wiki actueel kan houden.</p>
+</section></section><section id="bijlage-risico-s-van-de-toepassing-van-cloud-en-clouddiensten"><div class="header-wrapper"><h2 id="x7-bijlage-risico-s-van-de-toepassing-van-cloud-en-clouddiensten"><bdi class="secno">7. </bdi>Bijlage - Risico’s van de toepassing van cloud en clouddiensten</h2><a class="self-link" href="#bijlage-risico-s-van-de-toepassing-van-cloud-en-clouddiensten" aria-label="Permalink for Section 7."></a></div>
+<p>Hoewel cloudcomputing veel voordelen biedt, zijn er ook verschillende risico's en uitdagingen waarmee (overheids)organisaties en individuen rekening moeten houden. Vragen over dataprivacy, beveiliging en de integratie met bestaande systemen, maar ook de toenemende marktpositie en daarmee de macht van de hyperscalers zijn ontwikkelingen die in de gaten moeten worden gehouden. Een mogelijkheid hiertoe is de toepassing van wetgeving, normen en standaarden.</p>
+<p>In het onderzoek kwamen de volgende uitdagingen en risico’s naar voren:</p>
+<ol>
+<li><p><strong>Vendor-lockin:</strong> de cloudmarkt heeft een groot risico op vendor-lockin. Als eenmaal voor een cloudleverancier is gekozen dan zijn er grote drempels om over te stappen naar een ander leverancier. Het grote risico op vendor lockin lijkt groter dan bij traditionele on-premise oplossingen en heeft de volgende oorzaken:</p>
+<ol>
+<li><p>Clouddiensten worden binnen de overheid aanbesteed, waarna er één dienst overblijft en men zich daarop volledig richt. Een dergelijke aanbesteding kost veel tijd en moeite. Dit wordt nader onderbouwd in de <a href="https://www.acm.nl/system/files/documents/marktstudie-clouddiensten.pdf">Marktstudie clouddiensten door ACM</a>:</p>
+<blockquote>
+<p><em>“Wanneer een gebruiker eenmaal heeft gekozen voor een specifieke clouddienst is de drempel om voor die dienst over te stappen naar een andere cloudaanbieder in veel gevallen zeer hoog. Uit de gesprekken die de ACM voor deze studie heeft gevoerd, komt het beeld naar voren dat er weinig overstap plaatsvindt tussen clouddiensten van verschillende cloudaanbieders. In het bijzonder gebruikers van PaaS- en SaaS-diensten kunnen moeilijkheden ervaren bij het overstappen. Voor gebruikers van IaaS-diensten geldt dit in iets mindere mate.”</em></p>
+</blockquote>
+</li>
+<li><p>Clouddiensten en met name de hyperscalers bieden allerlei makkelijk toegankelijke proprietary diensten aan. Andere cloudaanbieders hebben andere proprietary diensten die moeilijk overdraagbaar zijn van de ene cloudleverancier naar de andere. Met name de proprietary diensten, maken een overstap lastig. Een voorbeeld is Office 365 van Microsoft. Eenmaal in gebruik genomen beperken die de mogelijkheden tot een overstap naar een andere cloudleverancier. Ook dit punt wordt bevestigd door de <a href="https://www.acm.nl/system/files/documents/marktstudie-clouddiensten.pdf">Marktstudie clouddiensten door ACM</a>:</p>
+<blockquote>
+<p><em>“De lock-in van afnemers geldt in het bijzonder wanneer er ook PaaS- en SaaS-diensten worden afgenomen in een geïntegreerd dienstenaanbod. Overstappen is bij ICT-producten en diensten – die in de praktijk vaak sterk verweven zijn met de processen binnen de organisatie – complex. Dat geldt voor geïntegreerde clouddiensten des te meer omdat er in veel gevallen opnieuw koppelingen moeten worden gemaakt en een overstap op meerdere diensten tegelijkertijd noodzakelijk is.”</em></p>
+</blockquote>
+</li>
+<li><p>Kosten van outbound data zijn veel hoger dan inbound. Het is dus goedkoop om data bij een cloudleverancier neer te zetten, maar de data verplaatsen naar een andere plek is duur. Dit kan organisatie ervan weerhouden om over te stappen naar een andere cloudleverancier. Dat zorgt voor onvoorspelbaarheid over de uiteindelijke totale kosten van gebruik van clouddiensten en de eventuele te realiseren besparingen als gevolg van een eventuele overstap. Vanuit de Data Act wordt beoogd dit tegen te gaan. Dit juist om switchen van de ene naar de andere provider niet te laten verhinderen door hoge kosten voor verplaatsen van data.</p>
+</li>
+</ol>
+</li>
+</ol>
+
+
+<ol start="2">
+<li><p><strong>“Winner takes all”-markt:</strong> “Winner takes all” refereert aan een economisch principe waar de best performende platformen in staat zijn een hele markt of een zeer groot deel van een markt in handen te krijgen. De cloudmarkt heeft duidelijke kenmerken van een ‘Winner takes all’-markt. Dit wordt bevestigd door de Engelse <a href="https://www.ofcom.org.uk/__data/assets/pdf_file/0027/269127/Cloud-services-market-study-final-report.pdf">Cloud Services market study report</a>:</p>
+<blockquote>
+<p><em>“There are two leading providers of cloud infrastructure services in the UK: Amazon Web Services (AWS) and Microsoft, who had a combined market share of 70% to 80% in 2022.2 Google is their closest competitor with a share of 5% to 10%.”</em></p>
+</blockquote>
+<p>Er is geen reden aan te nemen dat deze situatie voor de Nederlandse markt anders is dan dat in dit rapport wordt aangegeven. Ook wordt dit beeld van consolidatie bevestigd in de <a href="https://www.acm.nl/system/files/documents/marktstudie-clouddiensten.pdf">Marktstudie clouddiensten door ACM</a>. In dit rapport worden de mechanismen van deze consolidatie verder beschreven.</p>
+</li>
+<li><p><strong>Kosten moeilijk te voorspellen:</strong> Terwijl initieel cloudservices kostenbesparingen kunnen opleveren, kunnen onverwachte kosten optreden bij verhoogd gebruik, met name als organisaties niet zorgvuldig hun verbruik monitoren. Uit het onderzoek komt naar voren dat de prijsstelling van clouddiensten vooraf vaak erg moeilijk is in te schatten. De prijsstructuur is vaak zeer complex opgezet waardoor deze moeilijk voorspelbaar is. Een van de geïnterviewden gaf aan dat cloudkosten vaak alleen empirisch te bepalen zijn, dus achteraf. Naast technisch/organisatorische zijn er ook financiële overstapbelemmeringen. Deze ontstaan met name door de tariefstructuur die veel cloudaanbieders hanteren. Deze tariefstructuur is complex: voor elke handeling, opgeslagen GB of seconde rekenkracht wordt betaald.</p>
+</li>
+<li><p><strong>Beveiligingsrisico’s:</strong> De data van een organisatie bevindt zich buiten de directe controle van die organisatie, wat kan leiden tot zorgen over datalekken, hackpogingen en andere cyberbeveiligingsbedreigingen. Clouddiensten kunnen potentieel veiliger worden ingericht dan bestaande on-premise-diensten doordat deze vaak meer geavanceerde beveiligingsmaatregelen kunnen nemen. Het inrichten van een cloudomgeving vergt wel specifieke kennis en ervaring met het betreffende cloudplatform. Juist hier schuilt de zorg van veel geïnterviewden. Deze kennis is schaars en dat introduceert onder andere beveiligingsrisico’s.</p>
+</li>
+<li><p><strong>Risico’s rond privacy van gegevens:</strong> De opslag van gevoelige gegevens in de cloud kan leiden tot privacy zorgen, vooral als de cloudprovider gegevens opslaat in een ander rechtsgebied met andere privacywetten. Naast opslag van gevoelige gegevens gaat het ook om toegang tot de gegevens van buiten de EU, gebruik van telemetrie data etc. Zie ook de <a href="https://open.overheid.nl/documenten/ronl-734f947ec6465e4f75a56bed82fe64a1135f71a8/pdf">Handreiking risicobeheersing public clouddiensten - Rijksportaal (overheid-i.nl)</a></p>
+</li>
+<li><p><strong>Risico’s rond gegevenseigendom en -toegang:</strong> Dit risico geldt met name bij SaaS-diensten. Daar waar een dienst wordt afgenomen en de afnemer niet meer zelf direct toegang tot de gegevens heeft. Veelal betreft het diensten die eerder on-premise werden afgenomen, zoals een gemeentelijk vergunningensysteem of een gemeentelijke applicatie voor burgerzaken. Deze applicaties verschuiven steeds meer van on-premise naar clouddiensten. Hierna heeft de afnemer veelal niet direct toegang meer tot de gegevens omdat deze niet meer op de infrastructuur van de afnemer staat, en dienen daar aanvullende afspraken voor gemaakt te worden.</p>
+</li>
+<li><p><strong>Onvoldoende kennis en expertise</strong>: Geïnterviewden geven aan dat deze op dit moment onvoldoende aanwezig bij de overheid en daardoor de overheid achter de feiten aanloopt. Inrichting van een cloudomgeving is vaak erg complex en vergt aanvullende kennis en ervaring boven on-premise-inrichting. Deze blijkt schaars bij de Nederlandse overheid. Bovendien vergt het kennis van de omgeving van de verschillende cloudaanbieders, zo vergt inrichting van Microsoft Azure andere kennis dan de inrichting van Amazon Web Services. Uit het onderzoek blijkt dat overheden veelal los van elkaar kennis opbouwen, en er met samenwerking te verbeteren valt.</p>
+</li>
+</ol>
+</section><section id="bijlage-scope-en-uitgangspunten"><div class="header-wrapper"><h2 id="x8-bijlage-scope-en-uitgangspunten"><bdi class="secno">8. </bdi>Bijlage - Scope en uitgangspunten</h2><a class="self-link" href="#bijlage-scope-en-uitgangspunten" aria-label="Permalink for Section 8."></a></div>
+<p>Een belangrijk uitgangspunt voor het onderzoek is de brief van de Staatssecretaris van Huffelen van 29 augustus 2022 aan de Tweede Kamer, waarin zij een wijziging definieert ten opzichte van het tot dan toe geldende rijksbeleid van de overheid. In deze brief wordt geïnformeerd over het Rijksbrede cloudbeleid 2022. Dit beleid richt zich op het gebruik van public clouddiensten door de Rijksoverheid, als vervanging van het eerdere beleid uit 2011 dat de focus legde op private clouddiensten. De brief van de Staatssecretaris maakt het voor overheidsorganisaties mogelijk om gebruik te maken van de public cloud.</p>
+<section id="hoofdpunten-rijksbreed-cloudbeleid-2022"><div class="header-wrapper"><h3 id="x8-1-hoofdpunten-rijksbreed-cloudbeleid-2022"><bdi class="secno">8.1 </bdi>Hoofdpunten Rijksbreed Cloudbeleid 2022</h3><a class="self-link" href="#hoofdpunten-rijksbreed-cloudbeleid-2022" aria-label="Permalink for Section 8.1"></a></div>
+<p>Hoofdpunten van het cloudbeleid zoals gedefinieerd in de <a href="https://www.rijksoverheid.nl/documenten/kamerstukken/2022/08/29/kamerbrief-rijksbreed-cloudbeleid-2022">brief van de Staatssecretaris</a>:</p>
+<ol>
+<li><p><strong>Overheidsdiensten</strong> mogen onder bepaalde voorwaarden en uitzonderingen gebruik maken van public clouddiensten. Onderdelen van de overheid die niet tot de Rijksdienst behoren wordt geadviseerd om dit Rijksbeleid te volgen.</p>
+</li>
+<li><p><strong>Verwerking van persoonsgegevens</strong> in public clouddiensten vereist een goedgekeurde pre-scan gegevens-beschermingseffectbeoordeling. Bij een hoog risico is een volledige Data Protection Impact Assessment (DPIA) noodzakelijk.</p>
+</li>
+<li><p>Elk <strong>departement</strong> is zelf verantwoordelijk voor het inzicht in de risico’s van het gebruik van public cloudtoepassingen.</p>
+</li>
+<li><p>Er komt een ‘implementatierichtlijn risicoafweging cloudgebruik’ voor het einde van 2022. Deze bestaat inmiddels, en is een <a href="https://www.rijksoverheid.nl/documenten/rapporten/2023/01/05/implementatiekader-risicoafweging-cloudgebruik">implementatiekader</a> geworden in plaats van een richtlijn.</p>
+</li>
+<li><p><strong>Uitzonderingen</strong>: Public clouddiensten mogen niet worden gebruikt voor staatsgeheim gerubriceerde informatie. Het Ministerie van Defensie valt niet onder dit beleid.</p>
+</li>
+<li><p><strong>Voorwaarden</strong>:</p>
+<ul>
+<li><p>Departementen moeten hun eigen cloudbeleid formuleren.</p>
+</li>
+<li><p>Een relevante risicoafweging is vereist.</p>
+</li>
+<li><p>Jaarlijkse rapportage over het gebruik van public clouddiensten aan CIO Rijk.</p>
+</li>
+<li><p>Er moet een ‘exit strategie’ zijn in overeenkomsten met cloudleveranciers.</p>
+</li>
+<li><p>Clouddienstverlening moet voldoen aan bestaande ICT-voorwaarden.</p>
+</li>
+<li><p>Cyberveiligheid is essentieel, vooral met betrekking tot gegevensverwerking in andere landen. De overheid hanteert bij het cloudgebruik daarom ook de C2000 criteria, waardoor leveranciers of diensten uit landen met een actief cyberprogramma dat gericht is tegen Nederlandse belangen worden uitgesloten.</p>
+</li>
+<li><p>Besluitvorming moet openbaar zijn volgens de Wet Open Overheid.</p>
+</li>
+<li><p>Opslag en verwerking van persoonsgegevens moet in lijn zijn met de AVG.</p>
+</li>
+<li><p>Extra bescherming is vereist voor bijzondere persoonsgegevens.</p>
+</li>
+<li><p>In geval van de opslag en verwerking van een basisregistratie, of een bron van een basisregistratie wordt, in principe géén gebruik gemaakt van public cloudvoorzieningen.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>De brief benadrukt het belang van een evenwichtige benadering, waarbij gebruik wordt gemaakt van de voordelen van public clouddiensten terwijl de risico's worden beheerst.</p>
+</section><section id="doelstellingen-en-uitgangspunten-van-het-forum-voor-het-onderzoek"><div class="header-wrapper"><h3 id="x8-2-doelstellingen-en-uitgangspunten-van-het-forum-voor-het-onderzoek"><bdi class="secno">8.2 </bdi>Doelstellingen en uitgangspunten van het Forum voor het onderzoek</h3><a class="self-link" href="#doelstellingen-en-uitgangspunten-van-het-forum-voor-het-onderzoek" aria-label="Permalink for Section 8.2"></a></div>
+<p>De onderzoeksvraag is geformuleerd door het Forum Standaardisatie. Het Forum Standaardisatie adviseert de publieke sector over het gebruik van open standaarden. Het Forum hanteert daarbij diverse doelstellingen en uitganspunten. Deze doelstellingen en uitgangspunten vormen de basis van dit onderzoek:</p>
+<ol>
+<li><p><strong>Open standaarden</strong>: Het Forum promoot het gebruik van open standaarden. Een open standaard is een specificatie die beschikbaar is en waarvan het gebruik niet beperkt is door patenten of licentierechten.</p>
+</li>
+<li><p><strong>Level playing field</strong>: Door het gebruik van open standaarden wordt een gelijk speelveld gecreëerd voor aanbieders van ICT-producten en -diensten. Dit stimuleert innovatie en voorkomt dat overheidsorganisaties afhankelijk worden van één leverancier.</p>
+</li>
+<li><p><strong>Interoperabiliteit</strong>: Eén van de belangrijkste doelstellingen van het Forum is het waarborgen van interoperabiliteit. Dit betekent dat verschillende diensten van verschillende cloudproviders probleemloos met elkaar kunnen communiceren en gegevens kunnen uitwisselen.</p>
+</li>
+</ol>
+<p>Cloudcomputing heeft een scala aan standaarden nodig om interoperabiliteit, veiligheid, privacy en portabiliteit te bevorderen. In het onderzoek wordt onderscheid gemaakt in de volgende soorten cloudstandaarden:</p>
+<ol>
+<li><p><strong>Beveiligings- en privacystandaarden:</strong> De beveiliginsstandaarden zorgen voor een veilige omgeving die niet toegankelijk is voor onbevoegden. De standaarden hebben betrekking op aspecten zoals data-encryptie, authenticatie, autorisatie en auditlogboekregistratie. Privacystandaarden richten zich op de bescherming van persoonlijke gegevens die worden opgeslagen of verwerkt in de cloud. Hierbij kan gedacht worden aan standaarden die betrekking hebben op gegevensmaskering, anonimisering en pseudonimisering.</p>
+</li>
+<li><p><strong>Portabiliteitsstandaarden:</strong> Deze standaarden maken het gemakkelijker om applicaties en gegevens van de ene cloudomgeving naar de andere te verplaatsen. Denk hierbij aan standaarden voor containerization.</p>
+</li>
+<li><p><strong>Interoperabiliteitsstandaarden:</strong> Deze standaarden zorgen ervoor dat verschillende cloudservices en -componenten met elkaar op een gestandaardiseerde wijze kunnen communiceren en gegevens kunnen uitwisselen. Ze kunnen helpen bij het vermijden van vendor lockin en het ondersteunen van multi-cloudstrategieën.</p>
+</li>
+<li><p><strong>Overige standaarden:</strong> Standaarden die niet passen in bovenstaande classificatie maar wel relevant zijn en daarom niet ongenoemd mogen blijven.</p>
+</li>
+</ol>
+<p>In het onderzoek onderscheiden we naast standaarden ook normen en technologieën die gelden als de facto-standaard:</p>
+<ul>
+<li><p><strong>Standaarden</strong>: Technische specificaties of andere nauwkeurige criteria die worden gebruikt als regels of richtlijnen om consistentie en interoperabiliteit te waarborgen. Ze kunnen worden opgesteld door officiële normeringsorganisaties, door brancheorganisaties, of kunnen zelfs de facto standaarden worden door wijdverbreid gebruik.</p>
+</li>
+<li><p><strong>Normen</strong>: In de context van technologie en IT, zijn normen vaak officiële documenten die best practices, methodologieën, processen of specificaties bevatten die algemeen worden geaccepteerd. Normen worden meestal uitgegeven door officiële normeringsorganisaties.</p>
+</li>
+<li><p><strong>Technologieën</strong> die als de facto-standaard opgevat kunnen worden. Hierbij gaat het niet om technische specificaties maar om werkende technische oplossingen die zo breed in de markt worden toegepast dat ze als standaard opgevat kunnen worden.</p>
+</li>
+</ul>
+<p>In hoofdstuk 4 wordt per soort cloudstandaard een opsomming gegeven van bestaande of standaarden die worden ontwikkeld. Indien mogelijk worden ‘witte vlekken’ beschreven.</p>
+</section></section><section id="bijlage-aanpak-en-planning-onderzoek"><div class="header-wrapper"><h2 id="x9-bijlage-aanpak-en-planning-onderzoek"><bdi class="secno">9. </bdi>Bijlage - Aanpak en planning onderzoek</h2><a class="self-link" href="#bijlage-aanpak-en-planning-onderzoek" aria-label="Permalink for Section 9."></a></div>
+<table class="simple">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 40%">
+<col style="width: 27%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Wat</th>
+<th>Activiteit</th>
+<th>Resultaat</th>
+<th>Wanneer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Voorbereiding</td>
+<td><p>Gesprekken met opdrachtgever en adviseurs van deze voor afkadering</p>
+<p>Desk research</p>
+<p>Benaderen experts</p></td>
+<td>Duidelijke focus en afkadering onderzoek</td>
+<td>Juli/aug. 2023</td>
+</tr>
+<tr class="even">
+<td>Onderzoek</td>
+<td>Individuele (online) gesprekken<br>
+met meer dan 10 experts</td>
+<td>Kennis, meningen en ideeën experts ophalen</td>
+<td>Sept.-Nov. 2023</td>
+</tr>
+<tr class="odd">
+<td><p>Analyse en opmaak</p>
+<p>conceptrapport</p></td>
+<td>Analyseren en verwerken resultaten interviews en deskresearch</td>
+<td><p>Beeld van de huidige stand</p>
+<p>van zaken</p></td>
+<td>Nov. 2023</td>
+</tr>
+<tr class="even">
+<td>Toetsing en validatie</td>
+<td>Delen conceptrapport met<br>
+experts voor feedback</td>
+<td>Verdieping op de resultaten, aanvullende inzichten en validatie door experts</td>
+<td>Dec. 2023/jan 2024</td>
+</tr>
+</tbody>
+</table></section><section id="bijlage-de-betrokken-experts"><div class="header-wrapper"><h2 id="x10-bijlage-de-betrokken-experts"><bdi class="secno">10. </bdi>Bijlage - De betrokken experts</h2><a class="self-link" href="#bijlage-de-betrokken-experts" aria-label="Permalink for Section 10."></a></div>
+<p>Onderstaande experts zijn geïnterviewd tijdens het onderzoek. In de selectiecriteria is rekening gehouden met een representatie van experts vanuit diverse (overheids)organisaties en aanverwante organisaties die betrokken zijn bij het thema standaarden voor de cloud.</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Naam</th>
+<th>Functie en organisatie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Henrique Barnard</td>
+<td>Strategisch Leveranciersmanager Microsoft, Google Cloud en AWS rijksoverheid</td>
+</tr>
+<tr>
+<td>Frank van Dam</td>
+<td>Architectuur e-Government ICTU</td>
+</tr>
+<tr>
+<td>Edward van Gelderen</td>
+<td>Scrummaster Common Ground/Haven VNG</td>
+</tr>
+<tr>
+<td>Roderick Schaefer</td>
+<td>Adviseur en initiatiefnemer Haven VNG (inmiddels Binnenlandse Zaken)</td>
+</tr>
+<tr>
+<td>Peter Wiggers</td>
+<td>Kubernetes engineer VNG</td>
+</tr>
+<tr>
+<td>Mathijs Hoogland</td>
+<td>Kubernetes engineer VNG</td>
+</tr>
+<tr>
+<td>Sander Booij</td>
+<td>Enterprise architect IBM</td>
+</tr>
+<tr>
+<td>Michiel Steltman</td>
+<td>Managing director DINL</td>
+</tr>
+<tr>
+<td>Jacques Eding</td>
+<td>Portefeuillehouder Cloud, Adviseur CISO Rijk</td>
+</tr>
+<tr>
+<td>Artan van Hooijdonk</td>
+<td>Principal customer succes accountmanager Microsoft</td>
+</tr>
+<tr>
+<td>Benjamin Tissink</td>
+<td>Cloud Security Architect Microsoft</td>
+</tr>
+<tr>
+<td>Erwin van Essen</td>
+<td>Customer Succes Director Microsoft</td>
+</tr>
+<tr>
+<td>Jelle Niemantsverdriet</td>
+<td>National Security Officer Microsoft</td>
+</tr>
+<tr>
+<td>Linda Durand</td>
+<td>National Security Officer Microsoft</td>
+</tr>
+<tr>
+<td>Inge Piek</td>
+<td>Consultant ICT Standaarden NEN</td>
+</tr>
+<tr>
+<td>Edwin Harmsma</td>
+<td>Research consultant Cloud - TNO &amp; Centre of Excellence for Data Sharing and Cloud</td>
+</tr>
+<tr>
+<td>Harro Kremer</td>
+<td>Enterprise Architect Ministerie van Justitie en Veiligheid</td>
+</tr>
+<tr>
+<td>Chris Eyzenga</td>
+<td>Technisch CISO Ministerie van Justitie en Veiligheid</td>
+</tr>
+<tr>
+<td>Ruben Faber</td>
+<td>Strategisch Adviseur Cyber Security NCSC</td>
+</tr>
+<tr>
+<td>Femke Nagelhoud</td>
+<td>Projectmanager en Senior Enforcement Official ACM</td>
+</tr>
+<tr>
+<td>Christiaan Waters</td>
+<td>Medewerker Toezicht</td>
+</tr>
+<tr>
+<td>Jacco Hakfoort</td>
+<td>Senior medewerker toezicht</td>
+</tr>
+<tr>
+<td>Pieter Bas Nederkoorn</td>
+<td>Productmanager GGI VNG</td>
+</tr>
+<tr>
+<td>Geeske Logtmeijer</td>
+<td>Implementatie Adviseur GGI</td>
+</tr>
+<tr>
+<td>Bas Huisman</td>
+<td>Technisch consultant Sociodome</td>
+</tr>
+<tr>
+<td>Linda Strick</td>
+<td>Director Cloud Security Alliance</td>
+</tr>
+<tr>
+<td>Ruud Kerssens</td>
+<td>Lead security expert EU Cybersecurity Certification</td>
+</tr>
+</tbody></table>
+</section><section id="bijlage-gebruikte-bronnen-bij-het-onderzoek"><div class="header-wrapper"><h2 id="x11-bijlage-gebruikte-bronnen-bij-het-onderzoek"><bdi class="secno">11. </bdi>Bijlage - Gebruikte bronnen bij het onderzoek</h2><a class="self-link" href="#bijlage-gebruikte-bronnen-bij-het-onderzoek" aria-label="Permalink for Section 11."></a></div>
+<p>De volgende bronnen zijn gebruikt als input voor dit rapport:</p>
+<ul>
+<li><p><a href="https://open.overheid.nl/documenten/ronl-734f947ec6465e4f75a56bed82fe64a1135f71a8/pdf">Handreiking risicobeheersing toepassing publieke clouddiensten</a></p>
+</li>
+<li><p><a href="https://www.rijksoverheid.nl/documenten/kamerstukken/2022/08/29/kamerbrief-rijksbreed-cloudbeleid-2022">Kamerbrief over rijksbreed cloudbeleid 2022</a></p>
+</li>
+<li><p>Preparatory work in view of the procurement of an open source cloud-to-edge middleware platform (30 maart 2022)</p>
+</li>
+<li><p><a href="https://www.cip-overheid.nl/media/h4lcnhdn/20230322-bio-thema-uitwerking-clouddiensten-v22-def.pdf">20230322-bio-thema-uitwerking-clouddiensten-v22-def</a></p>
+</li>
+<li><p><a href="https://www.enisa.europa.eu/publications/cloud-cybersecurity-market-analysis">Cloud cybersecurity market analyses</a></p>
+</li>
+<li><p><a href="https://digital-strategy.ec.europa.eu/en/library/study-presenting-assessments-codes-conduct-data-porting-and-cloud-switching">Study presenting assessments of codes of conduct on data porting and cloud switching</a></p>
+</li>
+<li><p><a href="https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/09/201909-Factsheet-Is-mijn-leverancier-wel-of-geen-verwerker_v1.2.pdf">Factsheet-verwerkersovereenkomst IBD</a><a href="https://www.forumstandaardisatie.nl/sites/bfs/files/proceedings/Handreiking_CloudOverheden_Taskforce_LR_1_.pdf">Handreiking cloudcomputing</a></p>
+</li>
+<li><p><a href="https://www.rijksoverheid.nl/documenten/rapporten/2023/01/05/implementatiekader-risicoafweging-cloudgebruik">Implementatiekader risicoafweging cloudgebruik</a></p>
+</li>
+<li><p><a href="https://www.acm.nl/nl/publicaties/marktstudie-clouddiensten#:~:text=In%20deze%20marktstudie%20heeft%20de,van%20aanbieders%20van%20die%20diensten.">Marktstudie clouddiensten door ACM</a></p>
+</li>
+<li><p><a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.500-332.pdf">The NIST Cloud Federation Reference Architecture</a></p>
+</li>
+<li><p><a href="https://vng.nl/sites/default/files/2023-12/rapportage_mi_analyse_cloud_ontwikkelingen_gemeenten_v1.0_003.pdf">Analyse cloud ontwikkelingen gemeenten</a></p>
+</li>
+<li><p>Cloud governance whitepaper Microsoft (mei 2021)</p>
+</li>
+<li><p>Cloud afwegingskader J&amp;V versie 1.2 (juli 2021)</p>
+</li>
+<li><p><a href="https://www.ofcom.org.uk/consultations-and-statements/category-2/cloud-services-market-study">Cloud services market study</a></p>
+</li>
+<li><p><a href="https://www.autoritedelaconcurrence.fr/en/press-release/cloud-computing-autorite-de-la-concurrence-issues-its-market-study-competition-cloud">Cloud computing autorite de la concurrence Frankrijk</a></p>
+</li>
+<li><p><a href="https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:52022PC0068">Data Act</a></p>
+</li>
+<li><p>Eindrapportage onderzoek Behoefte gemeentelijke cloudondersteuning VNG (26 april 2023)</p>
+</li>
+<li><p><a href="https://ecp.nl/wp-content/uploads/2020/01/PT-2019-CSP-CERT-WG-Recommendations-for-the-implementation-of-the-CSP-Certification-scheme-20190607-Final-version.pdf">CSPCERT WG (Milestone 3) Recommendations for the implementation of the CSP certification scheme</a></p>
+</li>
+<li><p>CSA STAR programme 2022</p>
+</li>
+</ul>
+</section>
+  <script>
+    let content = "";
+
+    const getClass = function(key) {
+      if (respecConfig.content[key]!==""){return <code> class="${respecConfig.content[key]}"</code>}
+    }
+
+    for (let contentKey in respecConfig.content) {
+      content += <code>&lt;section data-include-format="markdown" data-include="${contentKey}.md" ${getClass(contentKey)||""}&gt;&lt;/section&gt;</code>
+    }
+
+    document.getElementById("sotd").insertAdjacentHTML('afterend', content);
+  </script>
+  <section id="conformance"><div class="header-wrapper"><h2 id="x12-conformiteit"><bdi class="secno">12. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 12."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
+  
+
+
+
+<p role="navigation" id="back-to-top">
+    <a href="#title"><abbr title="Back to Top">↑</abbr></a>
+  </p><script id="respec-dfn-panel">(() => {
+// @ts-check
+if (document.respec) {
+  document.respec.ready.then(setupPanel);
+} else {
+  setupPanel();
+}
+
+function setupPanel() {
+  const listener = panelListener();
+  document.body.addEventListener("keydown", listener);
+  document.body.addEventListener("click", listener);
+}
+
+function panelListener() {
+  /** @type {HTMLElement} */
+  let panel = null;
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (type === "keydown" && event.key !== "Enter") return;
+
+    const action = deriveAction(event);
+
+    switch (action) {
+      case "show": {
+        hidePanel(panel);
+        /** @type {HTMLElement} */
+        const dfn = target.closest("dfn, .index-term");
+        panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
+        const coords = deriveCoordinates(event);
+        displayPanel(dfn, panel, coords);
+        break;
+      }
+      case "dock": {
+        panel.style.left = null;
+        panel.style.top = null;
+        panel.classList.add("docked");
+        break;
+      }
+      case "hide": {
+        hidePanel(panel);
+        panel = null;
+        break;
+      }
+    }
+  };
+}
+
+/**
+ * @param {MouseEvent|KeyboardEvent} event
+ */
+function deriveCoordinates(event) {
+  const target = /** @type HTMLElement */ (event.target);
+
+  // We prevent synthetic AT clicks from putting
+  // the dialog in a weird place. The AT events sometimes
+  // lack coordinates, so they have clientX/Y = 0
+  const rect = target.getBoundingClientRect();
+  if (
+    event instanceof MouseEvent &&
+    event.clientX >= rect.left &&
+    event.clientY >= rect.top
+  ) {
+    // The event probably happened inside the bounding rect...
+    return { x: event.clientX, y: event.clientY };
+  }
+
+  // Offset to the middle of the element
+  const x = rect.x + rect.width / 2;
+  // Placed at the bottom of the element
+  const y = rect.y + rect.height;
+  return { x, y };
+}
+
+/**
+ * @param {Event} event
+ */
+function deriveAction(event) {
+  const target = /** @type {HTMLElement} */ (event.target);
+  const hitALink = !!target.closest("a");
+  if (target.closest("dfn:not([data-cite]), .index-term")) {
+    return hitALink ? "none" : "show";
+  }
+  if (target.closest(".dfn-panel")) {
+    if (hitALink) {
+      return target.classList.contains("self-link") ? "hide" : "dock";
+    }
+    const panel = target.closest(".dfn-panel");
+    return panel.classList.contains("docked") ? "hide" : "none";
+  }
+  if (document.querySelector(".dfn-panel:not([hidden])")) {
+    return "hide";
+  }
+  return "none";
+}
+
+/**
+ * @param {HTMLElement} dfn
+ * @param {HTMLElement} panel
+ * @param {{ x: number, y: number }} clickPosition
+ */
+function displayPanel(dfn, panel, { x, y }) {
+  panel.hidden = false;
+  // distance (px) between edge of panel and the pointing triangle (caret)
+  const MARGIN = 20;
+
+  const dfnRects = dfn.getClientRects();
+  // Find the `top` offset when the `dfn` can be spread across multiple lines
+  let closestTop = 0;
+  let minDiff = Infinity;
+  for (const rect of dfnRects) {
+    const { top, bottom } = rect;
+    const diffFromClickY = Math.abs((top + bottom) / 2 - y);
+    if (diffFromClickY < minDiff) {
+      minDiff = diffFromClickY;
+      closestTop = top;
+    }
+  }
+
+  const top = window.scrollY + closestTop + dfnRects[0].height;
+  const left = x - MARGIN;
+  panel.style.left = `${left}px`;
+  panel.style.top = `${top}px`;
+
+  // Find if the panel is flowing out of the window
+  const panelRect = panel.getBoundingClientRect();
+  const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
+  if (panelRect.right > SCREEN_WIDTH) {
+    const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
+    const newCaretOffset = left - newLeft;
+    panel.style.left = `${newLeft}px`;
+    /** @type {HTMLElement} */
+    const caret = panel.querySelector(".caret");
+    caret.style.left = `${newCaretOffset}px`;
+  }
+
+  // As it's a dialog, we trap focus.
+  // TODO: when <dialog> becomes a implemented, we should really
+  // use that.
+  trapFocus(panel, dfn);
+}
+
+/**
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function trapFocus(panel, dfn) {
+  /** @type NodeListOf<HTMLAnchorElement> elements */
+  const anchors = panel.querySelectorAll("a[href]");
+  // No need to trap focus
+  if (!anchors.length) return;
+
+  // Move focus to first anchor element
+  const first = anchors.item(0);
+  first.focus();
+
+  const trapListener = createTrapListener(anchors, panel, dfn);
+  panel.addEventListener("keydown", trapListener);
+
+  // Hiding the panel releases the trap
+  const mo = new MutationObserver(records => {
+    const [record] = records;
+    const target = /** @type HTMLElement */ (record.target);
+    if (target.hidden) {
+      panel.removeEventListener("keydown", trapListener);
+      mo.disconnect();
+    }
+  });
+  mo.observe(panel, { attributes: true, attributeFilter: ["hidden"] });
+}
+
+/**
+ *
+ * @param {NodeListOf<HTMLAnchorElement>} anchors
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function createTrapListener(anchors, panel, dfn) {
+  const lastIndex = anchors.length - 1;
+  let currentIndex = 0;
+  return event => {
+    switch (event.key) {
+      // Hitting "Tab" traps us in a nice loop around elements.
+      case "Tab": {
+        event.preventDefault();
+        currentIndex += event.shiftKey ? -1 : +1;
+        if (currentIndex < 0) {
+          currentIndex = lastIndex;
+        } else if (currentIndex > lastIndex) {
+          currentIndex = 0;
+        }
+        anchors.item(currentIndex).focus();
+        break;
+      }
+
+      // Hitting "Enter" on an anchor releases the trap.
+      case "Enter":
+        hidePanel(panel);
+        break;
+
+      // Hitting "Escape" returns focus to dfn.
+      case "Escape":
+        hidePanel(panel);
+        dfn.focus();
+        return;
+    }
+  };
+}
+
+/** @param {HTMLElement} panel */
+function hidePanel(panel) {
+  if (!panel) return;
+  panel.hidden = true;
+  panel.classList.remove("docked");
+}
+})()</script><div class="sidelabel">E-Space Adviesdocument - Vastgestelde versie</div><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
