@@ -29,9 +29,7 @@ jobs:
          wget https://raw.githubusercontent.com/Logius-standaarden/Automatisering/main/scripts/pdf.js
       - name: Push file
         run: |
-          echo "Hello, world!" > hello.txt
-          git config --global user.name 'brienen'
-          git config --global user.email 'brienen@e-space.nl'
+          git config --global user.name "${{ github.actor }}"
           git add snapshot.html
           git commit -m "Add snapshot.html"
           git push
